@@ -34,9 +34,9 @@ export default function Navbar() {
             <menu>
               <li><a href="#tempLink">Testimonials</a></li>
               <li className={styles.seperator}>&bull;</li>
-              <li><a href="tempLink">Contact</a></li>
+              <li><a href="#tempLink">Contact</a></li>
               <li className={styles.seperator}>&bull;</li>
-              <li><a href="tempLink">FAQ</a></li>
+              <li><a href="#tempLink">FAQ</a></li>
             </menu>
 
             <a href="#tempLink" className={styles.getStartedButton}>Get started!</a>

@@ -22,6 +22,7 @@
 body{
   font-family: var(--primary-font);
   color: var(--primary-text-color);
+  height: 500vh;
 }
 
 .center{
@@ -47,6 +48,59 @@ body{
 }
 .react-multi-carousel-item:active{
   cursor: grabbing;
+}
+
+.main-button{
+  position: relative;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  padding: 0.5vw 2vw;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  z-index: 10;
+  transition: 0.4s transform;
+}
+.main-button::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+.main-button::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: -4px;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #45454581;
+  z-index: -2;
+  transition: 0.4s transform;
+}
+
+.main-button:hover{
+  transform: translateY(-2px) translateX(2px);
+}
+
+.main-button:hover::after{
+  transform: translateY(4px) translateX(-4px);
+}
+
+.main-button img{
+  margin-left: 1vw;
+  display: inline-block;
+  width: 2vw;
 }
 
 :root{

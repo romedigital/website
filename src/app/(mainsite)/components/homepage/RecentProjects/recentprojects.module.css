@@ -1,0 +1,22 @@
+.carouselWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.carouselItem{
+    width: 22vw;
+    height: 15vw;
+    margin: 0 1.5vw;
+    object-fit: cover;
+    position: relative;
+    transition: 0.3s box-shadow;
+    cursor: pointer;
+}
+
+.carouselItem:hover{
+    box-shadow: 0px 0px 5px 5px #d44b4b93;
+}
