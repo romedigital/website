@@ -75,6 +75,9 @@ body{
   background-color: var(--primary-color);
   z-index: -1;
 }
+.main-button:active::before{
+  filter: brightness(85%);
+}
 .main-button::after{
   content: "";
   display: inline-block;
@@ -101,6 +104,11 @@ body{
   margin-left: 1vw;
   display: inline-block;
   width: 2vw;
+  transition: 0.4s transform;
+}
+
+.main-button:hover img{
+  transform: translateX(6px);
 }
 
 :root{
