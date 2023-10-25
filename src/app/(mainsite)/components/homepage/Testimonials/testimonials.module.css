@@ -1,0 +1,18 @@
+.section{
+    position: relative;
+    padding: 2.5vw 0;
+}
+
+.section h3{
+    padding-left: 10vw;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.section h1{
+    padding-left: 10vw;
+    font-size: 6rem;
+    color: var(--primary-text-color);
+    font-weight: bolder;
+    line-height: 100%;
+}

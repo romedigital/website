@@ -13,6 +13,7 @@ export default function Colosseum() {
             <a href="#tempLink" className={`main-button ${styles.ctaButton}`}>Get Started <img src="./icons/arrow-right.svg" aria-hidden /></a>
         </div>
 
+        <div className={styles.bgGradient}></div>
         <Image alt="Image of roman colosseum" className={styles.bgImg} src="/img/colosseum.png" width={1024} height={1024}/>
     </section>
   )
