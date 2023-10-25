@@ -1,0 +1,21 @@
+{
+  "name": "rome-digital-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "updatemain": "echo 'Enter Commit Message:' && read msg && git checkout -b main && git add -A && git commit -m \"$msg\" && git push origin main"
+  },
+  "dependencies": {
+    "@types/node": "20.8.8",
+    "@types/react": "18.2.31",
+    "@types/react-dom": "18.2.14",
+    "next": "13.5.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2"
+  }
+}
