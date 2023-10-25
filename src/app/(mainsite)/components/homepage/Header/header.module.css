@@ -15,6 +15,7 @@
     display: inline-block;
     position: relative;
     z-index: 10;
+    --clip-path-amt: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
 .mainTagline span::after{
@@ -30,6 +31,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    clip-path: var(--clip-path-amt);
 }
 
 .secondTagline{

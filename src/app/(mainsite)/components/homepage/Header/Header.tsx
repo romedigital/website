@@ -1,9 +1,27 @@
+"use client"
+import { useEffect, useRef } from "react"
 import styles from "./header.module.css"
+import gsap from "gsap"
 
 export default function Header() {
+
+  const mainTaglineSpanRef: any = useRef()
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      gsap.fromTo(mainTaglineSpanRef.current,{
+        "--clip-path-amt":  "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+      }, {
+        "--clip-path-amt": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        ease: "power3.in",
+        duration: 0.5
+      })
+    }, 500)
+  }, [])
+
   return (
     <header className={`${styles.header} main-bg-top`}>
-        <h1 className={styles.mainTagline}>Let's build <span>your</span> digital empire!</h1>
+        <h1 className={styles.mainTagline}>Let's build <span ref={mainTaglineSpanRef}>your</span> digital empire!</h1>
 
         <p className={styles.secondTagline}>At Rome Digital, we craft online masterpieces that stand the test of time, and set you and your business apart from the masses.</p>
 

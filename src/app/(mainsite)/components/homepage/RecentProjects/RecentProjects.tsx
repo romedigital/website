@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react"
 import styles from "./recentprojects.module.css"
 import gsap from "gsap"
+import Image from "next/image"
 
 
 export default function RecentProjects() {
@@ -34,6 +35,13 @@ useEffect(()=>{
 
   return (
     <div ref={wrapperRef} className={styles.wrapper}>
+
+        <div className={styles.pastProjectsSign}>
+          <span>Recent<br/>Projects</span>
+          <Image src={"/img/shield.png"} alt="Roman Shield Icon" width={300} height={300} />
+          <div className={styles.shader}></div>
+        </div>
+
         <div className={`${styles.carouselWrapper} recentProjectCarouselWrapper`}>
           <img alt="Past Project Thumbnail" src="./img/pastprojects/advantage.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="./img/pastprojects/shine.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
