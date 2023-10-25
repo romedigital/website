@@ -1,0 +1,124 @@
+.mainNav{
+    position: relative;
+    background-color: var(--third-color);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.topbar{
+    background-color: var(--primary-color);
+    padding: 0.2vw 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbarHeadline{
+    font-weight: 800;
+    font-family: var(--secondary-font);
+    font-size: 1.1rem;
+}
+
+.contactInfo, .phoneContact{
+    display: flex;
+    align-items: center;
+}
+.topbarLink{
+    margin: 0 0.5vw;
+}
+.phoneContact{
+color: var(--main-text-color);
+font-weight: 700;
+text-decoration: none;
+}
+
+.topbarLink img{
+    width: 1.2vw;
+    aspect-ratio: 1/1;
+}
+.phoneContact img{
+    width: 1.6vw;
+}
+
+.mainContent{
+    padding: 0.8vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 3.5vw;
+}
+.logo span{
+    margin-left: 1vw;
+    font-size: 2.4rem;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+.navLinks menu{
+    display: inline-block;
+}
+.navLinks li:not(.seperator){
+    margin: 0 1.5vw;
+}
+.navLinks li{
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    position: relative;
+}
+.navLinks li:not(.seperator)::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+    bottom: 6px;
+    left: 0;
+    width: 0;
+    transition: 0.4s width;
+}
+.navLinks li:not(.seperator):hover::after{
+    width: 100%;
+}
+.navLinks li a{
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.getStartedButton{
+    margin-left: 2vw;
+    color: var(--main-text-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.5vw 2vw;
+    border-radius: 10px;
+    transition: 0.3s filter;
+}
+.getStartedButton:hover{
+    filter: brightness(75%);
+}
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+ 
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+ 
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+
+}
