@@ -115,6 +115,14 @@ body{
   font-size: 14px;
 }
 
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1900px){
+  .main-button{
+    padding: 0.8vw 2.2vw;
+  }
+}
+
+
 /* SMALL LAPTOP STYLES */
 /* @media only screen and (min-width: 991px) and (max-width: 1400px){
   :root{

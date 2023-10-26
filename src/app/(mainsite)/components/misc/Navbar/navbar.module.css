@@ -108,6 +108,38 @@ text-decoration: none;
     filter: brightness(75%);
 }
 
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1900px){
+    .topbarLink{
+        margin: 0 0.6vw;
+    }
+    
+    .topbarLink img{
+        width: 1.6vw;
+    }
+    .phoneContact img{
+        width: 2.2vw;
+    }
+    
+    .mainContent{
+        padding: 0.6vw 5vw;
+    }
+    
+    .logo img{
+        width: 3.7vw;
+    }
+
+    .navLinks li{
+        font-size: 1.4rem;
+    }
+
+    .getStartedButton{
+        font-size: 1.4rem;
+        padding: 0.5vw 2.5vw;
+    }
+}
+
+
 /* SMALL LAPTOP STYLES */
 @media only screen and (min-width: 991px) and (max-width: 1400px){
  

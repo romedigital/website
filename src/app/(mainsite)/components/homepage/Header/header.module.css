@@ -57,3 +57,22 @@
     margin-left: 0.1vw;
     width: 1.2vw;
 }
+
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1900px){
+    .header{
+        padding: 5.5vw 0 8.5vw 0;
+    }
+    .secondTagline{
+        margin-top: 2vw;
+    }
+    
+    .ctaButton{
+        margin-top: 2.5vw;
+    }
+    
+    .subTagline{
+        font-size: 1.1rem;
+        margin-top: 2vw;
+    }
+}

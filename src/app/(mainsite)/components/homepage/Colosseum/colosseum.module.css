@@ -49,3 +49,14 @@
 .ctaButton{
     margin-top: 2.5vw;
 }
+
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1900px){
+    .section p{
+        margin-top: 2.5vw;
+        padding: 0 25%;
+    }
+    .ctaButton{
+        margin-top: 3vw;
+    }
+}
