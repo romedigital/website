@@ -1,4 +1,5 @@
 import './style.css'
+import "react-multi-carousel/lib/styles.css";
 import type { Metadata } from 'next'
 import { Spectral, EB_Garamond } from 'next/font/google'
 import Navbar from './(mainsite)/components/misc/Navbar/Navbar'

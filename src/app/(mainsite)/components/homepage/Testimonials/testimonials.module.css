@@ -1,18 +1,21 @@
 .section{
     position: relative;
-    padding: 2.5vw 0;
+    padding: 1vw 0;
 }
 
 .section h3{
-    padding-left: 10vw;
+    padding-left: 5vw;
     font-size: 2rem;
     color: var(--primary-color);
     font-weight: bold;
 }
 .section h1{
-    padding-left: 10vw;
+    padding-left: 5vw;
     font-size: 6rem;
     color: var(--primary-text-color);
     font-weight: bolder;
     line-height: 100%;
+}
+.testimonialsWrapper{
+    padding: 5vw 0;
 }
