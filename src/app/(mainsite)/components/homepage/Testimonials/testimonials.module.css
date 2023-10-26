@@ -3,19 +3,22 @@
     padding: 1vw 0;
 }
 
-.section h3{
-    padding-left: 5vw;
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-weight: bold;
+.headerWrapper{
+    margin-left: 5vw;
+    position: relative;
 }
-.section h1{
-    padding-left: 5vw;
-    font-size: 6rem;
-    color: var(--primary-text-color);
-    font-weight: bolder;
-    line-height: 100%;
+
+.headerWrapper::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    left: -2vw;
+    top:0;
+    background-color: var(--primary-color);
 }
+
 .testimonialsWrapper{
-    padding: 5vw 0;
+    padding: 2vw 0 5vw 0;
 }

@@ -22,7 +22,6 @@
 body{
   font-family: var(--primary-font);
   color: var(--primary-text-color);
-  height: 500vh;
 }
 
 .center{
@@ -48,6 +47,19 @@ body{
 }
 .react-multi-carousel-item:active{
   cursor: grabbing;
+}
+
+.small-heading{
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.large-heading{
+  font-size: 6rem;
+  color: var(--primary-text-color);
+  font-weight: bolder;
+  line-height: 100%;
 }
 
 .main-button{

@@ -34,8 +34,11 @@ export default function Testimonials() {
     })
   return (
     <section className={`${styles.section} main-bg-center`}>
-        <h3>Client</h3>
-        <h1>Testimonials</h1>
+      <div className={styles.headerWrapper}>
+        <h3 className="small-heading">Client</h3>
+        <h1 className="large-heading">Testimonials</h1>
+      </div>
+        
         <div className={styles.testimonialsWrapper}>
           
         

@@ -1,0 +1,59 @@
+.section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5vw 0;
+}
+
+.imgWrapper{
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+}
+.imgWrapper img{
+    opacity: 50%;
+    width: 20vw;
+    height: 40vw;
+    object-fit: contain;
+}
+
+.contentWrapper{
+    padding-left: 15vw;
+    padding-top: 2vw;
+    width: 40vw;
+}
+
+.contentWrapper h1{
+    font-size: 5rem;
+    line-height: 120%;
+}
+
+.contentWrapper h1 span{
+    color: var(--primary-color);
+}
+
+.section p{
+    margin-top: 1vw;
+    font-size: 1.7rem;
+    padding-right: 20%;
+    line-height: 180%;
+    padding-bottom: 4vw;
+}
+
+.point{
+    display: flex;
+    align-items: center;
+    margin: 1vw 0;
+}
+
+.point img{
+    width: 4vw;
+    height: 4vw;
+}
+
+.point span{
+    margin-left: 1vw;
+    font-size: 2rem;
+    font-weight: 500;
+}
