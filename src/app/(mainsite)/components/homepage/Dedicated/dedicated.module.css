@@ -7,9 +7,9 @@
 }
 
 .imgWrapper{
-    width: 30vw;
     display: flex;
     justify-content: flex-start;
+    padding-right: 15vw;
 }
 .imgWrapper img{
     opacity: 50%;
@@ -37,7 +37,7 @@
     margin-top: 1vw;
     font-size: 1.7rem;
     padding-right: 20%;
-    line-height: 180%;
+    line-height: 200%;
     padding-bottom: 4vw;
 }
 

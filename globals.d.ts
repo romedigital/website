@@ -3,3 +3,8 @@ interface testimonialType{
     title: string,
     desc: string
 }
+
+interface faqType{
+    question: string,
+    answer: string
+}
