@@ -34,3 +34,25 @@
     line-height: 220%;
     margin-top: 0.1vw;
 }
+
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1900px){
+    .testimonial{
+        width: 22vw;
+        margin: 0 1vw;
+    }
+    
+    .name{
+        padding-top: 0.5vw;
+        font-size: 1.2rem;
+    }
+    
+    .testimonial img{
+        width: 4.5vw;
+    }
+    
+    .testimonial p{
+        padding: 0 5%;
+        font-size: 1.1rem;
+    }
+}

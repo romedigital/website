@@ -57,3 +57,35 @@
     font-size: 2rem;
     font-weight: 500;
 }
+
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1900px){
+    
+    .imgWrapper{
+        padding-right: 15vw;
+    }
+    .imgWrapper img{
+        width: 20vw;
+        height: 40vw;
+    }
+    
+    .contentWrapper{
+        padding-left: 15vw;
+        width: 45vw;
+    }
+    
+    .section p{
+        margin-top: 2vw;
+        font-size: 1.6rem;
+        padding-bottom: 2vw;
+    }
+    
+    .point img{
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .point span{
+        font-size: 1.8rem;
+    }
+}

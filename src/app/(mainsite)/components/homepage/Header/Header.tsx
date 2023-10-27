@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react"
 import styles from "./header.module.css"
 import gsap from "gsap"
+import Image from "next/image"
 
 export default function Header() {
 
@@ -29,6 +30,8 @@ export default function Header() {
 
         <p className={styles.subTagline}>Websites that crush competition!
         <img src="./icons/sword.svg" aria-hidden /></p>
+
+        <Image className={styles.mainBg} alt="Main background" src="/img/main-bg.png" width={1024} height={1024}/>
     </header>
   )
 }

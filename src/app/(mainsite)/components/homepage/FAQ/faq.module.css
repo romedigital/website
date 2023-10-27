@@ -57,3 +57,16 @@
     font-weight: 400;
     line-height: 180%;
 }
+
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1900px){
+    
+    .headingContent{
+        padding: 0.1vw 2vw;
+        font-size: 1.6rem;
+    }
+    
+    .headingContent img{
+        width: 3.5vw;
+    }
+}
