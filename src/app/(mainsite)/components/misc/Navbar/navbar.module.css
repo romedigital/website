@@ -6,7 +6,7 @@
 
 .topbar{
     background-color: var(--primary-color);
-    padding: 0.2vw 10vw;
+    padding: 0.2vw 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,6 +15,7 @@
 .topbarHeadline{
     font-weight: 800;
     font-family: var(--secondary-font);
+    color: var(--secondary-text-color);
     font-size: 1.1rem;
 }
 
@@ -26,7 +27,7 @@
     margin: 0 0.5vw;
 }
 .phoneContact{
-color: var(--main-text-color);
+color: var(--secondary-text-color);
 font-weight: 700;
 text-decoration: none;
 }
