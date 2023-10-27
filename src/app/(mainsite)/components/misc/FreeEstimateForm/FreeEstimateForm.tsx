@@ -1,12 +1,9 @@
 "use client"
 // import PhoneNumber from "./PhoneNumber/PhoneNumber"
+import Image from "next/image"
 import { useRef, useState } from "react"
 import handleFormSubmit from "./handleFormSubmit"
 import "./freeestimateform.css"
-import emailIcon from "./icons/email.svg"
-import locationIcon from "./icons/location.svg"
-import personIcon from "./icons/person.svg"
-import phoneIcon from "./icons/phone.svg"
 import MessageStatus from "../MessageStatus/MessageStatus"
 import PopUpForm from "./PopupForm/PopupForm"
 
@@ -18,37 +15,38 @@ export default function FreeEstimateForm() {
 
   return (
     <>
-    <PopUpForm setStatus={setStatus} />
     <MessageStatus status={status} setStatus={setStatus}/>
     <form ref={formRef} id="estimateForm" onSubmit={(evt)=>{handleFormSubmit(evt, setStatus, formRef)}}>
-    <input type="hidden" name="_subject" value="New estimate request"/>
-
-
-        <input type="hidden" name="_captcha" value="false"/>
+    <input type="hidden" name="_subject" value="New message from website"/>
+    <input type="hidden" name="_captcha" value="false"/>
             
-            <h2 id="estimateFormTitle">Get a <em>Free</em><br />Estimate!</h2>
+            <h2 id="estimateFormTitle">Send a Message!</h2>
             <div className="input-wrapper">
-                <img id="formPersonIcon" src={personIcon} alt="Person Icon" />
+                <Image width={200} height={200} id="formPersonIcon" src={"/icons/person.png"} alt="Person Icon" />
                 <input required type="text" name="name" id="nameInput" placeholder={"Name"} />
             </div>
+            
             <div className="input-wrapper">
-                <img id="formEmailIcon" src={emailIcon} alt="Email Icon" />
-                <input required type="email" name="email" id="emailInput" placeholder={"Email Address"} />
-            </div>
-            <div className="input-wrapper">
-            <img id="formPhoneIcon" src={phoneIcon} alt="Phone Icon" />
+                <Image width={200} height={200} id="formPhoneIcon" src={"/icons/phone.png"} alt="Phone Icon" />
                 <input required type="text" name="phoneNumber" id="phoneNumberInput" placeholder={"Phone Number"} />
             </div>
             <div className="input-wrapper">
-            <img id="formLocationIcon" src={locationIcon} alt="Location Icon" />
-                <input required type="text" name="serviceAddress" id="locationInput" placeholder={"Service Address"} />
-            </div>
-            <div className="input-wrapper">
-                <textarea required maxLength={2000} name="message" id="messageInput" placeholder={"Any Additional Details..."}></textarea>
+                <Image width={200} height={200} id="formEmailIcon" src={"/icons/email.png"} alt="Email Icon" />
+                <input required type="email" name="email" id="emailInput" placeholder={"Email Address"} />
             </div>
 
-            <input id="estimateFormSubmit" type="submit" value="Get Your Free Estimate!" />
-            <div className="form-disclaimer">We will never spam you or sell your data, the data submitted will only be used to send estimates and invoices to.</div>
+            <div className="input-wrapper">
+                <textarea required maxLength={2000} name="details" id="messageInput" placeholder={"Details about your project"}></textarea>
+            </div>
+            
+            <div className="center">
+                <a onClick={(evt)=>{evt.preventDefault(); formRef.current.requestSubmit();}} className="main-button" id="estimateFormSubmit" type="submit">Let's Go! <img src="./icons/arrow-right.svg" aria-hidden /></a>
+            </div>
+            
+            <div className="form-decoration top-left"></div>
+            <div className="form-decoration top-right"></div>
+            <div className="form-decoration bottom-left"></div>
+            <div className="form-decoration bottom-right"></div>
         </form>
     </>
   )

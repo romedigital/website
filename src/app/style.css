@@ -22,6 +22,7 @@
 body{
   font-family: var(--primary-font);
   color: var(--primary-text-color);
+  margin-top: 6vw;
 }
 
 .center{
@@ -63,6 +64,7 @@ body{
 }
 
 .main-button{
+  cursor: pointer;
   position: relative;
   font-weight: 900;
   display: inline-flex;

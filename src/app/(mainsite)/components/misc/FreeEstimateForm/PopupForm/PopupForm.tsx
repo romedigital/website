@@ -95,8 +95,7 @@ export default function PopUpForm({setStatus}: {setStatus: any}) {
   return (
     <div id="popupFormWrapper" ref={wrapperRef} >
         <form ref={formRef} id="popupForm" onSubmit={(evt)=>{handleFormSubmit(evt, setStatus, formRef); closeForm()}}>
-    
-        <input type="hidden" name="_next" value={`${window.location.origin}?messagesuccess=true${location.hash}`}/>
+
         <input type="hidden" name="_captcha" value="false"/>
         <input type="hidden" name="_subject" value="New estimate request"/>
             

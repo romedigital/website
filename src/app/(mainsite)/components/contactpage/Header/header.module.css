@@ -1,0 +1,33 @@
+.header{
+    padding-top: 4vw;
+}
+
+.headingWrapper{
+    position: relative;
+}
+
+.header img{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: calc(50% - 3vw);
+    right: 100%;
+}
+
+.header h1{
+    margin-left: 2vw;
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.header span{
+    font-family: var(--secondary-font);
+    font-size: 7rem;
+    color: var(--primary-color);
+}
+
+.header p{
+    text-align: center;
+    font-size: 2rem;
+    width: 30%;
+}

@@ -34,7 +34,7 @@ export default function Testimonials() {
     })
   return (
     <section className={`${styles.section} main-bg-center`}>
-      <div className={styles.headerWrapper}>
+      <div className={styles.headerWrapper} id="testimonialsHeading">
         <h3 className="small-heading">Client</h3>
         <h1 className="large-heading">Testimonials</h1>
       </div>

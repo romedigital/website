@@ -1,24 +1,51 @@
 #estimateForm{
     display: inline-block;
-    background-color: var(--primary-color);
-    padding: 1.5vw;
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    padding: 4vw 1.5vw 3vw 1.5vw;
     padding-top: 0;
-    color: var(--main-color);
+    color: var(--main--text-color);
     width: 23vw;
-    min-height: 33rem;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
 }
 
+.form-decoration{
+    background-color: var(--primary-color);
+    width: 4vw;
+    aspect-ratio: 1/1;
+    position: absolute;
+    
+    
+}
+.form-decoration.top-left{
+    top:0;
+    left:0;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+.form-decoration.top-right{
+    top:0;
+    right:0;
+    clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+.form-decoration.bottom-left{
+    bottom:0;
+    left:0;
+    clip-path: polygon(100% 100%, 0 0, 0 100%);
+}
+.form-decoration.bottom-right{
+    bottom:0;
+    right:0;
+    clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+}
+
 #estimateFormTitle{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: var(--primary-font);
     text-align: center;
     line-height: 120%;
     font-weight: 800;
-    padding: 1vw 0 4vw 0;
+    padding: 2vw 0 2vw 0;
     position: relative;
-    background-color: var(--secondary-color);
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 
 .input-wrapper{
@@ -28,31 +55,28 @@
 .input-wrapper img{
     position: absolute;
     display: inline-block;
-    top: 10%;
-    left: 4%;
-    height: 80%;
-    width: 8%;
+    top: 0%;
+    left: 2%;
+    height: 100%;
+    width: 10%;
     object-position: center;
     object-fit: contain;
 }
-#formPhoneIcon:not(.company-name-icon){
-    top: 0%;
-    left: 3%;
-    height: 110%;
-    width: 11%;
-}
+
 #estimateForm input:not(input[type="submit"]):focus, #estimateForm textarea:focus{
-    outline: 4px solid var(--secondary-color);
-    /* border: 3px solid var(--secondary-color); */
+    outline: none;
+    border-color: var(--primary-color);
 }
-#estimateForm input, #estimateForm textarea{
+#estimateForm input:not(input[type="submit"]), #estimateForm textarea{
     display: inline-block;
     font-size: 1.2em;
-    font-family: var(--main-font);
+    font-family: var(--primary-font);
+    background-color: transparent;
     font-weight: 200;
     width: 85%;
     padding-left: 15%;
-    border: 3px solid var(--main-text-color);
+    border: none;
+    border-bottom: 1px solid var(--primary-text-color);
     padding: 0.8vw 0;
 }
 
@@ -60,29 +84,21 @@
     width: 101%;
 }
 
-#estimateForm input{
+#estimateFormSubmit{
+    margin-top: 1vw;
+}
+
+#estimateForm input:not(input[type="submit"]){
     padding-left: 15%;
 }
 
-#estimateForm input[type="submit"]{
-    background-color: var(--secondary-color);
-    font-family: var(--primary-font);
-    font-weight: 600;
-    padding-left: 0;
-    font-size: 1.4rem;
-    width: 100%;
-    border: none;
-    transition: 0.3s filter;
-    cursor: pointer;
-}
-#estimateForm input[type="submit"]:hover{
-    filter: brightness(75%);
-}
 
 #estimateForm textarea{
     resize: none;
     width: 98%;
     padding-left: 2%;
+    border: 1px solid black;
+    height: 5vw;
 }
 
 .form-disclaimer{
@@ -110,7 +126,7 @@
     #estimateFormTitle{
         font-size: 2.5rem;
     }
-    #estimateForm input, #estimateForm textarea{
+    #estimateForm input:not(input[type="submit"]), #estimateForm textarea{
         padding-top: 1vw;
         padding-bottom: 1vw;
     }
@@ -142,7 +158,7 @@
     .input-wrapper{
         margin: 1vw;
     }
-    #estimateForm input, #estimateForm textarea{
+    #estimateForm input:not(input[type="submit"]), #estimateForm textarea{
         padding-top: 1.5vw;
         padding-bottom: 1.5vw;
         font-size: 1.5rem;
@@ -153,9 +169,7 @@
     #formPhoneIcon:not(.company-name-icon){
         left: 1%;
     }
-    #estimateForm input[type="submit"]{
-        font-size: 1.8rem;
-    }
+
 }
  
 /* MOBILE STYLES */
@@ -185,7 +199,7 @@
         margin-top: 2vw;
         margin-bottom: 2vw;
     }
-    #estimateForm input, #estimateForm textarea{
+    #estimateForm input:not(input[type="submit"]), #estimateForm textarea{
         padding-top: 2.2vw;
         padding-bottom: 2.2vw;
         font-size: 1.5rem;
@@ -195,9 +209,6 @@
     }
     #formPhoneIcon:not(.company-name-icon){
         left: 1%;
-    }
-    #estimateForm input[type="submit"]{
-        font-size: 1.8rem;
     }
 }
 

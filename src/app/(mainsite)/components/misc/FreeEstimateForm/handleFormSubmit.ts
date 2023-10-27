@@ -1,3 +1,4 @@
+"use client"
 export default async function handleFormSubmit(evt: any, setStatus: any, formRef: any) {
     evt.preventDefault();
     localStorage.setItem("popupFormStats", JSON.stringify({lastShown: new Date().getTime(), isSent: true}))

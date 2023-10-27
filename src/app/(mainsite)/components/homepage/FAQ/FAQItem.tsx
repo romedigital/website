@@ -9,25 +9,32 @@ export default function FAQItem(props: faqType) {
     isOpen.current = false;
 
     const caretRef: any = useRef()
-    const answerRef: any = useRef();
+    const answerRef: any = useRef()
     const timelineRef: any = useRef()
+    const questionRef: any = useRef()
 
     useEffect(()=>{
         timelineRef.current = gsap.timeline({defaults:{
             ease: "power1.inOut",
             duration: 0.3
         }})
+
         gsap.set(caretRef.current,{
             rotate: "0deg"
         })
         gsap.set(answerRef.current, {
             height: 0
         })
+        gsap.set(questionRef.current, {
+            color: "black"
+        })
 
         timelineRef.current.to(answerRef.current, {
             height: "auto"
         }).to(caretRef.current,{
             rotate: "-180deg"
+        }, "<").to(questionRef.current, {
+            color: "#D44B4B"
         }, "<")
         timelineRef.current.pause()
 
@@ -46,7 +53,7 @@ export default function FAQItem(props: faqType) {
   return (
     <div className={styles.faqItem}>
         <div className={styles.headingContent} onClick={toggleAnswer}>
-            <span>{props.question}</span>
+            <span ref={questionRef}>{props.question}</span>
             <img ref={caretRef} src="./icons/caret-down.svg" aria-hidden />
         </div>
         <div ref={answerRef} className={styles.faqItemAnswer}>

@@ -9,7 +9,7 @@ export default function FAQ() {
     })
   return (
     <section className={`${styles.section} center`}>
-        <h3 className="small-heading">FAQ</h3>
+        <h3 id="faqHeading" className="small-heading">FAQ</h3>
         <h1 className="large-heading">Answers to your Questions</h1>
         <Image className={styles.mainBg} alt="Man Thinking" src={"/img/thinker.png"} height={813} width={981} />
 

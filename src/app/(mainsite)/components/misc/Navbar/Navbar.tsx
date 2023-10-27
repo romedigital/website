@@ -1,4 +1,5 @@
 import styles from "./navbar.module.css"
+import Link from "next/link"
 
 export default function Navbar() {
   return (
@@ -24,19 +25,24 @@ export default function Navbar() {
 
         <div className={styles.mainContent}>
 
-          <div className={styles.logo}>
+          <Link href="/" className={styles.logo}>
             <img src="./img/logo.png" alt="Rome Digital Logo" className={styles.logoImg} />
             <span>Rome Digital</span>
-          </div>
+          </Link>
 
           <div className={styles.navLinks}>
             
             <menu>
-              <li><a href="#tempLink">Testimonials</a></li>
+            <li><Link href="/">Home</Link></li>
               <li className={styles.seperator}>&bull;</li>
-              <li><a href="#tempLink">Contact</a></li>
+
+              <li><Link href="/contact">Contact</Link></li>
               <li className={styles.seperator}>&bull;</li>
-              <li><a href="#tempLink">FAQ</a></li>
+
+              <li><Link href="/#testimonialsHeading">Testimonials</Link></li>
+              <li className={styles.seperator}>&bull;</li>
+              
+              <li><Link href="/#faqHeading">FAQ</Link></li>
             </menu>
 
             <a href="#tempLink" className={styles.getStartedButton}>Get started!</a>
