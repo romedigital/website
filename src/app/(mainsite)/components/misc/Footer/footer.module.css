@@ -27,10 +27,16 @@
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
- 
+    .mainFooter img{
+        width: 7vw;
+        height: 7vw;
+    }
 }
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-
+    .mainFooter img{
+        width: 12vw;
+        height: 12vw;
+    }
 }
