@@ -4,6 +4,7 @@
     margin: 0 2vw;
     font-family: var(--secondary-font);
     user-select: none;
+    
 }
 
 .headerContent{
@@ -33,7 +34,26 @@
     font-size: 1.2rem;
     line-height: 220%;
     margin-top: 0.1vw;
+    max-height: 15vw;
+    overflow-y: auto;
 }
+
+/* width */
+.testimonial p::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .testimonial p::-webkit-scrollbar-track {
+    background: transparent;
+    
+  }
+  
+  /* Handle */
+  .testimonial p::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 999px;
+  }
 
 /* MEDIUM LAPTOP STYLES */
 @media only screen and (min-width: 1401px) and (max-width: 1900px){

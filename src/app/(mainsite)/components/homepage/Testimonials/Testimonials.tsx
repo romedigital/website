@@ -1,7 +1,7 @@
 "use client"
 
 import styles from "./testimonials.module.css"
-import testimonialData from "./testimonialData"
+import testimonialData from "../../../data/testimonialData"
 import Testimonial from "./Testimonial/Testimonial"
 import Carousel from "react-multi-carousel"
 
@@ -46,6 +46,8 @@ export default function Testimonials() {
         responsive={testimonialResponsiveness}
         arrows={false}
         infinite
+        autoPlay
+        autoPlaySpeed={10000}
         >
           {testimonialElems}
         </Carousel>

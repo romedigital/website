@@ -56,7 +56,7 @@ export default function PopUpForm() {
         }
         const formStats = JSON.parse(localStorage.getItem("popupFormStats")!)
 
-        if(!formStats.isSent && ((formStats.lastShown + 60000) < new Date().getTime()) ){
+        if(!formStats.isSent && ((formStats.lastShown + 600000) < new Date().getTime()) ){
             showThisSession = true
         }
 
