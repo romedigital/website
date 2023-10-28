@@ -1,7 +1,51 @@
+"use client"
+
 import styles from "./navbar.module.css"
 import Link from "next/link"
+import gsap from "gsap"
+import { useEffect, useRef } from "react"
+
 
 export default function Navbar() {
+
+  const navLinksRef: any = useRef()
+  const isMenuOpen: any = useRef()
+  const mobileTimeline: any = useRef()
+  const hamburgerMenuRef: any = useRef()
+  isMenuOpen.current = false
+  mobileTimeline.current = gsap.timeline({defaults: {
+    duration: 0.3,
+    ease: "power1.inOut"
+  }})
+
+  function toggleMenu(){
+    if(!isMenuOpen.current){
+      isMenuOpen.current = true
+      mobileTimeline.current.play()
+    }else{
+      isMenuOpen.current = false
+      mobileTimeline.current.reverse()
+    }
+  }
+
+  useEffect(()=>{
+    mobileTimeline.current.to(navLinksRef.current, {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    }).to(hamburgerMenuRef.current,{
+      scale: 0.8
+    },"<")
+    mobileTimeline.current.pause()
+
+    window.addEventListener("click", (evt)=>{
+      // @ts-ignore
+      const currentID = evt.target.id || "";
+      if((isMenuOpen.current == true) && (currentID !== "hamburgerMenu")&& (currentID !== "navLinksMenu")){
+        toggleMenu()
+      }
+    })
+
+  }, [])
+
   return (
     <nav className={styles.mainNav}>
         <div className={styles.topbar}>
@@ -32,7 +76,7 @@ export default function Navbar() {
 
           <div className={styles.navLinks}>
             
-            <menu>
+            <menu ref={navLinksRef} id="navLinksMenu">
             <li><Link href="/">Home</Link></li>
               <li className={styles.seperator}>&bull;</li>
 
@@ -44,8 +88,10 @@ export default function Navbar() {
               
               <li><Link href="/#faqHeading">FAQ</Link></li>
             </menu>
-
-            <a href="#tempLink" className={styles.getStartedButton}>Get started!</a>
+            <div className={styles.getStartedWrapper}>
+              <a href="#tempLink" className={styles.getStartedButton}>Get started!</a>
+              <button ref={hamburgerMenuRef} id="hamburgerMenu" onClick={toggleMenu} className={styles.hamburgerMenu}></button>
+            </div>
           </div>
 
         </div>

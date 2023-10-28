@@ -4,6 +4,10 @@ import styles from "./testimonials.module.css"
 import testimonialData from "../../../data/testimonialData"
 import Testimonial from "./Testimonial/Testimonial"
 import Carousel from "react-multi-carousel"
+import { useEffect } from "react"
+import gsap from "gsap"
+import ScrollTrigger from "gsap/dist/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Testimonials() {
 
@@ -32,6 +36,36 @@ export default function Testimonials() {
             <Testimonial key={i} {...data} />
         )
     })
+
+    useEffect(()=>{
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#testimonialsHeading",
+          start: "center 100%",
+          end: "center 80%"
+      },
+      defaults: {
+        duration: 0.5,
+        ease: "power1.inOut"
+      }
+    })
+
+    tl.to("#testimonialsHeading",{
+      "--psuedo-clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+    }).to("#testimonialsHeading h3", {
+      opacity: 1,
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      duration: 1.2
+    })
+    .to("#testimonialsHeading h1", {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      opacity: 1,
+      duration: 0.8
+    },"-=1.1")
+     
+    
+    }, [])
+
   return (
     <section className={`${styles.section} main-bg-center`}>
       <div className={styles.headerWrapper} id="testimonialsHeading">

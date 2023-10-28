@@ -90,3 +90,27 @@
         margin-top: 2vw;
     }
 }
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+    .header{
+        padding: 4vw 0 6.5vw 0;
+    }
+    .secondTagline{
+        margin-top: 2vw;
+    }
+    
+    .ctaButton{
+        margin-top: 2.5vw;
+    }
+    
+    .subTagline{
+        font-size: 1.1rem;
+        margin-top: 2vw;
+    }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+
+}

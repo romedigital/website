@@ -9,6 +9,14 @@
     backdrop-filter: blur(10px);
 }
 
+.hamburgerMenu{
+    display: none
+}
+
+.getStartedWrapper{
+    display: inline-block;
+}
+
 .topbar{
     background-color: var(--primary-color);
     padding: 0.2vw 5vw;
@@ -50,6 +58,7 @@ text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo{
@@ -118,7 +127,7 @@ text-decoration: none;
 }
 
 /* MEDIUM LAPTOP STYLES */
-@media only screen and (min-width: 1401px) and (max-width: 1900px){
+@media only screen and (min-width: 991px) and (max-width: 1900px){
     .topbarLink{
         margin: 0 0.6vw;
     }
@@ -149,17 +158,128 @@ text-decoration: none;
 }
 
 
-/* SMALL LAPTOP STYLES */
-@media only screen and (min-width: 991px) and (max-width: 1400px){
- 
+/* TABLET/MOBILE STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    
+    .topbar{
+        padding: 0.6vw 2vw;
+    }
+    
+    .topbarHeadline{
+        font-size: 1.1rem;
+    }
+    
+    .topbarLink{
+        margin: 0 1vw;
+    }
+    
+    .topbarLink img{
+        width: 2.5vw;
+        aspect-ratio: 1/1;
+    }
+    .phoneContact img{
+        width: 3.5vw;
+    }
+    
+    .mainContent{
+        padding: 0.4vw 2vw;
+    }
+    
+    .logo img{
+        width: 6vw;
+    }
+    .logo span{
+        margin-left: 1vw;
+        font-size: 2.2rem;
+    }
+    .navLinks li:not(.seperator){
+        margin: 0 1vw;
+    }
+    .navLinks li{
+        font-size: 1.3rem;
+    }
+    .navLinks li:not(.seperator)::after{
+        height: 2px;
+    }
+    
+    .getStartedButton{
+        padding: 0.8vw 2vw;
+        border-radius: 8px;
+    }
 }
 
-/* TABLET STYLES */
-@media only screen and (min-width: 650px) and (max-width: 990px){
- 
-}
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-
+    .getStartedWrapper{
+        display: flex;
+        align-items: center;
+    }
+    .hamburgerMenu{
+        display: inline-block;
+        position: relative;
+        width: 12vw;
+        aspect-ratio: 1/1;
+        background-image: url("/icons/hamburger-menu.svg");
+        background-color: transparent;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 1vw 0 4vw;
+        border: none;
+    }
+    .topbar{
+        padding: 1vw 2vw;
+        justify-content: center;
+    }
+    
+    .topbarLink{
+        display: none;
+    }
+    
+    .mainContent{
+        padding: 1vw 2vw;
+    }
+    
+    .logo img{
+        width: 10vw;
+    }
+    .logo span{
+        margin-left: 1vw;
+        font-size: 1.8rem;
+    }
+    .navLinks menu{
+        position: absolute;
+        background-color: var(--primary-color);
+        width: 50vw;
+        right: 0;
+        top:100%;
+        z-index: 990;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navLinks li:not(.seperator){
+        margin: 3vw 2vw;
+        display: block;
+    }
+    .navLinks li a{
+        display: block;
+    }
+    
+    .navLinks li{
+        font-size: 1.4rem;
+        color: var(--secondary-text-color);
+    }
+    .navLinks li.seperator{
+        display: none;
+    }
+    .navLinks li:not(.seperator)::after{
+        display: none;
+    }
+    
+    .getStartedButton{
+        margin-left: 2vw;
+        font-size: 1.5rem;
+        padding: 1vw 4vw;
+        border-radius: 999px;
+    }
 }

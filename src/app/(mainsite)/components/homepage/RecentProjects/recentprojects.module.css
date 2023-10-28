@@ -65,3 +65,11 @@
 .pastProjectsSign span{
     z-index: 900;
 }
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+    .pastProjectsSign{
+        height: 9vw;
+        width: 9vw;
+    }
+}

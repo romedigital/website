@@ -138,11 +138,14 @@ body{
 
 
 /* SMALL LAPTOP STYLES */
-/* @media only screen and (min-width: 991px) and (max-width: 1400px){
+@media only screen and (min-width: 991px) and (max-width: 1400px){
   :root{
-      font-size: 14px;
+      font-size: 12px;
   } 
-}*/
+  .main-button{
+    padding: 0.9vw 2.4vw;
+  }
+}
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){

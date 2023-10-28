@@ -59,7 +59,7 @@
 }
 
 /* MEDIUM LAPTOP STYLES */
-@media only screen and (min-width: 1401px) and (max-width: 1900px){
+@media only screen and (min-width: 991px) and (max-width: 1900px){
     
     .imgWrapper{
         padding-right: 15vw;
