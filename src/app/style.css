@@ -152,11 +152,29 @@ body{
   :root{
       font-size: 12px;
   }
+  body{
+    margin-top: 12vw;
+  }
+  .main-button{
+    padding: 1.2vw 3vw;
+  }
+  .main-button img{
+    margin-left: 1.5vw;
+    width: 3vw;
+  }
 }
 
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
   :root{
       font-size: 10px;
+  }
+  .main-button{
+    padding: 2vw 6vw;
+    font-size: 1.5rem;
+  }
+  .main-button img{
+    margin-left: 2vw;
+    width: 6vw;
   }
 }

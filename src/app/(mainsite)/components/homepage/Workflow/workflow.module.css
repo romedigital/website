@@ -92,7 +92,63 @@
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
     .section h1{
-        position: relative;
         font-size: 4rem;
     }
+    .section{
+        padding: 3vw 0 6vw 0;
+    }
+
+    .workflowWrapper{
+        padding: 4vw 0 6vw 0;
+    }
+    
+    .workflowItem{
+        width: 15vw;
+        height: 9vw;
+    }
+    .workflowItem span{
+        font-size: 1.3rem;
+        padding: 0 0.5vw;
+    }
 }
+
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+
+    .section{
+        position: relative;
+        padding: 4vw 0 10vw 0;
+    }
+
+    .section h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .section h1::before{
+        display: none;
+    }
+    .section h1::after{
+        display: none;
+    }
+
+    .workflowWrapper{
+        display: inline-flex;
+        padding: 8vw 0 10vw 0;
+    }
+    
+    .workflowItem{
+        width: 20vw;
+        height: 12vw;
+    }
+    .workflowItem span{
+        font-size: 1.2rem;
+        padding: 0.5vw 0.5vw;
+    }
+    
+    .seperator{
+        width: 5vw;
+        height: 10vw
+    }
+}
+

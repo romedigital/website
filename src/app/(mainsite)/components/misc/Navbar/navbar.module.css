@@ -225,8 +225,9 @@ text-decoration: none;
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
-        margin: 0 1vw 0 4vw;
+        margin-left: 4vw;
         border: none;
+        transition: 0.3s scale;
     }
     .topbar{
         padding: 1vw 2vw;
@@ -238,7 +239,7 @@ text-decoration: none;
     }
     
     .mainContent{
-        padding: 1vw 2vw;
+        padding: 1vw 3vw;
     }
     
     .logo img{
@@ -255,6 +256,7 @@ text-decoration: none;
         right: 0;
         top:100%;
         z-index: 990;
+        transition: 0.3s clip-path;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     .navLinks li:not(.seperator){

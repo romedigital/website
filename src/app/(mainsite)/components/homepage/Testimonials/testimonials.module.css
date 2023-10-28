@@ -34,3 +34,35 @@
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+ 
+.headerWrapper{
+    margin-left: 6vw;
+}
+
+.headerWrapper::after{
+    width: 6px;
+    left: -2.5vw;
+}
+
+.testimonialsWrapper{
+    padding: 5vw 0 6vw 0;
+}
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .headerWrapper{
+        margin-left: 10vw;
+    }
+    
+    .headerWrapper::after{
+        width: 4px;
+        left: -4vw;
+    }
+    
+    .testimonialsWrapper{
+        padding: 8vw 0 10vw 0;
+    }
+}

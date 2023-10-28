@@ -60,3 +60,41 @@
         margin-top: 3vw;
     }
 }
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .section{
+        padding: 12vw 0;
+        margin: 6vw 0;
+    }
+    .section p{
+        margin-top: 3.5vw;
+        padding: 0 20%;
+    }
+    .ctaButton{
+        margin-top: 4vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .tagline{
+        font-size: 3rem;
+        line-height: 150%;
+    }
+    
+    .tagline span{
+        font-size: 5rem;
+    }
+    .section{
+        padding: 20vw 0;
+        margin: 10vw 0;
+    }
+    .section p{
+        margin-top: 5vw;
+        padding: 0 5%;
+    }
+    .ctaButton{
+        margin-top: 8vw;
+    }
+}

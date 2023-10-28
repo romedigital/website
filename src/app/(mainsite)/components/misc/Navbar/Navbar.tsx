@@ -10,31 +10,23 @@ export default function Navbar() {
 
   const navLinksRef: any = useRef()
   const isMenuOpen: any = useRef()
-  const mobileTimeline: any = useRef()
   const hamburgerMenuRef: any = useRef()
   isMenuOpen.current = false
-  mobileTimeline.current = gsap.timeline({defaults: {
-    duration: 0.3,
-    ease: "power1.inOut"
-  }})
 
   function toggleMenu(){
     if(!isMenuOpen.current){
       isMenuOpen.current = true
-      mobileTimeline.current.play()
+      navLinksRef.current.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
+      hamburgerMenuRef.current.style.scale = "0.8"
     }else{
       isMenuOpen.current = false
-      mobileTimeline.current.reverse()
+      hamburgerMenuRef.current.style.scale = "1"
+      navLinksRef.current.style.clipPath = "polygon(0 0, 100% 0, 100% 0, 0 0)"
+      
     }
   }
 
   useEffect(()=>{
-    mobileTimeline.current.to(navLinksRef.current, {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    }).to(hamburgerMenuRef.current,{
-      scale: 0.8
-    },"<")
-    mobileTimeline.current.pause()
 
     window.addEventListener("click", (evt)=>{
       // @ts-ignore

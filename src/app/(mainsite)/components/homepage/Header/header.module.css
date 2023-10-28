@@ -11,6 +11,7 @@
 .mainTagline{
     font-weight: 900;
     font-size: 6rem;
+    text-align: center;
 }
 
 .mainTagline span{
@@ -34,6 +35,7 @@
     background-size: 100%;
     background-position: center;
     clip-path: var(--clip-path-amt);
+    
 }
 
 .secondTagline{
@@ -112,5 +114,62 @@
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
-
+    .header{
+        padding: 8vw 0 10vw 0;
+    }
+    
+    .mainTagline{
+        font-size: 4rem;
+    }
+    
+    .secondTagline{
+        margin-top: 2.5vw;
+        width: 60%;
+        font-size: 1.5rem;
+    }
+    
+    .ctaButton{
+        margin-top: 4vw;
+    }
+    
+    .subTagline{
+        margin-top: 2.5vw;
+        font-size: 1.1rem;
+    }
+    .subTagline img{
+        margin-left: 0.3vw;
+        width: 1.8vw;
+    }
 }
+
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .header{
+        padding: 25vw 0 20vw 0;
+    }
+    .mainTagline{
+        font-size: 5rem;
+        line-height: 120%;
+    }
+    
+    .secondTagline{
+        margin-top: 4vw;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    
+    .ctaButton{
+        margin-top: 8vw;
+    }
+    
+    .subTagline{
+        margin-top: 4vw;
+        font-size: 1.2rem;
+    }
+    .subTagline img{
+        margin-left: 0.4vw;
+        width: 4vw;
+    }
+}
+

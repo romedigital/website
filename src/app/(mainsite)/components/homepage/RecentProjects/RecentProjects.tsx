@@ -21,12 +21,14 @@ useEffect(()=>{
     })
   })
   carouselObserver.observe(wrapperRef.current)
-  
+
+  const scrollAmt = (window.matchMedia("(max-width: 649px)").matches) ? 0.5 : 0.3;
+
   window!.addEventListener("scroll", ()=>{
     if(isCarouselInView){
       const pixels = window.scrollY;
       gsap.to(".past-projects-carousel-item",
-        {x: -0.3 * pixels,
+        {x: -1 * (scrollAmt) * pixels,
         duration: 1}
       )
     }

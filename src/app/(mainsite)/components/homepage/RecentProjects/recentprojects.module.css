@@ -73,3 +73,33 @@
         width: 9vw;
     }
 }
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .pastProjectsSign{
+        top: -7vw;
+        left: 5vw;
+        height: 14vw;
+        width: 14vw;
+    }
+    .carouselItem{
+        width: 26vw;
+        height: 17vw;
+        margin: 0 2vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .pastProjectsSign{
+        top: -11vw;
+        left: 10vw;
+        height: 22vw;
+        width: 22vw;
+    }
+    .carouselItem{
+        width: 45vw;
+        height: 27vw;
+        margin: 0 2vw;
+    }
+}
