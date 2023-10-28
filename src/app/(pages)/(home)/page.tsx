@@ -6,10 +6,12 @@ import Testimonials from '../../(mainsite)/components/homepage/Testimonials/Test
 import Workflow from '../../(mainsite)/components/homepage/Workflow/Workflow'
 import Dedicated from '../../(mainsite)/components/homepage/Dedicated/Dedicated'
 import FAQ from '../../(mainsite)/components/homepage/FAQ/FAQ'
+import PopUpForm from '@/app/(mainsite)/components/misc/FreeEstimateForm/PopupForm/PopupForm'
 
 export default function Home() {
   return (
     <>
+      <PopUpForm />
       <Header />
       <RecentProjects />
       <Colosseum />
