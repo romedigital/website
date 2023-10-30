@@ -1,5 +1,7 @@
+"use client"
 import styles from "./dedicated.module.css"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Dedicated() {
   return (
@@ -22,12 +24,18 @@ export default function Dedicated() {
                 <Image src={"/icons/working.png"} width={200} height={200} alt="Working Man Icon" />
                 <span>We will deliver the highest quality website possible.</span>
             </div>
+
+        <div className={styles.ctaButtonWrapper}>
+            <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's Start <img src="./icons/arrow-right.svg" aria-hidden /></Link>
+        </div>
         
         </div>
+        
 
         <div className={styles.imgWrapper}>
             <Image src="/img/man_walking.png" alt="Greek Man Walking" width={465} height={994} />
         </div>
+        
     </section>
   )
 }

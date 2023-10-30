@@ -34,11 +34,11 @@
 }
 
 .section p{
-    margin-top: 1vw;
+    margin-top: 2vw;
     font-size: 1.7rem;
     padding-right: 20%;
     line-height: 200%;
-    padding-bottom: 4vw;
+    padding-bottom: 2vw;
 }
 
 .point{
@@ -56,6 +56,10 @@
     margin-left: 1vw;
     font-size: 2rem;
     font-weight: 500;
+}
+
+.ctaButtonWrapper{
+    margin-top: 2vw;
 }
 
 /* MEDIUM LAPTOP STYLES */
@@ -138,6 +142,9 @@
         font-size: 1.6rem;
         font-weight: 500;
     }
+    .ctaButtonWrapper{
+        margin-top: 4vw;
+    }
 }
  
 /* MOBILE STYLES */
@@ -190,11 +197,11 @@
         line-height: 150%;
         width: 80%;
         margin-left: 5%;
-        padding-bottom: 10vw;
+        padding-bottom: 5vw;
     }
     
     .point{
-        margin: 2vw 0;
+        margin: 2vw 0 2vw 5vw;
     }
     
     .point img{
@@ -205,5 +212,10 @@
     .point span{
         margin-left: 2vw;
         font-size: 1.4rem;
+    }
+    .ctaButtonWrapper{
+        margin-top: 6vw;
+        display: flex;
+        justify-content: center;
     }
 }
