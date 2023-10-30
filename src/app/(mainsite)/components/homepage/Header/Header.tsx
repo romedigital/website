@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react"
 import styles from "./header.module.css"
 import gsap from "gsap"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Header() {
 
@@ -26,7 +27,7 @@ export default function Header() {
 
         <p className={styles.secondTagline}>At Rome Digital, we craft online masterpieces that stand the test of time, and set you and your business apart from the masses.</p>
 
-        <a href="#tempLink" className={`main-button ${styles.ctaButton}`}>Let's Start <img src="./icons/arrow-right.svg" aria-hidden /></a>
+        <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's Start <img src="./icons/arrow-right.svg" aria-hidden /></Link>
 
         <p className={styles.subTagline}>Websites that crush competition!
         <img src="./icons/sword.svg" aria-hidden /></p>

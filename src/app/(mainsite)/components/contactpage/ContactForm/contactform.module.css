@@ -1,3 +1,17 @@
 .contactForm{
     padding-bottom: 5vw;
 }
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .contactForm{
+        padding-bottom: 6vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .contactForm{
+        padding-bottom: 10vw;
+    }
+}

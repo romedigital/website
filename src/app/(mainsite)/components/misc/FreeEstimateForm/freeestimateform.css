@@ -111,7 +111,7 @@
 /* MEDIUM LAPTOP STYLES */
 @media only screen and (min-width: 1401px) and (max-width: 1900px){
     #estimateForm{
-        width: 25vw;
+        width: 23vw;
     }
 }
 
@@ -120,7 +120,7 @@
 @media only screen and (max-width: 1400px){
     
     #estimateForm{
-        width: 28vw;
+        width: 25vw;
     }
     
     #estimateFormTitle{
@@ -134,33 +134,37 @@
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
-    .form-disclaimer{
-        padding: 1.5vw 2vw 0 2vw;
-
-    }
+/* 
     .header-content-wrapper:has(#estimateForm){
         margin: 0 0 8vw 0;
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    
+     */
     #estimateForm{
         padding: 2vw;
-        padding-top: 0;
-        width: 45vw;
+        width: 40vw;
     }
     
     #estimateFormTitle{
         font-size: 2.5em;
     }
     
+    .form-decoration{
+        width: 8vw;
+    }
+    #estimateForm textarea{
+        height: 8vw;
+    }
+
     .input-wrapper{
-        margin: 1vw;
+        margin: 0.5vw;
     }
     #estimateForm input:not(input[type="submit"]), #estimateForm textarea{
         padding-top: 1.5vw;
         padding-bottom: 1.5vw;
+        margin: 1vw 0;
         font-size: 1.5rem;
     }
     .input-wrapper img{
@@ -169,6 +173,7 @@
     #formPhoneIcon:not(.company-name-icon){
         left: 1%;
     }
+    
 
 }
  
@@ -193,7 +198,7 @@
     
     #estimateFormTitle{
         font-size: 2.4em;
-        padding-bottom: 8vw;
+        padding: 4vw 0;
     }
     .input-wrapper{
         margin-top: 2vw;
@@ -210,12 +215,18 @@
     #formPhoneIcon:not(.company-name-icon){
         left: 1%;
     }
+    #estimateForm textarea{
+        height: 12vw;
+    }
+    .form-decoration{
+        width: 14vw;
+    }
 }
 
 /* VERY SMALL  MOBILE STYLES */
 @media only screen and (max-width: 290px){
     #estimateForm{
-        width: 80vw;
+        width: 75vw;
     }
     #estimateFormTitle{
         font-size: 2rem;
@@ -223,5 +234,8 @@
     .input-wrapper{
         margin-top: 3vw;
         margin-bottom: 3vw;
+    }
+    #estimateForm textarea{
+        height: 15vw;
     }
 }

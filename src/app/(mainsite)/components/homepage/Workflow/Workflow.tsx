@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import styles from "./workflow.module.css"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/dist/ScrollTrigger"
+import Link from "next/link"
 gsap.registerPlugin(ScrollTrigger) 
 
 export default function Workflow() {
@@ -86,7 +87,7 @@ export default function Workflow() {
             </div>
         </div>
         <div className="center">
-            <a href="#tempLink" className="main-button">Get Started! <img src="./icons/arrow-right.svg" aria-hidden /></a>
+            <Link href="/contact" className="main-button">Get Started! <img src="./icons/arrow-right.svg" aria-hidden /></Link>
         </div>
     </section>
   )

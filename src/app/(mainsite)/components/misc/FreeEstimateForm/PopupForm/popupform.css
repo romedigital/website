@@ -145,11 +145,19 @@
     font-weight: bold;
 }
 
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1900px){
+    #popupForm{
+        width: 23vw;
+    }
+}
+
+
     /* Small Laptop Styles */
     @media only screen and (max-width: 1400px){
         
         #popupForm{
-            width: 28vw;
+            width: 25vw;
         }
         
         #popupFormTitle{
@@ -172,8 +180,7 @@
     
     #popupForm{
         padding: 2vw;
-        padding-top: 0;
-        width: 45vw;
+        width: 40vw;
     }
     
     #popupFormTitle{
@@ -187,6 +194,12 @@
         padding-top: 1.5vw;
         padding-bottom: 1.5vw;
         font-size: 1.5rem;
+    }
+    .form-decoration{
+        width: 8vw;
+    }
+    #estimateForm textarea{
+        height: 8vw;
     }
     .input-wrapper img{
         left: 2%;
@@ -222,7 +235,13 @@
     
     #popupFormTitle{
         font-size: 2.4em;
-        padding-bottom: 8vw;
+        padding: 4vw 0;
+    }
+    #popupForm textarea{
+        height: 12vw;
+    }
+    .form-decoration{
+        width: 14vw;
     }
     .input-wrapper{
         margin-top: 2vw;

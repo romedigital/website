@@ -2,7 +2,6 @@
 
 import styles from "./navbar.module.css"
 import Link from "next/link"
-import gsap from "gsap"
 import { useEffect, useRef } from "react"
 
 
@@ -81,7 +80,7 @@ export default function Navbar() {
               <li><Link href="/#faqHeading">FAQ</Link></li>
             </menu>
             <div className={styles.getStartedWrapper}>
-              <a href="#tempLink" className={styles.getStartedButton}>Get started!</a>
+              <Link href="/contact" className={styles.getStartedButton}>Get started!</Link>
               <button ref={hamburgerMenuRef} id="hamburgerMenu" onClick={toggleMenu} className={styles.hamburgerMenu}></button>
             </div>
           </div>
