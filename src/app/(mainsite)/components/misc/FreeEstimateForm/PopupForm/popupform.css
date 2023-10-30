@@ -101,11 +101,11 @@
     object-fit: contain;
 }
 
-#popupForm input:not(input[type="submit"]):focus, #popupForm textarea:focus{
+#popupForm input:focus, #popupForm textarea:focus{
     outline: none;
     border-color: var(--primary-color);
 }
-#popupForm input:not(input[type="submit"]), #popupForm textarea{
+#popupForm input, #popupForm textarea{
     display: inline-block;
     font-size: 1.2em;
     font-family: var(--primary-font);
@@ -126,7 +126,7 @@
     margin-top: 1vw;
 }
 
-#popupForm input:not(input[type="submit"]){
+#popupForm input{
     padding-left: 15%;
 }
 
@@ -188,11 +188,12 @@
     }
     
     .input-wrapper{
-        margin: 1vw;
+        margin: 0.5vw;
     }
     #popupForm input, #popupForm textarea{
         padding-top: 1.5vw;
         padding-bottom: 1.5vw;
+        margin: 1vw 0;
         font-size: 1.5rem;
     }
     .form-decoration{
