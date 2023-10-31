@@ -39,8 +39,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <img src="./img/main-website-bg.jpg" aria-hidden style={{display: "none"}} />
+      
       <body className={`${primaryFont.variable} ${secondaryFont.variable}`}>
+      <img src="./img/main-website-bg.jpg" aria-hidden style={{display: "none"}} />
       <Navbar />{children}<Footer /></body>
       
     </html>
