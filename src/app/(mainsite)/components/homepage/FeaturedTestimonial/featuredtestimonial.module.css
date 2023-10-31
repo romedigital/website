@@ -37,6 +37,14 @@
     text-align: center;
 }
 
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1900px){
+    .featuredTestimonial p::after{
+        top: 92%;
+    }
+}
+
+
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
     .featuredTestimonial{
