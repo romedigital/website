@@ -4,6 +4,8 @@ import type { Metadata } from 'next'
 import { Spectral, EB_Garamond } from 'next/font/google'
 import Navbar from './(mainsite)/components/misc/Navbar/Navbar'
 import Footer from './(mainsite)/components/misc/Footer/Footer'
+import Script from 'next/script';
+
 
 const primaryFont = EB_Garamond({ subsets: ['latin'], weight: [ "400", "500", "600", "800"], display: "swap", variable: "--primary-font" })
 const secondaryFont = Spectral({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800"], display: "swap", variable: "--secondary-font" })
@@ -41,6 +43,16 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={`${primaryFont.variable} ${secondaryFont.variable}`}>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+        `}
+      </Script>
       <img src="./img/main-website-bg.jpg" aria-hidden style={{display: "none"}} />
       <Navbar />{children}<Footer /></body>
       
