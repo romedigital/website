@@ -11,7 +11,26 @@ const secondaryFont = Spectral({ subsets: ['latin'], weight: ["200", "300", "400
 
 export const metadata: Metadata = {
   title: 'Rome Digital | Top Rated Website Development Agency',
-  description: 'Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.'
+  description: 'Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.',
+
+  openGraph: {
+    title: "Rome Digital | Top Rated Website Development Agency",
+    description: "Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.",
+    type: "website",
+    images: [
+      {
+        url: 'https://www.romedigital.co/img/main-website-bg.jpg',
+        width: 1920,
+        height: 1080,
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Rome Digital | Top Rated Website Development Agency",
+    description: "Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.",
+    images: ['https://www.romedigital.co/img/main-website-bg.jpg']
+  },
 }
 
 export default function RootLayout({
