@@ -19,6 +19,8 @@ export default function FreeEstimateForm() {
     <form ref={formRef} id="estimateForm" onSubmit={(evt)=>{handleFormSubmit(evt, setStatus, formRef)}}>
     <input type="hidden" name="_subject" value="New message from website"/>
     <input type="hidden" name="_captcha" value="false"/>
+    <input type="hidden" name="_cc" value="contact@romedigital.co" />
+
             
             <h2 id="estimateFormTitle">Send a Message!</h2>
             <div className="input-wrapper">

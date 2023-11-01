@@ -86,7 +86,7 @@ export default function PopUpForm() {
     <MessageStatus status={status} setStatus={setStatus} />
     <div id="popupFormWrapper" ref={wrapperRef} >
         <form ref={formRef} id="popupForm" onSubmit={(evt)=>{handleFormSubmit(evt, setStatus, formRef); closeForm()}}>
-
+        <input type="hidden" name="_cc" value="contact@romedigital.co" />
         <input type="hidden" name="_captcha" value="false"/>
         <input type="hidden" name="_subject" value="New message from website"/>
             
