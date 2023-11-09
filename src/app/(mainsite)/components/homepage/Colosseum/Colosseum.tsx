@@ -7,9 +7,9 @@ export default function Colosseum() {
   return (
     <section className={styles.section}>
 
-        <h1 className={styles.tagline}><span>Beyond</span> the Colesseum<br />of Competitors</h1>
+        <h1 className={styles.tagline}><span>Unlike</span> the Colesseum<br />of Competitors</h1>
 
-        <p>We not only create websites that look amazing, but win clients nonstop, rank high with SEO, are extremely fast, ones that your visitors will love using! We use modern and durable technology to ensure your website never get's left in the past.</p>
+        <p>Do you want a website that looks like every other business on the market? Or a website that just doesn't convert? Luckily we solve both! Every website is custom-made to compliment and strengthen YOUR brand, and use proven techniques to get more clients to convert than ever!</p>
 
         <div className="center">
             <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Get Started <img src="./icons/arrow-right.svg" aria-hidden /></Link>

@@ -16,9 +16,10 @@ export default function Home() {
       <Header />
       <RecentProjects />
       <Colosseum />
-      <Testimonials />
-      <Workflow />
       <FeaturedTestimonial />
+      
+      <Workflow />
+      <Testimonials />
       <Dedicated />
       <FAQ />
     </>
