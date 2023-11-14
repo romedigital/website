@@ -1,7 +1,7 @@
 const faqData: faqType[] = [
     {
         question: "How much do your website’s cost?",
-        answer: `It all depends on the project's size and complexity. We'd be happy to give you a free quote!`
+        answer: `It all depends on the project's size and complexity. Book a call with me and I'd be happy to analyze your business' needs and give you a free quote!`
     },
     {
         question: "How long does it take to complete a website?",

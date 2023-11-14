@@ -43,6 +43,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={`${primaryFont.variable} ${secondaryFont.variable}`}>
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
       <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
       <Script id="google-analytics">
         {`

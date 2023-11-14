@@ -9,10 +9,10 @@ export default function Colosseum() {
 
         <h1 className={styles.tagline}><span>Unlike</span> the Colesseum<br />of Competitors</h1>
 
-        <p>Do you want a website that looks like every other business on the market? Or a website that just doesn't convert? Luckily we solve both! Every website is custom-made to compliment and strengthen YOUR brand, and use proven techniques to get more clients to convert than ever!</p>
+        <p>Do you want a website that looks like every other business' website on the market and just doesn't convert? Didn't think so. We are dedicated to building your unique brand and creating websites that stand apart and convert more than ever!</p>
 
         <div className="center">
-            <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Get Started <img src="./icons/arrow-right.svg" aria-hidden /></Link>
+            <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's GO! <img src="./icons/arrow-right.svg" aria-hidden /></Link>
         </div>
 
         <div className={styles.bgGradient}></div>

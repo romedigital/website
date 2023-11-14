@@ -45,12 +45,13 @@ useEffect(()=>{
         </div>
 
         <div className={`${styles.carouselWrapper} recentProjectCarouselWrapper`}>
-        <img alt="Past Project Thumbnail" src="./img/pastprojects/speedspray.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
+          <img alt="Past Project Thumbnail" src="./img/pastprojects/superior.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="./img/pastprojects/advantage.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="./img/pastprojects/shine.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
-          <img alt="Past Project Thumbnail" src="./img/pastprojects/coi.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
-
           <img alt="Past Project Thumbnail" src="./img/pastprojects/speedspray.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
+        
+
+          <img alt="Past Project Thumbnail" src="./img/pastprojects/superior.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="./img/pastprojects/advantage.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="./img/pastprojects/shine.png" className={`${styles.carouselItem} past-projects-carousel-item`} />
         </div>

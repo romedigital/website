@@ -52,7 +52,7 @@ export default function Workflow() {
 
                 <div className={`${styles.workflowItem} workflow-item`}>
                     <img src="./img/paper.png" aria-hidden />
-                    <span>Contact our team</span>
+                    <span>Book a call with me</span>
                 </div>
 
                 <aside className={`${styles.seperator} workflow-seperator`}>
