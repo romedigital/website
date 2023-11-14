@@ -1,10 +1,14 @@
 .contactForm{
     padding-bottom: 5vw;
+    align-items: flex-start;
+    gap: 4vw;
 }
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
     .contactForm{
+        flex-direction: column;
+        align-items: center;
         padding-bottom: 6vw;
     }
 }
@@ -12,6 +16,8 @@
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
     .contactForm{
+        flex-direction: column;
+        align-items: center;
         padding-bottom: 10vw;
     }
 }
