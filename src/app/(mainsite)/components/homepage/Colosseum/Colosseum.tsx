@@ -7,9 +7,9 @@ export default function Colosseum() {
   return (
     <section className={styles.section}>
 
-        <h1 className={styles.tagline}><span>Unlike</span> the Colesseum<br />of Competitors</h1>
+        <h1 className={styles.tagline}><span>What</span> We Do...</h1>
 
-        <p>Do you want a website that looks like every other business' website on the market and just doesn't convert? Didn't think so. I am dedicated to building your unique brand and creating websites that stand apart and convert more than ever!</p>
+        <p>We focus on creating websites for small businesses all across the US. We write each line of code by hand to make sure your site runs smoothly, bringing in more customers and revenue for your business.</p>
 
         <div className="center">
             <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's GO! <img src="./icons/arrow-right.svg" aria-hidden /></Link>

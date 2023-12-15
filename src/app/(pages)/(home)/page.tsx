@@ -21,7 +21,7 @@ export default function Home() {
       <FeaturedTestimonial />
       
       <Workflow />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Dedicated />
       <FAQ />
     </>
