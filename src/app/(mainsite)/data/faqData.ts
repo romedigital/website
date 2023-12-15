@@ -5,7 +5,7 @@ const faqData: faqType[] = [
     },
     {
         question: "How long does it take to complete a website?",
-        answer: `I aim to give you a completed website within generally 3 days. Though there are some factors to consider such as project size, project complexity, and my current workload. But rest assured I will deliver as soon as possible.`
+        answer: `I aim to give you a completed website within generally 1-2 weeks. Though there are some factors to consider such as project size, project complexity, and my current workload. But rest assured I will deliver as soon as possible.`
     },
     {
         question: "What if I don't like the inital design?",
@@ -13,7 +13,7 @@ const faqData: faqType[] = [
     },
     {
         question: "Do you offer refunds?",
-        answer: "Being that the website's are usually provided in a recurring payment, and the quality of the work provided, refunds are not offered. I am 100% positive we can make your dream website!"
+        answer: "Being that the website's are usually provided on a recurring payment, and the quality of the work provided, refunds are not offered. I am 100% positive we can make your dream website!"
     }
 ]
 
