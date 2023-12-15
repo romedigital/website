@@ -7,7 +7,7 @@ import Image from "next/image"
 import ContentCalendar from "@/app/(mainsite)/components/contactpage/ContactCalendar/ContentCalendar"
 
 export const metadata: Metadata = {
-    title: "Contact Page | Rome Digital",
+    title: "Contact | Small Business Web Design and Development",
     description: "Let's get started on building your digital empire through websites by Rome Digital"
 }
 
