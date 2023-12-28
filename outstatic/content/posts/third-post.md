@@ -5,7 +5,7 @@ author:
   name: ''
   picture: 'https://avatars.githubusercontent.com/u/148979171?v=4'
 slug: 'third-post'
-description: ''
+description: 'This is a desc'
 coverImage: 'https://i.imgur.com/Cv04V8e.jpg'
 publishedAt: '2023-12-28T18:52:10.107Z'
 ---
