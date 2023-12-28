@@ -2,7 +2,7 @@
 title: 'Second Post'
 status: 'published'
 author:
-  name: ''
+  name: 'William Bojczuk'
   picture: 'https://avatars.githubusercontent.com/u/148979171?v=4'
 slug: 'second-post'
 description: 'This is a description'
