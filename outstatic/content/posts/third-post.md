@@ -2,7 +2,7 @@
 title: 'Third Post'
 status: 'published'
 author:
-  name: ''
+  name: 'William Bojczuk'
   picture: 'https://avatars.githubusercontent.com/u/148979171?v=4'
 slug: 'third-post'
 description: 'This is a desc'
