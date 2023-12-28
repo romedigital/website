@@ -74,7 +74,7 @@ export default function Navbar() {
               <li><Link href="/contact">Contact</Link></li>
               <li className={styles.seperator}>&bull;</li>
 
-              <li><Link href="/#testimonialsHeading">Testimonials</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
               <li className={styles.seperator}>&bull;</li>
               
               <li><Link href="/#faqHeading">FAQ</Link></li>

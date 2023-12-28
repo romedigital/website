@@ -11,11 +11,11 @@ const primaryFont = EB_Garamond({ subsets: ['latin'], weight: [ "400", "500", "6
 const secondaryFont = Spectral({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800"], display: "swap", variable: "--secondary-font" })
 
 export const metadata: Metadata = {
-  title: 'Small Business Web Design and Development',
+  title: 'Small Business Web Design and Development | Rome Digital',
   description: 'Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.',
 
   openGraph: {
-    title: "Small Business Web Design and Development",
+    title: "Small Business Web Design and Development | Rome Digital",
     description: "Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.",
     type: "website",
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Small Business Web Design and Development",
+    title: "Small Business Web Design and Development | Rome Digital",
     description: "Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.",
     images: ['https://www.romedigital.co/img/main-website-bg.jpg']
   },
@@ -55,7 +55,7 @@ export default function RootLayout({
         `}
       </Script>
       <img src="./img/main-website-bg.jpg" aria-hidden style={{display: "none"}} />
-      <Navbar />{children}<Footer /></body>
+     {children}</body>
       
     </html>
   )
