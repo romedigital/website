@@ -1,9 +1,8 @@
 import './style.css'
 import "react-multi-carousel/lib/styles.css";
+import "prismjs/themes/prism-tomorrow.min.css"
 import type { Metadata } from 'next'
 import { Spectral, EB_Garamond } from 'next/font/google'
-import Navbar from './(mainsite)/components/misc/Navbar/Navbar'
-import Footer from './(mainsite)/components/misc/Footer/Footer'
 import Script from 'next/script';
 
 
