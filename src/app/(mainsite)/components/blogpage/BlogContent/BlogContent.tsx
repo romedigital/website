@@ -1,4 +1,3 @@
-// "use client"
 import styles from "./blogcontent.module.css"
 import getBlog from "@/app/controllers/getBlog"
 
