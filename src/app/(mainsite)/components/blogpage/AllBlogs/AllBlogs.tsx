@@ -1,12 +1,6 @@
 import styles from "./allblogs.module.css"
 import BlogCard from "../BlogCard/BlogCard";
 import getBlogs from "@/app/controllers/getBlogs";
-import { getDocumentSlugs } from "outstatic/server";
-
-export async function generateStaticParams() {
-  const posts = getDocumentSlugs('posts')
-  return posts.map((slug) => ({ slug }))
-}
 
 export default async function AllBlogs() {
     const blogs = getBlogs()

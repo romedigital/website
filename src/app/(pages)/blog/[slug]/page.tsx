@@ -6,6 +6,13 @@ export const metadata: Metadata = {
     description: "Let's get started on building your digital empire through websites by Rome Digital"
 }
 
+import { getDocumentSlugs } from "outstatic/server";
+
+export async function generateStaticParams() {
+  const posts = getDocumentSlugs('posts')
+  return posts.map((slug) => ({ slug }))
+}
+
 export default function Article({params}: {params: {slug: string}}){
     return(
         <BlogContent slug={params.slug} />
