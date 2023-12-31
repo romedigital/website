@@ -44,16 +44,16 @@ export default function Navbar() {
 
           <div className={styles.contactInfo}>
             <a  href="tel:7065121082" className={`${styles.phoneContact} ${styles.topbarLink}`}>
-              <img src="./icons/phone-rounded.svg" aria-hidden={true} />
+              <img src="/icons/phone-rounded.svg" aria-hidden={true} />
               <span>(706) 512-1082</span>
             </a>
 
             <a className={styles.topbarLink} href="https://www.facebook.com/rome.digital.dev/" target="_blank">
-              <img src="./icons/facebook-rounded.svg" aria-hidden={true} />
+              <img src="/icons/facebook-rounded.svg" aria-hidden={true} />
             </a>
  
             <a target="_blank" className={styles.topbarLink} href="mailto:contact@romedigital.co">
-              <img src="./icons/email-rounded.svg" aria-hidden={true} />
+              <img src="/icons/email-rounded.svg" aria-hidden={true} />
             </a>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className={styles.mainContent}>
 
           <Link href="/" className={styles.logo}>
-            <img src="./img/logo.png" alt="Rome Digital Logo" className={styles.logoImg} />
+            <img src="/img/logo.png" alt="Rome Digital Logo" className={styles.logoImg} />
             <span>Rome Digital</span>
           </Link>
 
