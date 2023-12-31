@@ -27,10 +27,10 @@ export default function Header() {
 
         <p className={styles.secondTagline}>We craft websites that get it done right the first time, and set you and your business apart from the masses, without breaking the bank. Contact me and let's get your business transformed today!</p>
 
-        <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's Start <img src="./icons/arrow-right.svg" aria-hidden /></Link>
+        <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's Start <img src="/icons/arrow-right.svg" aria-hidden /></Link>
 
         <p className={styles.subTagline}>Websites that crush competition!
-        <img src="./icons/sword.svg" aria-hidden /></p>
+        <img src="/icons/sword.svg" aria-hidden /></p>
 
         <Image className={styles.mainBg} alt="Main background" src="/img/main-bg.png" width={1024} height={1024}/>
     </header>

@@ -54,7 +54,7 @@ export default function FAQItem(props: faqType) {
     <div className={styles.faqItem}>
         <div className={styles.headingContent} onClick={toggleAnswer}>
             <span ref={questionRef}>{props.question}</span>
-            <img ref={caretRef} src="./icons/caret-down.svg" aria-hidden />
+            <img ref={caretRef} src="/icons/caret-down.svg" aria-hidden />
         </div>
         <div ref={answerRef} className={styles.faqItemAnswer}>
             <p>{props.answer}</p>

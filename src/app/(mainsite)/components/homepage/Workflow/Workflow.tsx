@@ -51,43 +51,43 @@ export default function Workflow() {
             <div className={`${styles.workflowWrapper} workflow-wrapper` }>
 
                 <div className={`${styles.workflowItem} workflow-item`}>
-                    <img src="./img/paper.png" aria-hidden />
+                    <img src="/img/paper.png" aria-hidden />
                     <span>Contact Me</span>
                 </div>
 
                 <aside className={`${styles.seperator} workflow-seperator`}>
-                    <img src="./img/svg-squiggle.svg" aria-hidden  />
+                    <img src="/img/svg-squiggle.svg" aria-hidden  />
                 </aside>
 
                 <div className={`${styles.workflowItem} workflow-item`}>
-                    <img src="./img/paper.png" aria-hidden />
+                    <img src="/img/paper.png" aria-hidden />
                     <span>Outline the needs for your business</span>
                 </div>
 
                 <aside className={`${styles.seperator} ${styles.seperatorOdd} workflow-seperator`}>
-                    <img src="./img/svg-squiggle.svg" aria-hidden  />
+                    <img src="/img/svg-squiggle.svg" aria-hidden  />
                 </aside>
 
 
                 <div className={`${styles.workflowItem} workflow-item`}>
-                    <img src="./img/paper.png" aria-hidden />
+                    <img src="/img/paper.png" aria-hidden />
                     <span>Build and test your product</span>
                 </div>
 
                 <aside className={`${styles.seperator} workflow-seperator`}>
-                    <img src="./img/svg-squiggle.svg" aria-hidden  />
+                    <img src="/img/svg-squiggle.svg" aria-hidden  />
                 </aside>
                 
 
                 <div className={`${styles.workflowItem} workflow-item`}>
-                    <img src="./img/paper.png" aria-hidden />
+                    <img src="/img/paper.png" aria-hidden />
                     <span>We launch it for you!</span>
                 </div>
 
             </div>
         </div>
         <div className="center">
-            <Link href="/contact" className="main-button">Get Started! <img src="./icons/arrow-right.svg" aria-hidden /></Link>
+            <Link href="/contact" className="main-button">Get Started! <img src="/icons/arrow-right.svg" aria-hidden /></Link>
         </div>
     </section>
   )

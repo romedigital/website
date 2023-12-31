@@ -110,7 +110,7 @@ export default function PopUpForm() {
             </div>
             
             <div className="center">
-                <a onClick={(evt)=>{evt.preventDefault(); formRef.current.requestSubmit();}} className="main-button" id="estimateFormSubmit" type="submit">Let's Go! <img src="./icons/arrow-right.svg" aria-hidden /></a>
+                <a onClick={(evt)=>{evt.preventDefault(); formRef.current.requestSubmit();}} className="main-button" id="estimateFormSubmit" type="submit">Let's Go! <img src="/icons/arrow-right.svg" aria-hidden /></a>
             </div>
             
             <div className="form-decoration top-left"></div>

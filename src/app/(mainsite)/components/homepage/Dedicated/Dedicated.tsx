@@ -26,7 +26,7 @@ export default function Dedicated() {
             </div>
 
         <div className={styles.ctaButtonWrapper}>
-            <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's Start! <img src="./icons/arrow-right.svg" aria-hidden /></Link>
+            <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's Start! <img src="/icons/arrow-right.svg" aria-hidden /></Link>
         </div>
         
         </div>

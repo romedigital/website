@@ -12,7 +12,7 @@ export default function Colosseum() {
         <p>We focus on creating websites for small businesses all across the US. We write each line of code by hand to make sure your site runs smoothly, bringing in more customers and revenue for your business.</p>
 
         <div className="center">
-            <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's GO! <img src="./icons/arrow-right.svg" aria-hidden /></Link>
+            <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's GO! <img src="/icons/arrow-right.svg" aria-hidden /></Link>
         </div>
 
         <div className={styles.bgGradient}></div>
