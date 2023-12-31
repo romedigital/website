@@ -5,7 +5,7 @@ author:
   name: 'William Bojczuk'
   picture: 'https://avatars.githubusercontent.com/u/148979171?v=4'
 slug: 'third-post'
-description: 'This is a desc'
+description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim'
 coverImage: 'https://i.imgur.com/Cv04V8e.jpg'
 publishedAt: '2023-12-28T18:52:10.107Z'
 ---

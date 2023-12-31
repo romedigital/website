@@ -20,6 +20,8 @@
     "react-dom": "^18.2.0",
     "react-lottie-player": "^1.5.5",
     "react-multi-carousel": "^2.8.4",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "typescript": "5.2.2"
   }
 }

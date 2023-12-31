@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import BlogContent from "@/app/(mainsite)/components/blogpage/BlogContent/BlogContent"
 
 export const metadata: Metadata = {
     title: "Blog | Small Business Web Design and Development",
@@ -7,8 +8,6 @@ export const metadata: Metadata = {
 
 export default function Article({params}: {params: {slug: string}}){
     return(
-        <main>
-            
-        </main>
+        <BlogContent slug={params.slug} />
     )
 }

@@ -1,15 +1,29 @@
-import { getDocuments } from 'outstatic/server'
+import styles from "./allblogs.module.css"
+import BlogCard from "../BlogCard/BlogCard";
+import getBlogs from "@/app/controllers/getBlogs";
+import { getDocumentSlugs } from "outstatic/server";
 
-
-async function getData() {
-  const posts = getDocuments('posts', ['title', "description", "author", "publishedAt"])
-
-  return posts
+export async function generateStaticParams() {
+  const posts = getDocumentSlugs('posts')
+  return posts.map((slug) => ({ slug }))
 }
 
 export default async function AllBlogs() {
-    const posts = await getData()
-  return (
-    posts.map((post) => <h1>{post.title} - {post.author?.name} - {post.description} - {post.publishedAt}</h1>)
-  )
+    const blogs = getBlogs()
+
+    const blogElems = blogs.map((data, i)=>{
+      return <BlogCard key={i} {...data} />
+    })
+
+    return(
+      <>
+        <div className={styles.bannerWrapper}>
+          <h1 className={styles.bannerTitle}>Blog</h1>
+          <img src="./img/blog-banner.png" alt="blog banner" className={styles.banner} />
+        </div>
+        <section className={styles.blogWrapper}>
+          {blogElems}
+        </section>
+      </>
+    )
 }

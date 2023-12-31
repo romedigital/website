@@ -51,7 +51,7 @@ export default function Navbar() {
             <a className={styles.topbarLink} href="https://www.facebook.com/rome.digital.dev/" target="_blank">
               <img src="./icons/facebook-rounded.svg" aria-hidden={true} />
             </a>
-
+ 
             <a target="_blank" className={styles.topbarLink} href="mailto:contact@romedigital.co">
               <img src="./icons/email-rounded.svg" aria-hidden={true} />
             </a>
