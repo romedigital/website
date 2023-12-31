@@ -14,3 +14,29 @@ publishedAt: '2023-12-28T18:47:26.972Z'
 
 \
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+```tsx
+import styles from "./allblogs.module.css"
+import BlogCard from "../BlogCard/BlogCard";
+import getBlogs from "@/app/controllers/getBlogs";
+
+export default async function AllBlogs() {
+    const blogs = getBlogs()
+
+    const blogElems = blogs.map((data, i)=>{
+      return <BlogCard key={i} {...data} />
+    })
+
+    return(
+      <>
+        <div className={styles.bannerWrapper}>
+          <h1 className={styles.bannerTitle}>Blog</h1>
+          <img src="./img/blog-banner.png" alt="blog banner" className={styles.banner} />
+        </div>
+        <section className={styles.blogWrapper}>
+          {blogElems}
+        </section>
+      </>
+    )
+}
+```

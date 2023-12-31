@@ -1,5 +1,6 @@
 "use client"
-import "prismjs"
+//@ts-ignore
+import "@/app/vendor/prism.js"
 import { useEffect } from "react"
 import styles from "./blogcontent.module.css"
 export default function BlogText(props: {content: any}){

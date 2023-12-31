@@ -1,13 +1,14 @@
 import './style.css'
 import "react-multi-carousel/lib/styles.css";
-import "prismjs/themes/prism-tomorrow.min.css"
+import "./vendor/prism.css"
 import type { Metadata } from 'next'
-import { Spectral, EB_Garamond } from 'next/font/google'
+import { Spectral, EB_Garamond, IBM_Plex_Sans } from 'next/font/google'
 import Script from 'next/script';
 
 
 const primaryFont = EB_Garamond({ subsets: ['latin'], weight: [ "400", "500", "600", "800"], display: "swap", variable: "--primary-font" })
 const secondaryFont = Spectral({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800"], display: "swap", variable: "--secondary-font" })
+const thirdFont = IBM_Plex_Sans({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "100"], display: "swap", variable: "--third-font" })
 
 export const metadata: Metadata = {
   title: 'Small Business Web Design and Development | Rome Digital',
@@ -41,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={`${primaryFont.variable} ${secondaryFont.variable}`}>
+      <body className={`${primaryFont.variable} ${secondaryFont.variable} ${thirdFont.variable}`}>
       <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
       <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
       <Script id="google-analytics">
