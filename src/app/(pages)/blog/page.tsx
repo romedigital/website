@@ -3,7 +3,7 @@ import styles from "./blog.module.css"
 import AllBlogs from "@/app/(mainsite)/components/blogpage/AllBlogs/AllBlogs"
 
 export const metadata: Metadata = {
-    title: "Blog | Small Business Web Design and Development",
+    title: "Blog | Rome Digital Web Design",
     description: "Let's get started on building your digital empire through websites by Rome Digital"
 }
 

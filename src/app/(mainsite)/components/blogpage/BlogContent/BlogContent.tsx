@@ -1,9 +1,8 @@
 import styles from "./blogcontent.module.css"
-import getBlog from "@/app/controllers/getBlog"
 import BlogText from "./BlogText"
 
-export default async function BlogContent(props: {slug: string}) {
-    const postData = await getBlog(props.slug || "")
+export default async function BlogContent({postData}: {postData: any}) {
+    
   return (
     <section className={styles.wrapper}>
         <div className={styles.content}>
