@@ -25,7 +25,7 @@ export default function Header() {
     <header className={`${styles.header} main-bg-top`}>
         <h1 className={styles.mainTagline}>Let's build <span ref={mainTaglineSpanRef}>your</span> empire together!</h1>
 
-        <p className={styles.secondTagline}>We craft websites that get it done right the first time, and set you and your business apart from the masses, without breaking the bank. Contact me and let's get your business transformed today!</p>
+        <p className={styles.secondTagline}>We craft websites for small businesses that get it done right the first time, and set you and your business apart from the masses without breaking the bank. Contact me and let's get your business transformed today!</p>
 
         <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's Start <img src="/icons/arrow-right.svg" aria-hidden /></Link>
 
