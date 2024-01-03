@@ -27,11 +27,11 @@
 /* MOBILE STYLES */
 @media only screen and (max-width: 750px) {
     #socialShareContainer{
-        margin: 2vh 0;
+        margin: 4vw 0;
     }
     .social-share-button{
-        margin: 0 1vh;
-        height: 4vh;
-        width: 10vh;
+        margin: 0 2.5vw;
+        height: 9vw;
+        width: 22vw;
     } 
 }
