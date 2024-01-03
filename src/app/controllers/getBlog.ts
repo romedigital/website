@@ -9,7 +9,8 @@ export default async function getBlog(slug: string){
         'slug',
         'author',
         'content',
-        'coverImage'
+        'coverImage',
+        "description"
     ])
 
     const content = await markdownToHtml(post?.content || "")
