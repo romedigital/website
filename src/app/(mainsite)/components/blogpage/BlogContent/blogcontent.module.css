@@ -3,7 +3,7 @@
 }
 
 .content{
-    width: 65%;
+    width: 60%;
 }
 
 .coverImg{
@@ -27,13 +27,16 @@
 
 .blogContent{
     margin: 1.5vw 0; 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 200%;
     font-family: var(--third-font);
 }
 
 .blogContent code{
     font-size: 1.2rem;
+}
+.blogContent > p{
+    margin: 2vw 0;
 }
 
 
@@ -59,11 +62,16 @@
     .blogContent{
         margin: 3vw 0; 
         font-size: 1.5rem;
-        line-height: 180%;  
+        line-height: 180%;
+        white-space: pre-wrap;
     }
     .blogContent code{
         font-size: 1.2rem;
     }
+    .blogContent > p{
+        margin: 0;
+    }
+    
 }
  
 /* MOBILE STYLES */
@@ -90,5 +98,8 @@
         margin: 6vw 0; 
         font-size: 1.6rem;
         line-height: 160%;  
+    }
+    .blogContent > p{
+        margin: 6vw 0;
     }
 }
