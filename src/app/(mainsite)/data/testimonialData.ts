@@ -11,9 +11,9 @@ const testimonialData: testimonialType[] = [
     },
 
     {
-        name: "Alex",
-        title: "PM of PushMusic.us",
-        desc: `Super happy I found William's page! I had some HTML that I needed revised to customize a search bar on my website. William was able to assist timely and efficiently. If/when I need someone to write or edit custom code, I will definitely turn to William again!`
+        name: "Trey",
+        title: "CEO of Superior Pressure Washing",
+        desc: `Big shout out to William Bojczuk for our new website! Now you can fill a form out online and receive a quote that way! There will be more that we will be working with William on in the future. Message William directly if you need a high quality website build.`
     },
 
     {

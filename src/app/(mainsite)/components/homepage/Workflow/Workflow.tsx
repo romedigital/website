@@ -52,7 +52,7 @@ export default function Workflow() {
 
                 <div className={`${styles.workflowItem} workflow-item`}>
                     <img src="/img/paper.png" aria-hidden />
-                    <span>Contact Me</span>
+                    <span>Reach Out!</span>
                 </div>
 
                 <aside className={`${styles.seperator} workflow-seperator`}>
@@ -61,7 +61,7 @@ export default function Workflow() {
 
                 <div className={`${styles.workflowItem} workflow-item`}>
                     <img src="/img/paper.png" aria-hidden />
-                    <span>Outline the needs for your business</span>
+                    <span>We discuss your business' needs</span>
                 </div>
 
                 <aside className={`${styles.seperator} ${styles.seperatorOdd} workflow-seperator`}>
@@ -71,7 +71,7 @@ export default function Workflow() {
 
                 <div className={`${styles.workflowItem} workflow-item`}>
                     <img src="/img/paper.png" aria-hidden />
-                    <span>Build and test your product</span>
+                    <span>Design and build your new site</span>
                 </div>
 
                 <aside className={`${styles.seperator} workflow-seperator`}>
@@ -81,7 +81,7 @@ export default function Workflow() {
 
                 <div className={`${styles.workflowItem} workflow-item`}>
                     <img src="/img/paper.png" aria-hidden />
-                    <span>We launch it for you!</span>
+                    <span>We get it online for you!</span>
                 </div>
 
             </div>

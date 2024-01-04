@@ -23,11 +23,11 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} main-bg-top`}>
-        <h1 className={styles.mainTagline}>Let's build <span ref={mainTaglineSpanRef}>your</span> empire together!</h1>
+        <h1 className={styles.mainTagline}>Small Business <span ref={mainTaglineSpanRef}>Website</span> Creation!</h1>
 
-        <p className={styles.secondTagline}>We craft websites for small businesses that get it done right the first time, and set you and your business apart from the masses without breaking the bank. Contact me and let's get your business transformed today!</p>
+        <p className={styles.secondTagline}>No-Stress small business websites that get it done right the first time. Our sites will set you and your business apart from the masses, and get more clients, all while being extremely affordable. Reach out and let's take your business to the next level today!</p>
 
-        <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's Start <img src="/icons/arrow-right.svg" aria-hidden /></Link>
+        <Link href="/contact" className={`main-button ${styles.ctaButton}`}>Let's Start! <img src="/icons/arrow-right.svg" aria-hidden /></Link>
 
         <p className={styles.subTagline}>Websites that crush competition!
         <img src="/icons/sword.svg" aria-hidden /></p>

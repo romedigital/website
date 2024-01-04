@@ -13,7 +13,7 @@ const faqData: faqType[] = [
     },
     {
         question: "Do you offer refunds?",
-        answer: "Being that the website's are usually provided on a recurring payment, and the quality of the work provided, refunds are not offered. I am 100% positive we can make your dream website!"
+        answer: "Being that the website's are usually provided on a recurring payment, and the quality of the work provided, refunds are not offered on previously charged months. I am 100% positive we can make your dream website!"
     }
 ]
 

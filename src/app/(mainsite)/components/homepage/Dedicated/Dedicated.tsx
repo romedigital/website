@@ -8,21 +8,21 @@ export default function Dedicated() {
     <section className={styles.section}>
         <div className={styles.contentWrapper}>
             <h1>I am <span>dedicated</span> to your business’ success!</h1>
-            <p>And I will do everything in my power to ensure that you succeed in the online realm. My job is not done until you are satisfied with your website!</p>
+            <p>Your success is my success, and I want to see everyone succeed in their business. Let's create your business the site it deserves, and set your brand apart!</p>
 
             <div className={styles.point}>
                 <Image src={"/icons/bug.png"} width={200} height={200} alt="Bug Icon" />
-                <span>Errors/bugs are fixed free of charge.</span>
+                <span>Revisions and maintenance are included!</span>
             </div>
 
             <div className={styles.point}>
                 <Image src={"/icons/money.png"} width={200} height={200} alt="Money Icon" />
-                <span>I will work with your budget.</span>
+                <span>Extremely affordable monthly plan</span>
             </div>
 
             <div className={styles.point}>
                 <Image src={"/icons/working.png"} width={200} height={200} alt="Working Man Icon" />
-                <span>I will deliver the highest quality website possible.</span>
+                <span>Made to strengthen your branding!</span>
             </div>
 
         <div className={styles.ctaButtonWrapper}>
