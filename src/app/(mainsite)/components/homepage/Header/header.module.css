@@ -26,9 +26,9 @@
     display: inline-block;
     position: absolute;
     width: 110%;
-    height: 2vw;
+    height: 3vw;
     left: -5%;
-    bottom: -0.5vw;
+    bottom: -1.5vw;
     z-index: -1;
     background-image: url("/img/svg-squiggle.svg");
     background-repeat: no-repeat;
