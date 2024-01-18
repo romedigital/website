@@ -5,7 +5,7 @@ import ContentCalendar from "../ContactCalendar/ContentCalendar"
 export default function ContactForm() {
   return (
     <div className={`center ${styles.contactForm}`}>
-      <ContentCalendar />
+      {/* <ContentCalendar /> */}
         <FreeEstimateForm />
     </div>
   )
