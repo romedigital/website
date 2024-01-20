@@ -1,6 +1,6 @@
 const faqData: faqType[] = [
     {
-        question: "How much do your website’s cost?",
+        question: "How much does a website cost?",
         answer: `Our most popular website that meets most business' needs is $100 per month. If you need a website larger than 5 pages, etc, contact me and I'd be happy to analyze your business' needs and give you a free quote!`
     },
     {
@@ -13,7 +13,7 @@ const faqData: faqType[] = [
     },
     {
         question: "Do you offer refunds?",
-        answer: "Being that the website's are usually provided on a recurring payment, and the quality of the work provided, refunds are not offered on previously charged months. I am 100% positive we can make your dream website!"
+        answer: "Being that the websites are usually provided on a recurring payment, and the quality of the work provided, refunds are not offered on previously charged months. I am 100% positive we can make your dream website!"
     }
 ]
 
