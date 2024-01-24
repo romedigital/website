@@ -7,8 +7,8 @@ export default function Dedicated() {
   return (
     <section className={styles.section}>
         <div className={styles.contentWrapper}>
-            <h1>I am <span>dedicated</span> to your business’ success!</h1>
-            <p>Your success is my success, and I want to see everyone succeed in their business. Let's create your business the site it deserves, and set your brand apart!</p>
+            <h1>We are <span>dedicated</span> to your business’ success!</h1>
+            <p>Your success is our success, and we want to see everyone succeed in their business. Let's create your business the site it deserves, and set your brand apart!</p>
 
             <div className={styles.point}>
                 <Image src={"/icons/bug.png"} width={200} height={200} alt="Bug Icon" />

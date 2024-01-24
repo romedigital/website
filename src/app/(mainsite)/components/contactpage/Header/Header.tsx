@@ -11,7 +11,7 @@ export default function Header() {
             </div>
         </div>
         <div className="center">
-          <p>Let’s create your brand-specific online presence, I can't wait to help you reach your goals!</p>
+          <p>Let’s create your business' new website together, we can't wait to help you reach your goals!</p>
         </div>
     </header>
   )
