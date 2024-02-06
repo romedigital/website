@@ -43,9 +43,9 @@ export default function Navbar() {
           <span className={styles.topbarHeadline}>Let’s start building your digital empire today!</span>
 
           <div className={styles.contactInfo}>
-            <a  href="tel:+18014163693" className={`${styles.phoneContact} ${styles.topbarLink}`}>
-              <img src="/icons/phone-rounded.svg" aria-hidden={true} />
-              <span>(801) 416-3693</span>
+            <a  href="https://www.facebook.com/messages/t/130761123452165" target="_blank" className={`${styles.phoneContact} ${styles.topbarLink}`}>
+              <img src="/icons/messenger.svg" aria-hidden={true} />
+              <span>Click To Chat!</span>
             </a>
 
             <a className={styles.topbarLink} href="https://www.facebook.com/rome.digital.dev/" target="_blank">
