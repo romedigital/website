@@ -1,0 +1,72 @@
+.title{
+    padding: 6vw 10% 0 10%;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1vw;
+}
+
+.buttonWrapper{
+    padding: 4vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    text-align: center;
+    width: 40%;
+    margin: 2vw 30%;
+    font-size: 1.2rem;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .title{
+        padding: 8vw 10% 0 10%;
+        line-height: 4rem;
+    }
+    
+    .subtitle{
+        font-size: 1.8rem;
+        padding: 3vw 20% 0 20%;
+    }
+    
+    .buttonWrapper{
+        padding: 6vw 0;
+    }
+    
+    .content{
+        width: 50%;
+        margin: 3vw 25%;
+        font-size: 1.4rem;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .title{
+        padding: 30vw 5% 0 5%;
+        line-height: 4.5rem;
+    }
+    
+    .subtitle{
+        font-size: 1.8rem;
+        padding: 4vw 15% 0 15%;
+    }
+    
+    .buttonWrapper{
+        padding: 8vw 0;
+    }
+    
+    .content{
+        width: 60%;
+        margin: 4vw 20%;
+        font-size: 1.6rem;
+    }
+}
