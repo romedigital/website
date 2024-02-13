@@ -43,7 +43,7 @@ export default function Navbar() {
           <span className={styles.topbarHeadline}>Let’s start building your digital empire today!</span>
 
           <div className={styles.contactInfo}>
-            <a  href="https://www.facebook.com/messages/t/130761123452165" target="_blank" className={`${styles.phoneContact} ${styles.topbarLink}`}>
+            <a href="https://www.facebook.com/messages/t/130761123452165" target="_blank" className={`${styles.phoneContact} ${styles.topbarLink}`}>
               <img src="/icons/messenger.svg" aria-hidden={true} />
               <span>Click To Chat!</span>
             </a>
