@@ -1,4 +1,4 @@
-export default function getTACData(businessName: string): string{
+export default function getTACData(businessName: string, cost: number = 100): string{
     const date = new Date().toDateString()
     return `
 
@@ -6,13 +6,13 @@ export default function getTACData(businessName: string): string{
         <span style="font-size:14pt">&#xa0;</span>
     </p>
     <p>
-        <br /><span style="width:36pt; font-family:Arial; display:inline-block">&#xa0;</span><strong><span style="font-family:Arial; ">Service Capacity: </span></strong><span style="font-family:Arial">A maximum of 5 pages, 8 hours of monthly maintenance / </span><span style="font-family:Arial">revisions. These revisions allow text / graphic changes. New pages and components </span><span style="font-family:Arial">can be created at a rate of $50 per hour.</span>
+        <br /><span style="width:36pt; font-family:Arial; display:inline-block">&#xa0;</span><strong><span style="font-family:Arial; ">Service Capacity: </span></strong><span style="font-family:Arial">A maximum of 5 pages, 8 hours of monthly maintenance / </span><span style="font-family:Arial">revisions. These revisions allow text / graphic changes. New pages and components </span><span style="font-family:Arial">can be created at on request for an estimated rate.</span>
     </p>
     <p>
         <span style="font-family:Arial">&#xa0;</span>
     </p>
     <p>
-        <strong><span style="width:36pt; font-family:Arial; display:inline-block">&#xa0;</span></strong><strong><span style="font-family:Arial; ">Service Fee</span></strong><span style="font-family:Arial">:</span><span style="font-family:Arial"> $100 per month, payable in advance, subject to the terms of Section 2.5 </span><span style="font-family:Arial">herein.</span>
+        <strong><span style="width:36pt; font-family:Arial; display:inline-block">&#xa0;</span></strong><strong><span style="font-family:Arial; ">Service Fee</span></strong><span style="font-family:Arial">:</span><span style="font-family:Arial"> $${cost} per month, payable in advance, subject to the terms of Section 2.5 </span><span style="font-family:Arial">herein.</span>
     </p>
     <p>
         <span style="font-family:Arial">&#xa0;</span>

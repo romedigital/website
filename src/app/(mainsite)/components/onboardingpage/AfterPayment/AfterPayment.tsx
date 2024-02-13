@@ -1,9 +1,14 @@
 "use client"
 import styles from "./afterpayment.module.css"
+import { useEffect, useState } from "react"
 
 export default function AfterPayment() {
 
-  const businessName = (typeof window !== "undefined" && window.localStorage.getItem("business_name")) ? ` ${window.localStorage.getItem("business_name")}` : ""
+  const [businessName, setBusinessName] = useState("")
+
+  useEffect(()=>{
+    setBusinessName((typeof window !== "undefined" && window.localStorage.getItem("business_name")) ? ` ${window.localStorage.getItem("business_name")}` : "")
+  }, [])
 
   return (
     <>

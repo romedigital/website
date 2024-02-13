@@ -8,13 +8,26 @@ import sendEmail from "@/app/controllers/sendEmail"
 
 export default function TAC(props: {businessName: string}) {
 
+    const urlParams = (typeof window !== "undefined") ? new URLSearchParams(window.location.search) : null;
+    
+    let pkg = urlParams?.has("pkg") ?  urlParams?.get("pkg") : "t8mu09b4"
+
+    let curCost: number = 100
+
+
+    switch(pkg){
+      case "t8mu09b4":
+          curCost = 100
+      break;
+    }
+
     const [status, setStatus] = useState("none")
 
     const businessName = props.businessName.split("_").map((str)=>{
         return str.charAt(0).toUpperCase() + str.slice(1)
     }).join(" ")
 
-    const TACData = getTACData(businessName)
+    const TACData = getTACData(businessName, curCost)
 
     async function agreeHandler(evt: any){
 
@@ -28,7 +41,7 @@ export default function TAC(props: {businessName: string}) {
         content: TACData
       })
 
-      location.href = `/onboarding/accepted/${props.businessName}`
+      location.href = `/onboarding/accepted/${props.businessName}?pkg=${pkg}`
     }
     
   return (
