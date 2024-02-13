@@ -12,7 +12,7 @@ export default function getTACData(businessName: string, cost: number = 100): st
         <span style="font-family:Arial">&#xa0;</span>
     </p>
     <p>
-        <strong><span style="width:36pt; font-family:Arial; display:inline-block">&#xa0;</span></strong><strong><span style="font-family:Arial; ">Service Fee</span></strong><span style="font-family:Arial">:</span><span style="font-family:Arial"> $${cost} per month, payable in advance, subject to the terms of Section 2.5 </span><span style="font-family:Arial">herein.</span>
+        <strong><span style="width:36pt; font-family:Arial; display:inline-block">&#xa0;</span></strong><strong><span style="font-family:Arial; ">Service Fee</span></strong><span style="font-family:Arial">:</span><span style="font-family:Arial"> <strong>$${cost}</strong> per month, payable in advance, subject to the terms of Section 2.5 </span><span style="font-family:Arial">herein.</span>
     </p>
     <p>
         <span style="font-family:Arial">&#xa0;</span>
