@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
-import Payment from "@/app/(mainsite)/components/onboardingpage/Payment/Payment"
+// import Payment from "@/app/(mainsite)/components/onboardingpage/Payment/Payment"
+import AfterPayment from "@/app/(mainsite)/components/onboardingpage/AfterPayment/AfterPayment"
 
 export const metadata: Metadata = {
     title: "Onboarding | Small Business Web Design and Development",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function OnboardingAcceptedPage({params}: {params: {businessname: string}}){
 return(
     <>
-    <Payment />
+    <AfterPayment />
     </>
 )
 }
