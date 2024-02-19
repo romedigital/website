@@ -17,7 +17,7 @@ export default function TAC(props: {businessName: string}) {
 
     switch(pkg){
       case "t8mu09b4":
-          curCost = 100
+          curCost = 50
       break;
     }
 
