@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <PopUpForm />
-      {/* <CalendarPopup /> */}
+      <CalendarPopup />
       <Header />
       <RecentProjects />
       <Colosseum />
