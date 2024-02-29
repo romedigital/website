@@ -1,290 +1,515 @@
 .mainNav{
     position: fixed;
-    background-color: rgba(255,255,255,0.8);
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-    z-index: 950;
     top:0;
     left:0;
     width: 100%;
-    backdrop-filter: blur(10px);
+    background-color: white;
+    z-index: 998;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    transition: 0.5s transform;
 }
 
-.hamburgerMenu{
-    display: none
-}
-
-.getStartedWrapper{
-    display: inline-block;
-}
-
-.topbar{
+.topBar{
     background-color: var(--primary-color);
-    padding: 0.2vw 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.topbarHeadline{
-    font-weight: 600;
-    font-family: var(--secondary-font);
+    padding: 0.5vw 10%;
     color: var(--secondary-text-color);
-    font-size: 1.1rem;
-}
-
-.contactInfo, .phoneContact{
-    display: flex;
-    align-items: center;
-}
-.topbarLink{
-    margin: 0 0.5vw;
-}
-.phoneContact{
-color: var(--secondary-text-color);
-font-weight: 700;
-text-decoration: none;
-}
-
-.topbarLink img{
-    width: 1.2vw;
-    aspect-ratio: 1/1;
-}
-.phoneContact img{
-    margin-right: 0.1vw;
-    width: 1.2vw;
-}
-
-.mainContent{
-    padding: 0.2vw 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+.topBarText{
+    
+}
+
+.topBarLinks{
+    display: flex;
+    align-items: center;
+}
+
+.topBarLinks a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    padding: 0 1vw;
+}
+
+.topBarLinks a:not(.topBarLinks a:nth-child(1)){
+    border-left: 1px solid var(--secondary-text-color);
+}
+
+.topBarLinks svg{
+    width: 1.8vw;
+    height: 1.8vw;
+    margin-right: 0.4vw;
+}
+
+.topBarLinks svg path{
+    fill: var(--secondary-text-color);
+}
+
+.navContent{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.4vw 10%;
 }
 
 .logo{
     display: flex;
     align-items: center;
-    text-decoration: none;
+    justify-content: center;
     color: var(--primary-text-color);
-}
-.logo img{
-    width: 3.5vw;
+    text-decoration: none;
 }
 .logo span{
-    margin-left: 1vw;
-    font-size: 2.4rem;
+    padding-left: 0.5vw;
     font-family: var(--secondary-font);
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 2rem;
 }
-.navLinks menu{
-    display: inline-block;
+.logoImg{
+    width: 12vw;
+    height: 5vw;
+    object-fit: contain;
+    object-position: center;
 }
-.navLinks li:not(.seperator){
-    margin: 0 1vw;
+
+
+.links{
+    list-style-type: none;
+    margin-bottom: 0.5vw;
 }
-.navLinks li{
-    display: inline-block;
-    font-family: var(--secondary-font);
-    font-size: 1.4rem;
+
+.links a, .dropdownLink{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+.noIcon{
+    height: 1.1vw;
+}
+.links svg{
+    width: 1.1vw;
+    height: 1.1vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.links span{
+    font-weight: 500;
+    padding-left: 0.2vw;
+    font-size: 1.2rem;
+}
+
+.navLink li, .dropdownLink, .cta{
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+}
+.content{
+    padding-top: 0.8vw;
+    display: flex;
+    align-items: flex-start;
+}
+.navLink{
+    transition: color 0.3s;
+    cursor: pointer;
+    padding-bottom: 1.4vw;
+    margin-bottom: 2vw !important;
     position: relative;
 }
-.navLinks li:not(.seperator)::after{
+
+.navLink.active::after{
     content: "";
-    display: inline-block;
     position: absolute;
+    display: inline-block;
     width: 100%;
     height: 4px;
-    background-color: var(--primary-color);
-    bottom: 6px;
+    border-radius: 999px;
     left: 0;
-    width: 0;
-    transition: 0.4s width;
-    pointer-events: none;
+    bottom: 1vw;
+    background-color: var(--primary-color);
 }
-.navLinks li:not(.seperator):hover::after{
-    width: 100%;
+
+.navLink:hover{
+    color: rgb(109, 109, 109);
 }
-.navLinks li a{
-    color: var(--main-text-color);
-    text-decoration: none;
+
+.dropdownLink{
+    position: relative;
+    z-index: 900;
+}
+
+.dropdownLink:hover ul{
+    transform: scaleY(1);
+}
+
+.dropdownLink ul{
+   
+    cursor: auto;
+    position: absolute;
+    padding: 1vw 0.5vw;
+    top: 100%;
+    left:0;
+    min-width: 12vw;
+    background-color: white;
+    border-top: 2px solid var(--primary-color);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+    transform-origin: top;
+    transition: transform 0.2s ease-in-out;
+    transform: scaleY(0);
+}
+
+.dropdownLink ul li{
+    display: block;
     font-weight: 500;
 }
 
-.getStartedButton{
-    margin-left: 2vw;
-    color: var(--main-text-color);
-    background-color: var(--primary-color);
-    text-decoration: none;
-    font-family: var(--primary-font);
-    font-size: 1.3rem;
-    font-weight: 700;
-    padding: 0.5vw 2vw;
-    border-radius: 10px;
-    transition: 0.3s filter;
+.dropdownLink ul a{
+    background-color: white;
+    display: block;
+    padding: 0.6vw 0.5vw;
+    transition: background-color 0.3s;
 }
-.getStartedButton:hover{
-    filter: brightness(75%);
+.dropdownLink ul a:hover{
+    background-color: rgb(238, 238, 238);
+}
+.dropdownLink ul a:active{
+    background-color: rgb(223, 223, 223);
+}
+
+.links a.cta{
+    background-color: var(--primary-color);
+    padding: 0.6vw 1.5vw;
+    border-radius: 999px;
+    transition: filter 0.3s;
+    color: black;
+}
+
+.cta:hover{
+    filter: brightness(80%);
+}
+
+.ctaButton{
+    margin-left: 2vw !important;
+}
+
+.cta span{
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-weight: 1.2rem;
 }
 
 /* MEDIUM LAPTOP STYLES */
-@media only screen and (min-width: 991px) and (max-width: 1900px){
-    .topbarLink{
-        margin: 0 0.6vw;
+/* @media only screen and (min-width: 1401px) and (max-width: 1900px){
+    .mainNav{
+        width: 96%;
+        padding: 0.4vw 2%;
     }
-    
-    .topbarLink img{
-        width: 1.6vw;
-    }
-    .phoneContact img{
-        width: 1.6vw;
-        margin-left: 0.2vw;
-    }
-    
-    .mainContent{
-        padding: 0.6vw 5vw;
-    }
-    
-    .logo img{
-        width: 3.7vw;
-    }
+} */
 
-    .navLinks li{
-        font-size: 1.4rem;
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+    .logo span{
+        padding-left: 0.8vw;
     }
-
-    .getStartedButton{
-        font-size: 1.4rem;
-        padding: 0.5vw 2.5vw;
+    .logoImg{
+        width: 12vw;
+        height: 5vw;
+    }
+    .content{
+        padding-top: 1vw;
+    }
+    .navLink{
+        padding-bottom: 1.5vw;
+    }
+    .noIcon{
+        height: 1.3vw;
+    }
+    .links svg{
+        width: 1.3vw;
+        height: 1.3vw;
+    }
+    .links a.cta{
+        padding: 0.8vw 1vw;
+    }
+    .dropdownLink ul{
+        padding: 1vw 0.5vw;
+        min-width: 15vw;
+    }
+    .dropdownLink ul a{
+        padding: 0.8vw 0.6vw;
+        
     }
 }
 
+/* TABLET + MOBILE STYLES */
+@media only screen and (max-width: 990px){
+    .topBarText{
+        display: none;
+    }
+    .content{
+        padding: 0 !important;
+    }
+    .mainNav{
+        position: fixed;
+        width: 100%;
+    }
 
-/* TABLET/MOBILE STYLES */
-@media only screen and (min-width: 650px) and (max-width: 990px){
-    
-    .topbar{
-        padding: 0.6vw 2vw;
+    .topBar{
+        justify-content: center;
+        padding: 1.5vw 0;
+    }
+
+    .topBar svg{
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    .topBarLinks a{
+        font-size: 1.5rem;
+        padding: 0 2vw;
+    }
+
+    .navContent{
+        align-items: center;
+        width: 90%;
+        padding: 1vw 5%;
+    }
+    .navLink.active::after{
+        width: 20%;
     }
     
-    .topbarHeadline{
+    .logo span{
+        padding-left: 1vw;
+        font-size: 2.2rem;
+    }
+    .logoImg{
+        width: 30vw;
+        height: 8vw;
+    }
+    
+    .links a{
+        margin: 0;
+    }
+
+    .noIcon{
+        height: 2vw;
+    }
+    
+    .links svg{
+        width: 2vw;
+        height: 2vw;
+    }
+    
+    .links span{
+        padding-left: 0.2vw;
+        font-size: 1.2rem;
+    }
+    
+    .navLink li, .dropdownLink, .cta{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .links{
+        position: absolute;
+        /* width: 40%; */
+        right: 0;
+        top: 100%;
+        padding: 2vw;
+        background-color: white;
+        border-top: 2px solid var(--primary-color);
+        box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: 0.4s transform ease-in-out;
+    }
+    .contentWrapper{
+        display: flex;
+    }
+    .navLink{
+        display: block;
+        transition: color 0.3s;
+        cursor: pointer;
+        padding: 1.5vw 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .navLink.dropdownLink{
+        position: relative;
+        margin: 0;
+    }
+
+    .dropdownLink.dropdownActive{
+        padding-bottom: 0;
+    }
+    .dropdownLink.dropdownActive ul{
+        display: block;
+
+    }
+    
+    
+    .dropdownLink ul{
+        cursor: auto;
+        position: relative;
+        padding: 0 0.5vw;
+        padding-bottom: 0;
+        top: 100%;
+        left:0;
+        min-width: 12vw;
+        background-color: white;
+        border-top: none;
+        box-shadow:none;
+        transform-origin: top;
+        transition: transform 0.2s ease-in-out;
+        transform: scaleY(1);
+        display: none;
+    }
+    
+    .dropdownLink ul li{
+        display: block;
+        font-weight: 500;
         font-size: 1.1rem;
     }
     
-    .topbarLink{
-        margin: 0 1vw;
+    .dropdownLink ul a{
+        background-color: white;
+        display: block;
+        padding: 1.5vw;
+        transition: background-color 0.3s;
+        
+    }
+    .dropdownLink ul a:not(.dropdownLink ul a:nth-last-child(1)){
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        
+    }
+    .dropdownLink ul a:nth-child(1){
+        border-top: 1px solid rgba(0,0,0,0.1);
+        margin-top: 1.5vw;
+    }
+    .dropdownLink ul a:hover{
+        background-color: rgb(238, 238, 238);
+    }
+    .dropdownLink ul a:active{
+        background-color: rgb(223, 223, 223);
     }
     
-    .topbarLink img{
-        width: 2.5vw;
-        aspect-ratio: 1/1;
+    .links a.cta{
+        background-color: var(--primary-color);
+        padding: 1vw 2vw;
+        border-radius: 999px;
+        transition: filter 0.3s;
+        display: inline-flex;
+        margin: 1.5vw 0;
     }
-    .phoneContact img{
-        width: 2.5vw;
-        margin-left: 0.3vw;
+    .links a.cta .noIcon{
+        height: 3vw;;
     }
-    
-    .mainContent{
-        padding: 0.4vw 2vw;
-    }
-    
-    .logo img{
-        width: 6vw;
-    }
-    .logo span{
-        margin-left: 1vw;
-        font-size: 2.2rem;
-    }
-    .navLinks li:not(.seperator){
-        margin: 0 1vw;
-    }
-    .navLinks li{
-        font-size: 1.3rem;
-    }
-    .navLinks li:not(.seperator)::after{
-        height: 2px;
-    }
-    
-    .getStartedButton{
-        padding: 0.8vw 2vw;
-        border-radius: 8px;
+    .links a.cta svg{
+        width: 3vw;
+        height: 3vw;;
     }
 }
-
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-    .getStartedWrapper{
-        display: flex;
-        align-items: center;
-    }
-    .hamburgerMenu{
-        display: inline-block;
-        position: relative;
-        width: 12vw;
-        aspect-ratio: 1/1;
-        background-image: url("/icons/hamburger-menu.svg");
-        background-color: transparent;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-left: 4vw;
-        border: none;
-        transition: 0.3s scale;
-    }
-    .topbar{
-        padding: 1vw 2vw;
-        justify-content: center;
-    }
     
-    .topbarLink{
-        display: none;
-    }
-    
-    .mainContent{
-        padding: 1vw 3vw;
-    }
-    
-    .logo img{
-        width: 10vw;
-    }
     .logo span{
-        margin-left: 1vw;
-        font-size: 1.8rem;
+        padding-left: 2vw;
+        font-size: 2.2rem;
     }
-    .navLinks menu{
-        position: absolute;
-        background-color: var(--primary-color);
-        width: 50vw;
-        right: 0;
-        top:100%;
-        z-index: 990;
-        transition: 0.3s clip-path;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    .logoImg{
+        width: 30vw;
+        height: 10vw;
     }
-    .navLinks li:not(.seperator){
-        margin: 3vw 2vw;
-        display: block;
+    .noIcon{
+        height: 5vw;
     }
-    .navLinks li a{
-        display: block;
+    .links svg{
+        width: 5vw;
+        height: 5vw;
     }
-    
-    .navLinks li{
-        font-size: 1.4rem;
-        color: var(--secondary-text-color);
+
+    .topBar{
+        padding: 3vw 0;
     }
-    .navLinks li.seperator{
-        display: none;
+
+    .topBar svg{
+        width: 5vw;
+        height: 5vw;
+        margin-right: 1vw;
     }
-    .navLinks li:not(.seperator)::after{
-        display: none;
-    }
-    
-    .getStartedButton{
-        margin-left: 2vw;
+    .topBarLinks a{
         font-size: 1.5rem;
-        padding: 1vw 4vw;
+        padding: 0 2vw;
+    }
+
+    .topBarLinks a:nth-child(2){
+        display: none;
+    }
+    /* .topBarLinks a:nth-child(2){
+        border: none !important;
+        padding-left: 0;
+    } */
+    
+    .links span{
+        padding-left: 0.8vw;
+    }
+    
+    .content{
+        width: 60%;
+        padding: 4vw;
+    }
+    .navLink{
+        display: block;
+        transition: color 0.3s;
+        cursor: pointer;
+        padding: 2.5vw 0;
+        font-size: 1.2rem;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .dropdownLink{
+        position: relative;
+        margin: 0;
+    }
+    
+    .dropdownLink ul a:nth-child(1){
+        margin-top: 2.5vw;
+    }
+    
+    .dropdownLink ul{
+        padding: 0 0.5vw;
+    }
+    .dropdownList{
+        padding-bottom: 0;
+    }
+    
+    .dropdownLink ul li{
+        font-size: 1.2rem;
+    }
+    
+    .dropdownLink ul a{
+        padding: 2.5vw;
+    }
+
+    .links a.cta{
+        padding: 2vw 4vw;
         border-radius: 999px;
+        transition: filter 0.3s;
+        display: inline-flex;
+        margin: 2.5vw 0 0 0;
+    }
+    .links a.cta .noIcon{
+        height: 6vw;
+    }
+    .links a.cta svg{
+        width: 6vw;
+        height: 6vw;;
     }
 }

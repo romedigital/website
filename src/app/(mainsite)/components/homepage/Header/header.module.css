@@ -1,66 +1,162 @@
 .header{
     padding: 6vw 0 8vw 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    z-index: 10;
+    z-index: 1;
     position: relative;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.contentWrapper{
+    width: 45%;
+}
+
+.contentWrapper:nth-child(1){
+    margin-left: 2.5%;
+}
+
+.contentWrapper:nth-child(2){
+    margin-right: 2.5%;
 }
 
 .mainTagline{
-    font-weight: 900;
-    font-size: 6rem;
-    text-align: center;
+    line-height: 120%;
+    font-size: 5.5rem;
+    font-weight: 800;
 }
 
 .mainTagline span{
-    display: inline-block;
+    --clip-path-amt: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
     position: relative;
-    z-index: 10;
-    --clip-path-amt: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    color: var(--primary-color);
 }
 
 .mainTagline span::after{
     content: "";
     display: inline-block;
     position: absolute;
-    width: 110%;
-    height: 3vw;
-    left: -5%;
-    bottom: -1.5vw;
-    z-index: -1;
+    bottom:-0.5vw;
+    left:0;
+    clip-path: var(--clip-path-amt);
+    width: 100%;
+    height: 2vw;
     background-image: url("/img/svg-squiggle.svg");
-    background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    clip-path: var(--clip-path-amt);
-    
+    background-repeat: no-repeat;
 }
 
-.secondTagline{
-    line-height: 200%;
-    margin-top: 1.5vw;
-    width: 40%;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.5rem;
+.infoWrapper{
+    margin: 3vw 0 2vw 0;
+    padding: 1vw;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    font-family: var(--secondary-font);
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.ctaButton{
-    margin-top: 2vw;
-}
-
-.subTagline{
+.info{
     display: flex;
     align-items: center;
-    margin-top: 1.5vw;
-    font-weight: 300;
+    padding: 0 1vw;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
-.subTagline img{
-    margin-left: 0.1vw;
-    width: 1.2vw;
+
+.info:not(.info:nth-child(1)){
+    border-left: 2px solid black;
 }
+
+.info svg{
+    margin-right: 0.5vw;
+    width: 2.5vw;
+    height: 2.5vw
+}
+
+.info:not(.info:nth-child(3)) svg path{
+    fill: var(--primary-color)
+}
+.info:nth-child(3) svg path{
+    stroke: var(--primary-color);
+}
+
+.happyClients{
+    margin: 2vw 0;
+    font-family: var(--secondary-font);
+    display: inline-flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 0.8vw 2vw;
+    border-radius: 999px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.happyClients span{
+    font-size: 1.4rem;
+}
+
+.happyClients span.big{
+    font-size: 2.5rem;
+    line-height: 100%;
+}
+
+.happyClients div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.happyClients img{
+    width: 7vw;
+    height: 2vw;
+    object-fit: contain;
+    object-position: center;
+}
+
+.mainImg{
+    margin-left: 10%;
+    width: 90%;
+}
+
+.quote{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--secondary-font);
+    width: 60%;
+    margin-left: 20%;
+    border: 3px solid black;
+    font-size: 1.5rem;
+    padding: 1vw 1.5vw;
+    position: relative;
+    /* top: -2vw; */
+}
+
+.logoWrapper{
+    margin: 2vw 0;
+    padding: 1vw 0;
+    display: flex;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.logoImg{
+    height: 6vw;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+
 
 .mainBg{
     position: absolute;
@@ -79,18 +175,6 @@
     .header{
         padding: 4vw 0 6.5vw 0;
     }
-    .secondTagline{
-        margin-top: 2vw;
-    }
-    
-    .ctaButton{
-        margin-top: 2.5vw;
-    }
-    
-    .subTagline{
-        font-size: 1.1rem;
-        margin-top: 2vw;
-    }
 }
 
 /* SMALL LAPTOP STYLES */
@@ -98,78 +182,194 @@
     .header{
         padding: 4vw 0 6.5vw 0;
     }
-    .secondTagline{
-        margin-top: 2vw;
-    }
-    
-    .ctaButton{
-        margin-top: 2.5vw;
-    }
-    
-    .subTagline{
-        font-size: 1.1rem;
-        margin-top: 2vw;
-    }
 }
 
 /* TABLET STYLES */
-@media only screen and (min-width: 650px) and (max-width: 990px){
+@media only screen and (max-width: 990px){
     .header{
         padding: 8vw 0 10vw 0;
     }
     
+    .content{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .contentWrapper{
+        
+        width: 90%;
+        padding: 0 5%;
+
+    }
+    
+    .contentWrapper:nth-child(1){
+        margin-left: 0;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .contentWrapper:nth-child(2){
+        margin-right: 0;
+    }
+    
     .mainTagline{
-        font-size: 4rem;
+        line-height: 110%;
+        font-size: 4.5rem;
+        font-weight: 800;
+        /* padding-right: 10%; */
     }
     
-    .secondTagline{
-        margin-top: 2.5vw;
+    .infoWrapper{
+        margin: 5vw 0 4vw 0;
+        padding: 1.5vw;
+    }
+    
+    .info{
+        display: flex;
+        align-items: center;
+        padding: 0 1vw;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    
+    .info:not(.info:nth-child(1)){
+        border-left: 2px solid black;
+    }
+    
+    .info svg{
+        margin-right: 1vw;
+        width: 4vw;
+        height: 4vw
+    }
+    
+    .happyClients{
+        margin: 3vw 0;
+        gap: 1.5vw;
+        padding: 1.2vw 3vw;;
+    }
+    
+    .happyClients span{
+        font-size: 1.6rem;
+    }
+    
+    .happyClients span.big{
+        font-size: 3rem;
+    }
+    
+    .happyClients img{
+        width: 12vw;
+        height: 4vw;
+    }
+    
+    .mainImg{
+        margin-top: 3vw;
+        margin-left: 5%;
+        width: 90%;
+    }
+    
+    .quote{
         width: 60%;
-        font-size: 1.5rem;
+        margin-left: 10%;
+        font-size: 1.6rem;
+        padding: 3vw 2.5vw;
     }
     
-    .ctaButton{
-        margin-top: 4vw;
+    .logoWrapper{
+        margin: 3vw 0;
+        padding: 1.5vw 0;
+        gap: 6vw;
     }
     
-    .subTagline{
-        margin-top: 2.5vw;
-        font-size: 1.1rem;
-    }
-    .subTagline img{
-        margin-left: 0.3vw;
-        width: 1.8vw;
-    }
+    .logoImg{
+        height: 9vw;
+        width: auto;
+        object-fit: contain;
+       
+}
 }
 
 
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
     .header{
-        padding: 25vw 0 20vw 0;
+        padding: 30vw 0 20vw 0;
     }
-    .mainTagline{
-        font-size: 5rem;
-        line-height: 120%;
+
+    
+    .infoWrapper{
+        margin: 8vw 0 6vw 0;
+        padding: 3vw;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
-    .secondTagline{
-        margin-top: 4vw;
+    .info{
+        display: flex;
+        align-items: center;
+        padding: 1vw 1vw;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    
+    .info:not(.info:nth-child(1)){
+        border-left: none;
+    }
+    
+    .info svg{
+        margin-right: 2vw;
+        width: 8vw;
+        height: 8vw
+    }
+    
+    .happyClients{
+        margin: 4.5vw 0;
+        gap: 2vw;
+        padding: 2vw 5vw;;
+    }
+    
+    .happyClients span{
+        font-size: 1.8rem;
+    }
+    
+    .happyClients span.big{
+        font-size: 3.5rem;
+    }
+    
+    .happyClients img{
+        width: 20vw;
+        height: 6vw;
+    }
+    
+    .mainImg{
+        margin-top: 6vw;
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+    .quote{
         width: 80%;
-        font-size: 1.5rem;
+        margin-left: 5%;
+        font-size: 1.8rem;
+        padding: 5vw 2.5vw;
     }
     
-    .ctaButton{
-        margin-top: 8vw;
+    .logoWrapper{
+        margin: 5vw 0;
+        padding: 3vw 0;
+        gap: 10vw;
     }
     
-    .subTagline{
-        margin-top: 4vw;
-        font-size: 1.2rem;
-    }
-    .subTagline img{
-        margin-left: 0.4vw;
-        width: 4vw;
-    }
+    .logoImg{
+        height: 15vw;
+        width: auto;
+        object-fit: contain;
+       
+}
 }
 

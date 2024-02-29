@@ -1,8 +1,28 @@
 .section{
     position: relative;
-    padding: 10vw 0;
-    margin: 5vw 0;
+    padding: 5vw 0;
+    /* margin: 5vw 0; */
 }
+
+.tagline{
+    
+}
+
+.subTagline{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    line-height: 100%;
+}
+
+.secondTagline{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: var(--secondary-font);
+}
+
 
 .bgImg{
     position: absolute;
@@ -26,75 +46,34 @@
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 5%, rgba(255,255,255,0) 95%, rgba(255,255,255,1) 100%);
 }
 
-.tagline{
-    font-size: 5rem;
-    text-align: center;
-    line-height: 110%;
-}
-
-.tagline span{
-    color: var(--primary-color);
-    font-family: var(--secondary-font);
-    font-size: 7rem;
-}
-
-.section p{
-    margin-top: 2vw;
-    padding: 0 32%;
-    text-align: center;
-    font-size: 1.7rem;
-    line-height: 180%;
-}
-
-.ctaButton{
-    margin-top: 2.5vw;
-}
-
 /* MEDIUM LAPTOP STYLES */
 @media only screen and (min-width: 991px) and (max-width: 1900px){
-    .section p{
-        margin-top: 2.5vw;
-        padding: 0 25%;
-    }
-    .ctaButton{
-        margin-top: 3vw;
-    }
+
 }
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
     .section{
-        padding: 12vw 0;
+        padding: 6vw 0;
         margin: 6vw 0;
     }
-    .section p{
-        margin-top: 3.5vw;
-        padding: 0 20%;
+    .subTagline{
+        margin-bottom: 1vw;
     }
-    .ctaButton{
-        margin-top: 4vw;
-    }
+
 }
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-    .tagline{
-        font-size: 3rem;
-        line-height: 150%;
+    .ctaButton{
+        font-size: 2rem;
+        padding: 4vw 8vw;
     }
-    
-    .tagline span{
-        font-size: 5rem;
+    div:has(.ctaButton){
+        padding: 2vw 0;
     }
     .section{
-        padding: 20vw 0;
+        padding: 10vw 0;
         margin: 10vw 0;
-    }
-    .section p{
-        margin-top: 5vw;
-        padding: 0 5%;
-    }
-    .ctaButton{
-        margin-top: 8vw;
     }
 }

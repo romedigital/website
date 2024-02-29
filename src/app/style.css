@@ -25,6 +25,84 @@ body{
   margin-top: 6vw;
 }
 
+.hidden{
+  display: none !important;
+}
+
+.main-heading{
+  font-size: 6rem;
+    font-weight: 900;
+    font-family: var(--secondary-font);
+    text-align: center;
+    line-height: 110%;
+}
+
+.bg-img{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+.shader-gradient{
+  z-index: -1;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%);
+}
+
+.highlight{
+  color: var(--primary-color);
+}
+
+.helmet{
+  position: relative;
+  line-height: 100%;
+  --top-amt: -10%;
+}
+
+.helmet::after{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: var(--top-amt);
+  background-image: url("/img/roman-helm.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.helmet-reverse{
+  position: relative;
+  /* line-height: 100%; */
+  --top-amt: -2rem;
+}
+
+.helmet-reverse::after{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: var(--top-amt);
+  background-image: url("/img/roman-helm.webp");
+  transform: scaleX(-1) rotate(10deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .center{
   display: flex;
   align-items: center;
@@ -56,6 +134,14 @@ body{
   font-weight: bold;
 }
 
+.mobile{
+  display: none !important;
+}
+
+.tablet{
+  display: none !important;
+}
+
 .large-heading{
   font-size: 6rem;
   color: var(--primary-text-color);
@@ -64,6 +150,7 @@ body{
 }
 
 .main-button{
+  border: none;
   cursor: pointer;
   position: relative;
   font-weight: 900;
@@ -162,6 +249,9 @@ body{
     margin-left: 1.5vw;
     width: 3vw;
   }
+  .tablet{
+    display: initial !important;
+  }
 }
 
 /* MOBILE STYLES */
@@ -176,5 +266,8 @@ body{
   .main-button img{
     margin-left: 2vw;
     width: 6vw;
+  }
+  .mobile{
+    display: initial !important;
   }
 }

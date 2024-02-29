@@ -1,42 +1,204 @@
-.mainFooter{
-    border-top: 4px solid var(--primary-color);
-    padding: 1vw 0;
+.footer{
+    padding-top: 4vw;
+    background-color: #1a1a1a;
+    color: var(--secondary-text-color);
 }
 
-.mainFooter img{
-    width: 6vw;
-    height: 6vw;
+.footer a{
+    transition: 0.3s color;
+    position: relative;
+}
+.footer a::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -6px;
+    left:0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--secondary-text-color);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.3s transform, 0.3s background-color;
+}
+.footer a:hover{
+    color: var(--primary-color);
+}
+.footer a:hover::after{
+    background-color: var(--primary-color);
+    transform: scaleX(1);
+}
+.content{
+    display: inline-flex;
+    width: 70%;
+    padding-bottom: 2vw;
+    margin: 0 15%;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+.logo{
+    width: 25vw;
+    height: 10vw;
     object-fit: contain;
     object-position: center;
 }
 
-.mainFooter p{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 2.5rem;
+.links{
+    display: flex;
+    align-items: flex-start;
+    gap: 5vw;
 }
 
-.mainFooter p span{
+.listTitle{
     font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    padding-bottom: 0.5vw;
 }
 
-/* SMALL LAPTOP STYLES */
-@media only screen and (min-width: 991px) and (max-width: 1400px){
- 
+.listItem{
+    color: var(--secondary-text-color);
+    display: block;
+    margin: 0.8vw 0;
+    font-size: 1.2rem;
+}
+
+.listItem a, .copyright a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    max-width: 10vw;
+    text-align: left;
+}
+
+.contactItem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.4vw;
+}
+
+.contactItem svg{
+    width: 1.4vw;
+    height: 1.4vw;
+}
+
+.contactItem svg path{
+    fill: var(--primary-color);
+}
+
+.copyright{
+    padding: 2vw 0;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
-    .mainFooter img{
-        width: 7vw;
-        height: 7vw;
+    .footer{
+        padding-top: 5vw;
+    }
+    .content{
+        width: 75%;
+        padding-bottom: 4vw;
+        margin: 0 12.5%;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+    }
+    
+    .logo{
+        width: 15vw;
+        height: 15vw;
+    }
+    .listItem a, .copyright a{
+        max-width: 18vw;
+    }
+    
+    .links{
+        gap: 6vw;
+    }
+    
+    .listTitle{
+        font-size: 2rem;
+        padding-bottom: 1vw;
+    }
+    
+    .listItem{
+        margin: 1.8vw 0;
+        font-size: 1.6rem;
+    }
+    
+    .contactItem{
+        gap: 0.8vw;
+    }
+    
+    .contactItem svg{
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    .copyright{
+        padding: 3vw 0;
+        text-align: center;
+        font-size: 1.3rem;
     }
 }
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-    .mainFooter img{
-        width: 12vw;
-        height: 12vw;
+    .footer{
+        padding-top: 8vw;
+    }
+    .content{
+        width: 80%;
+        padding-bottom: 8vw;
+        margin: 0 10%;
+        flex-direction: column;
+        align-items: center;
+        gap: 8vw;
+    }
+    .listItem a, .copyright a{
+        max-width: 35vw;
+        text-align: left;
+    }
+    
+    .logo{
+        width: 30vw;
+        height: 30vw;
+    }
+    
+    .links{
+        gap: 8vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .listTitle{
+        text-align: center;
+        font-size: 2.5rem;
+        padding-bottom: 1vw;
+    }
+    
+    .listItem{
+        text-align: center;
+        margin: 3vw 0;
+        font-size: 1.6rem;
+    }
+    
+    .contactItem{
+        gap: 1.5vw;
+    }
+    
+    .contactItem svg{
+        width: 6vw;
+        height: 6vw;
+    }
+    
+    .copyright{
+        padding: 6vw 0;
+        text-align: center;
+        font-size: 1.3rem;
     }
 }

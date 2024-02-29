@@ -16,7 +16,7 @@
 .faqItem{
     box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
     overflow: hidden;
-    width: 50%;
+    width: 60%;
     margin: 1vw;
     border-radius: 15px;
     background-color: rgba(255,255,255,0.5);
@@ -40,11 +40,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2vw;
+    padding: 0.5vw 2vw;
     user-select: none;
     cursor: pointer;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 2rem;
     transition: 0.3s background-color ease-in-out;
 }
 
@@ -58,7 +58,7 @@
 
 .faqItemAnswer p{
     padding: 1vw 2vw;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 180%;
 }
@@ -67,8 +67,7 @@
 @media only screen and (min-width: 991px) and (max-width: 1900px){
     
     .headingContent{
-        padding: 0.1vw 2vw;
-        font-size: 1.6rem;
+        padding: 0.5vw 2vw;
     }
     
     .headingContent img{

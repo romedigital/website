@@ -37,41 +37,9 @@ export default function Testimonials() {
         )
     })
 
-    useEffect(()=>{
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#testimonialsHeading",
-          start: "center 100%",
-          end: "center 80%"
-      },
-      defaults: {
-        duration: 0.5,
-        ease: "power1.inOut"
-      }
-    })
-
-    tl.to("#testimonialsHeading",{
-      "--psuedo-clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
-    }).to("#testimonialsHeading h3", {
-      opacity: 1,
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: 1.2
-    })
-    .to("#testimonialsHeading h1", {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      opacity: 1,
-      duration: 0.8
-    },"-=1.1")
-     
-    
-    }, [])
-
   return (
-    <section className={`${styles.section} main-bg-center`}>
-      <div className={styles.headerWrapper} id="testimonialsHeading">
-        <h3 className="small-heading">Client</h3>
-        <h1 className="large-heading">Testimonials</h1>
-      </div>
+    <section className={`${styles.section}`}>
+      <h1 className={`main-heading ${styles.mainHeading}`}>Here's What Our<br /><span className="highlight"><span className={`helmet-reverse ${styles.helmet}`}>C</span>lients</span> Say</h1>
         
         <div className={styles.testimonialsWrapper}>
           
@@ -86,6 +54,8 @@ export default function Testimonials() {
           {testimonialElems}
         </Carousel>
         </div>
+        <img src="/img/brick-bg.webp" aria-hidden className="bg-img" style={{opacity: 0.3}} />
+        <div className="shader-gradient"></div>
     </section>
   )
 }

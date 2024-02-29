@@ -1,0 +1,167 @@
+.commitment{
+    position: relative;
+    padding: 4vw 0;
+    display: inline-flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 10%;
+
+}
+
+.contentWrapper{
+    width: 60%;
+}
+.imgWrapper{
+    position: relative;
+    width: 40%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.guarantee{
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    transform: rotate(20deg);
+    object-fit: contain;
+    object-position: center;
+    top: -5vw;
+    right: 1vw;
+}
+
+.mainImg{
+    width: 80%;
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contentWrapper p{
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1vw;
+    padding-right: 22%;
+    line-height: 180%;
+}
+
+.personWrapper{
+    padding-top: 1vw;
+    display: flex;
+    gap: 2vw;
+    align-items: flex-end;
+}
+
+.ownerImg{
+    width: 15vw;
+    aspect-ratio: 1/1;
+}
+
+.personWrapper div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2vw;
+}
+
+.personWrapper div img{
+    height: 5vw;
+}
+
+.personWrapper div span{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .commitment{
+        padding: 8vw 0;
+        width: 90%;
+        margin: 0 5%;
+    
+    }
+    .contentWrapper{
+        width: 100%;
+    }
+    .imgWrapper{
+        display: none;
+    }
+    
+    .contentWrapper p{
+        font-size: 1.5rem;
+        margin: 1.5vw;
+        padding-right: 25%;
+    }
+    
+    .personWrapper{
+        padding-top: 1.5vw;
+        gap: 3vw;
+    }
+    
+    .ownerImg{
+        width: 20vw;
+    }
+    
+    .personWrapper div{
+        padding-bottom: 3vw;
+    }
+    
+    .personWrapper div img{
+        height: 8vw;
+    }
+    
+    .personWrapper div span{
+        font-size: 1.4rem;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .commitment{
+        padding: 8vw 0;
+        width: 90%;
+        margin: 0 5%;
+    
+    }
+    .helmet{
+        --top-amt: -1.5rem;
+    }
+    .mainHeading{
+        font-size: 4rem
+    }
+    .contentWrapper{
+        width: 100%;
+    }
+    .imgWrapper{
+        display: none;
+    }
+    
+    .contentWrapper p{
+        font-size: 1.7rem;
+        margin: 4vw 0;
+        padding-right: 5%;
+    }
+    
+    .personWrapper{
+        padding-top: 1.5vw;
+        gap: 3vw;
+    }
+    
+    .ownerImg{
+        width: 30vw;
+    }
+    
+    .personWrapper div{
+        padding-bottom: 6vw;
+    }
+    
+    .personWrapper div img{
+        height: 12vw;
+    }
+    
+    .personWrapper div span{
+        font-size: 1.8rem;
+    }
+}

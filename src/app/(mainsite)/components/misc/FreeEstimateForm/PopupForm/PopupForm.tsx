@@ -6,15 +6,19 @@ import gsap from "gsap"
 import handleFormSubmit from "../handleFormSubmit"
 import Image from "next/image"
 import MessageStatus from "../../MessageStatus/MessageStatus"
+import { AppContext } from "../../appContext"
+import { useContext } from "react"
 
 export default function PopUpForm() {
+
+    const {isFormOpen, closeForm}: {isFormOpen: boolean, closeForm: any} = useContext(AppContext)
 
     const [status, setStatus] = useState("none")
 
     const formRef: any = useRef();
     const wrapperRef: any = useRef();
 
-    function openForm(){
+    function openTheForm(){
         wrapperRef.current.style.pointerEvents = "all";
         wrapperRef.current.style.display = "flex";
         gsap.to(wrapperRef.current, {
@@ -28,7 +32,7 @@ export default function PopUpForm() {
             duration: 1
         })
     }
-    function closeForm(){
+    function closeTheForm(){
         wrapperRef.current.style.pointerEvents = "none";
         wrapperRef.current.style.display = "none";
         gsap.to(wrapperRef.current, {
@@ -41,45 +45,17 @@ export default function PopUpForm() {
             ease: "power3.out",
             duration: 0.5
         })
-        localStorage.setItem("popupFormStats", JSON.stringify({lastShown: new Date().getTime(), isSent: false}))
     }
 
     
     useEffect(()=>{
-        let showThisSession: boolean = false;
-        
-        if(localStorage.getItem("popupFormStats") == undefined){
-            
-            localStorage.setItem("popupFormStats", JSON.stringify({lastShown: 0, isSent: false}))
-            showThisSession = true;
-
-        }
-        const formStats = JSON.parse(localStorage.getItem("popupFormStats")!)
-
-        if(!formStats.isSent && ((formStats.lastShown + 600000) < new Date().getTime()) ){
-            showThisSession = true
+        if(isFormOpen){
+            openTheForm()
+        }else{
+            closeTheForm()
         }
 
-        if(showThisSession){
-            let randomTimeOut  = Math.floor(Math.random() * (180000 - 60000) + 60000);
-            
-
-            let isIntersecting = false
-            //@ts-ignore
-            function checkIfShow(){
-                if(!isIntersecting){
-                    openForm();
-                    localStorage.setItem("popupFormStats", JSON.stringify({lastShown: new Date().getTime(), isSent: false}))
-                }else{
-                    let randomTimeOut  = Math.floor(Math.random() * (180000 - 60000) + 60000);
-                    setTimeout(checkIfShow, randomTimeOut)
-                }
-            }
-
-            setTimeout(checkIfShow, randomTimeOut)
-        }
-
-    }, [])
+    }, [isFormOpen])
 
   return (
     <>

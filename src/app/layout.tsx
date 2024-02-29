@@ -11,16 +11,16 @@ const secondaryFont = Spectral({ subsets: ['latin'], weight: ["200", "300", "400
 const thirdFont = IBM_Plex_Sans({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "100"], display: "swap", variable: "--third-font" })
 
 export const metadata: Metadata = {
-  title: 'Small Business Web Design and Development | Rome Digital',
+  title: 'Rome Digital - High Converting Websites For Small Businesses',
   description: 'Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.',
 
   openGraph: {
-    title: "Small Business Web Design and Development | Rome Digital",
+    title: "Rome Digital - High Converting Websites For Small Businesses",
     description: "Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.",
     type: "website",
     images: [
       {
-        url: 'https://www.romedigital.co/img/main-website-bg.jpg',
+        url: 'https://www.romedigital.co/img/main-website-bg.webp',
         width: 1920,
         height: 1080,
       }
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Small Business Web Design and Development | Rome Digital",
+    title: "Rome Digital - High Converting Websites For Small Businesses",
     description: "Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.",
-    images: ['https://www.romedigital.co/img/main-website-bg.jpg']
+    images: ['https://www.romedigital.co/img/main-website-bg.webp']
   },
 }
 
@@ -54,7 +54,7 @@ export default function RootLayout({
           gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
         `}
       </Script>
-      <img src="./img/main-website-bg.jpg" aria-hidden style={{display: "none"}} />
+      <img src="./img/main-website-bg.webp" aria-hidden style={{display: "none"}} />
      {children}</body>
     
 <Script>
