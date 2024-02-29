@@ -23,7 +23,7 @@
     width: 15vw;
     height: 15vw;
     position: absolute;
-    transform: rotate(20deg);
+    /* transform: rotate(20deg); */
     object-fit: contain;
     object-position: center;
     top: -5vw;
