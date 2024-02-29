@@ -109,8 +109,8 @@
     }
     
     .logo{
-        width: 15vw;
-        height: 15vw;
+        width: 28vw;
+        height: 18vw;
     }
     .listItem a, .copyright a{
         max-width: 18vw;
@@ -165,7 +165,7 @@
     }
     
     .logo{
-        width: 30vw;
+        width: 60vw;
         height: 30vw;
     }
     
