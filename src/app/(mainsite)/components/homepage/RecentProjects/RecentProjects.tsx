@@ -45,16 +45,16 @@ useEffect(()=>{
         </div>
 
         <div className={`${styles.carouselWrapper} recentProjectCarouselWrapper`}>
-        <img alt="Past Project Thumbnail" src="/img/pastprojects/shine.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
+        <img alt="Past Project Thumbnail" src="/img/pastprojects/speedspray.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="/img/pastprojects/quicknclean.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="/img/pastprojects/advantage.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
           
-          <img alt="Past Project Thumbnail" src="/img/pastprojects/speedspray.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
+          <img alt="Past Project Thumbnail" src="/img/pastprojects/iconhomes.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
         
 
-          <img alt="Past Project Thumbnail" src="/img/pastprojects/quicknclean.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
-          <img alt="Past Project Thumbnail" src="/img/pastprojects/advantage.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="/img/pastprojects/shine.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
+          <img alt="Past Project Thumbnail" src="/img/pastprojects/advantage.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
+          <img alt="Past Project Thumbnail" src="/img/pastprojects/iconhomes.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
         </div>
     </div>
   )
