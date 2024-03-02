@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import MessageStatus from "../../misc/MessageStatus/MessageStatus"
 import styles from "./tac.module.css"
 import getTACData from "@/app/controllers/getTACData"
@@ -8,9 +8,13 @@ import sendEmail from "@/app/controllers/sendEmail"
 
 export default function TAC(props: {businessName: string}) {
 
+  const [renderClient, setRenderClient] = useState(false)
+
     const urlParams = (typeof window !== "undefined") ? new URLSearchParams(window.location.search) : null;
     
     let pkg = urlParams?.has("pkg") ?  urlParams?.get("pkg") : "t8mu09b4"
+
+    // console.log(pkg)
 
     let curCost: number = 100
 
@@ -19,6 +23,9 @@ export default function TAC(props: {businessName: string}) {
       case "t8mu09b4":
           curCost = 50
       break;
+      case "2024sale":
+        curCost = 20
+        break;
     }
 
     const [status, setStatus] = useState("none")
@@ -41,8 +48,12 @@ export default function TAC(props: {businessName: string}) {
         content: TACData
       })
 
-      location.href = `/onboarding/accepted/${props.businessName}?pkg=${pkg}`
+      location.href = `/onboarding/accepted/${pkg}`
     }
+
+    useEffect(()=>{
+      setRenderClient(true)
+    }, [])
     
   return (
     <>
@@ -51,7 +62,7 @@ export default function TAC(props: {businessName: string}) {
         <h1 className={styles.title}>Website Design Development Agreement</h1>
         <h3 className={styles.subtitle}>Between Rome Digital and {businessName}</h3>
         <div className={styles.tacWrapper}>
-            <div className={styles.tac} dangerouslySetInnerHTML={{__html: TACData}}>
+            <div className={styles.tac} dangerouslySetInnerHTML={{__html: (renderClient) ? TACData : "Loading..."}}>
 
             </div>
 

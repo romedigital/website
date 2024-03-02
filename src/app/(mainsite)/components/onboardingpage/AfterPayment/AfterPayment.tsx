@@ -12,17 +12,11 @@ export default function AfterPayment() {
 
   return (
     <>
-        <h1 className={styles.title}>Thank's for joining{businessName}!</h1>
-        <h3 className={styles.subtitle}>Now we can begin creating the website your business deserves!</h3>
+        <h1 className={styles.title}>Thank's for Choosing us {businessName}!</h1>
 
-        <p className={styles.content}>We will reach out to you very soon using the email we have on record for you. <br /><br />
-
-        In the meantime, you can fill out the questionaire linked below so that we have enough information to create the website exactly how you want it.
+        <p className={styles.content}>We will now begin finishing the design for your website and developing it. We will keep in close contact with you through the whole process to make sure you get exactly what you want!
          </p>
 
-        <div className={styles.buttonWrapper}>
-        <a target="_blank" href="https://form.jotform.com/232695090163154" className={`main-button ${styles.ctaButton}`}>Questionaire <img src="/icons/arrow-right.svg" aria-hidden /></a>
-        </div>
     </>
   )
 }
