@@ -42,9 +42,9 @@ publishable-key="pk_live_51OTXVsKaTewv8x5B7ocCPmnBDkWU0v37izsVOBOTKx8a457McIMV4K
 
   return (
     <>
-        <h1 className={styles.title}>Let's Get Started!</h1>
-        <h3 className={styles.subtitle}>Complete the subscription below. Don't worry, if our services dont match your expectations, you can cancel anytime!</h3>
-        <div className={styles.buttonWrapper} dangerouslySetInnerHTML={{__html: buttonHTML}}></div>
+        <h1 className={styles.title}>Thank you for agreeing to our contract!</h1>
+        <h3 className={styles.subtitle}>You can now close this page.</h3>
+        <div className={styles.buttonWrapper}> </div>
     </>
   )
 }
