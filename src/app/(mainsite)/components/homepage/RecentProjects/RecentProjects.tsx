@@ -52,7 +52,7 @@ useEffect(()=>{
           <img alt="Past Project Thumbnail" src="/img/pastprojects/iconhomes.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
         
 
-          <img alt="Past Project Thumbnail" src="/img/pastprojects/shine.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
+          <img alt="Past Project Thumbnail" src="/img/pastprojects/theplug.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="/img/pastprojects/advantage.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
           <img alt="Past Project Thumbnail" src="/img/pastprojects/iconhomes.webp" className={`${styles.carouselItem} past-projects-carousel-item`} />
         </div>

@@ -10,9 +10,9 @@ const portfolioData: portfolioType[] = [
         url: "https://speedspray.co"
     },
     {
-        mockupImg: "/img/portfolio/superiorpressurewashing.webp",
-        logoImg: "/img/logos/superiorpressurewashing.webp",
-        url: "https://superiorwashing.net"
+        mockupImg: "/img/portfolio/pastoringgodssheep.webp",
+        logoImg: "/img/logos/pastoringgodssheep.webp",
+        url: "https://pastoringgodssheep.org"
     },
 ]
 
