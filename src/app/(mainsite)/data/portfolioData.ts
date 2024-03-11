@@ -5,6 +5,11 @@ const portfolioData: portfolioType[] = [
         url: "https://iconichome.co.za"
     },
     {
+        mockupImg: "/img/portfolio/theplug.webp",
+        logoImg: "/img/logos/theplug.webp",
+        url: "https://theplugservices.net"
+    },
+    {
         mockupImg: "/img/portfolio/speedspray.webp",
         logoImg: "/img/logos/speedspray.webp",
         url: "https://speedspray.co"
