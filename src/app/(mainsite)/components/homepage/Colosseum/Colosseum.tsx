@@ -19,7 +19,7 @@ export default function Colosseum() {
         <h1 className={styles.secondTagline}>And Many More!</h1>
         <div className="center">
 
-          <button onClick={openForm} style={{color: "white"}} className={`main-button ${styles.ctaButton}`}>Book a Call With Me</button>
+          <button onClick={openForm} style={{color: "white"}} className={`main-button ${styles.ctaButton}`}>Let's Get Started!</button>
         </div>
 
 
