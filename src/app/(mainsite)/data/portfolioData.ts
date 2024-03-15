@@ -19,6 +19,11 @@ const portfolioData: portfolioType[] = [
         logoImg: "/img/logos/pastoringgodssheep.webp",
         url: "https://pastoringgodssheep.org"
     },
+    {
+        mockupImg: "/img/portfolio/mikemendietaministries.webp",
+        logoImg: "/img/logos/mikemendietaministries.webp",
+        url: "https://mikemendietaministries.com"
+    },
 ]
 
 export default portfolioData
