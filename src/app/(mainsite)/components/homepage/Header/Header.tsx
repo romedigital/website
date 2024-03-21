@@ -52,7 +52,7 @@ export default function Header() {
       
 
       <div className={styles.contentWrapper}>
-        <img src="/img/portfolio/iconhomes.webp" aria-hidden className={styles.mainImg} />
+        <img src="/img/portfolio/trexdetailing.webp" aria-hidden className={styles.mainImg} />
       
         <div className={styles.quote}><span>“Did an amazing job with great detail. I definitely recommend using him. I will definitely use him again in the future..“</span></div>
       </div>
