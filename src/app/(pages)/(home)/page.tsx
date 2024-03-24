@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-    <CalendarPopup />
+    {/* <CalendarPopup /> */}
     <Header />
     <RecentProjects />
     <Colosseum />
