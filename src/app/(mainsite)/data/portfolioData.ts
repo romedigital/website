@@ -15,6 +15,11 @@ const portfolioData: portfolioType[] = [
         url: "https://blessedhandscatering.org"
     },
     {
+        mockupImg: "/img/portfolio/gbmusiq.webp",
+        logoImg: "/img/logos/gbmusiq.webp",
+        url: "https://gbmusiq.net"
+    },
+    {
         mockupImg: "/img/portfolio/theplug.webp",
         logoImg: "/img/logos/theplug.webp",
         url: "https://theplugservices.net"
@@ -24,11 +29,11 @@ const portfolioData: portfolioType[] = [
         logoImg: "/img/logos/pastoringgodssheep.webp",
         url: "https://pastoringgodssheep.org"
     },
-    {
-        mockupImg: "/img/portfolio/mikemendietaministries.webp",
-        logoImg: "/img/logos/mikemendietaministries.webp",
-        url: "https://mikemendietaministries.com"
-    },
+    // {
+    //     mockupImg: "/img/portfolio/mikemendietaministries.webp",
+    //     logoImg: "/img/logos/mikemendietaministries.webp",
+    //     url: "https://mikemendietaministries.com"
+    // },
 ]
 
 export default portfolioData
