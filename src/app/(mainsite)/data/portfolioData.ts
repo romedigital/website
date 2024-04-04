@@ -20,10 +20,11 @@ const portfolioData: portfolioType[] = [
         url: "https://gbmusiq.net"
     },
     {
-        mockupImg: "/img/portfolio/theplug.webp",
-        logoImg: "/img/logos/theplug.webp",
-        url: "https://theplugservices.net"
+        mockupImg: "/img/portfolio/itsallaboutlife.webp",
+        logoImg: "/img/logos/itsallaboutlife.webp",
+        url: "https://itsallaboutlifeinsurance.com"
     },
+    
     {
         mockupImg: "/img/portfolio/pastoringgodssheep.webp",
         logoImg: "/img/logos/pastoringgodssheep.webp",
@@ -33,6 +34,11 @@ const portfolioData: portfolioType[] = [
     //     mockupImg: "/img/portfolio/mikemendietaministries.webp",
     //     logoImg: "/img/logos/mikemendietaministries.webp",
     //     url: "https://mikemendietaministries.com"
+    // },
+    // {
+    //     mockupImg: "/img/portfolio/theplug.webp",
+    //     logoImg: "/img/logos/theplug.webp",
+    //     url: "https://theplugservices.net"
     // },
 ]
 
