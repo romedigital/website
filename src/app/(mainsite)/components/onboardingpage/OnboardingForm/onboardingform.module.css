@@ -58,6 +58,7 @@
     
     .stuffWrapper{
         width: 70%;
+        margin: 0 15%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -96,11 +97,13 @@
     
     .stuffWrapper{
         width: 90%;
+        margin:  0 5%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+    
     
     .stuffWrapper img{
         width: 100%;
