@@ -1,4 +1,4 @@
-
+import Payment from "@/app/(mainsite)/components/onboardingpage/Payment/Payment"
 import type { Metadata } from "next"
 
 
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function OnboardingPayedPage(){
 return(
     <>
-
+        <Payment />
     </>
 )
 }

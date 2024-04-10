@@ -9,14 +9,19 @@ export default function OnboardingForm(props: {businessName: string}){
  if(typeof window !== "undefined"){
   localStorage.setItem("business_name", businessName)
  }
+
+ 
 return (
  <div className={styles.onboardingForm}>
     <div className={styles.stuffWrapper}>
       <h1>Hey {businessName}, let's get started!</h1>
       <img src="/img/portfolio/trexdetailing.webp" aria-hidden className={styles.mainImg} />
     </div>
-    <div className={styles.formWrapper} dangerouslySetInnerHTML={{__html: `<script type="text/javascript" src="https://form.jotform.com/jsform/241003968771156"></script>`}}>
-        
+    <div className={styles.formWrapper}>
+        <div className={styles.formContent} dangerouslySetInnerHTML={{__html: `<script type="text/javascript" src="https://form.jotform.com/jsform/241003968771156"></script>`}}>
+          
+        </div>
+        <div className={styles.hideBoi}></div>
     </div>
     <img src="/img/colosseum.webp" alt="" className="bg-img" />
     <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>

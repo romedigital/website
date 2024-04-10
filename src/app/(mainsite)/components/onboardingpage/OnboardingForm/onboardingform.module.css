@@ -8,6 +8,19 @@
 
 .formWrapper{
     width: 50%;
+    position: relative;
+}
+.hideBoi{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f3f3fe;
+    z-index: 990;
+    /* border: 1px solid black;
+    border-top:  none; */
 }
 
 .stuffWrapper{
@@ -70,11 +83,16 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        overflow: hidden;
+        
     }
     
     .formWrapper{
         width: 100%;
+        position: relative;
     }
+
+    
     
     .stuffWrapper{
         width: 90%;
