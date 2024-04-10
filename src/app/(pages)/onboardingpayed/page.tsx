@@ -1,4 +1,5 @@
 
+import AfterPayment from "@/app/(mainsite)/components/onboardingpage/AfterPayment/AfterPayment"
 import type { Metadata } from "next"
 
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 export default function OnboardingPayedPage(){
 return(
     <>
-
+        <AfterPayment />
     </>
 )
 }

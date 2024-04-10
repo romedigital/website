@@ -7,7 +7,11 @@ export default function OnboardingForm(props: {businessName: string}){
 }).join(" ")
 
  if(typeof window !== "undefined"){
+  const urlParams = (typeof window !== "undefined") ? new URLSearchParams(window.location.search) : null;
+    
+    let pkg = urlParams?.has("pkg") ?  urlParams?.get("pkg") : "2024sale"
   localStorage.setItem("business_name", businessName)
+  localStorage.setItem("pkg", pkg!)
  }
 
  
