@@ -1,5 +1,6 @@
-import type { Metadata } from "next"
 import AfterPayment from "@/app/(mainsite)/components/onboardingpage/AfterPayment/AfterPayment"
+import type { Metadata } from "next"
+
 
 export const metadata: Metadata = {
     title: "Onboarding | Small Business Web Design and Development",

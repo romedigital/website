@@ -11,12 +11,13 @@ export default function AfterPayment() {
   }, [])
 
   return (
-    <>
-        <h1 className={styles.title}>Thank's for Choosing us {businessName}!</h1>
+        <div className={styles.contentWrapper}>
+        <h1 className={styles.title}>Thank's for Choosing Us{businessName}!</h1>
 
-        <p className={styles.content}>We will now begin finishing the design for your website and developing it. We will keep in close contact with you through the whole process to make sure you get exactly what you want!
-         </p>
-
-    </>
+        <p className={styles.content}>We will now begin designing your website. We will keep in close contact with you through the whole process to make sure you get exactly what you want!
+        </p>
+        <img src="/img/colosseum.webp" alt="" className="bg-img" />
+    <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>
+        </div>
   )
 }

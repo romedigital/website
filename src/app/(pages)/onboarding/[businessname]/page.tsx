@@ -1,5 +1,6 @@
+import OnboardingForm from "@/app/(mainsite)/components/onboardingpage/OnboardingForm/OnboardingForm"
 import type { Metadata } from "next"
-import TAC from "@/app/(mainsite)/components/onboardingpage/TAC/TAC"
+
 
 export const metadata: Metadata = {
     title: "Onboarding | Small Business Web Design and Development",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function OnboardingPage({params}: {params: {businessname: string}}){
 return(
     <>
-        <TAC businessName={params.businessname} />
+        <OnboardingForm businessName={params.businessname} />
     </>
 )
 }
