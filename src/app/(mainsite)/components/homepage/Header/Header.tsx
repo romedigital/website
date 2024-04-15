@@ -54,7 +54,7 @@ export default function Header() {
       <div className={styles.contentWrapper}>
         <img src="/img/portfolio/trexdetailing.webp" aria-hidden className={styles.mainImg} />
       
-        <div className={styles.quote}><span>“Did an amazing job with great detail. I definitely recommend using him. I will definitely use him again in the future..“</span></div>
+        <div className={styles.quote}><span>“Great job! Professional, fast and friendly services. I love my website! I can’t thank you enough.“</span></div>
       </div>
 
       </div>
