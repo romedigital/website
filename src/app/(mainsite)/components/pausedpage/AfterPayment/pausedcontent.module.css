@@ -23,7 +23,7 @@
 .content{
     text-align: center;
     width: 40%;
-    margin: 2vw 30%;
+    margin: 2vw 30% 12vw 30%;
     font-size: 1.5rem;
     
 }
@@ -46,7 +46,7 @@
     
     .content{
         width: 50%;
-        margin: 3vw 25%;
+        margin: 3vw 25% 8vw 25%;
         font-size: 1.4rem;
     }
 }
@@ -69,7 +69,7 @@
     
     .content{
         width: 80%;
-        margin: 4vw 10%;
+        margin: 4vw 10% 40vw 10%;
         font-size: 1.6rem;
     }
 }
