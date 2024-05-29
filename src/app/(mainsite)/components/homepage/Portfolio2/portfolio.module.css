@@ -1,0 +1,23 @@
+.portfolio{
+    position: relative;
+    display: inline-flex;
+    width: 90%;
+    margin: 0 5%;
+    padding: 2vw 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .portfolio{
+        padding: 3vw 0;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .portfolio{
+        padding: 4vw 0;
+    }
+}

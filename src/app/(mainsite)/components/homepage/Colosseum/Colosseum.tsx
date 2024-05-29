@@ -2,11 +2,8 @@
 import styles from "./colosseum.module.css"
 import Portfolio from "../Portfolio/Portfolio"
 import portfolioData from "@/app/(mainsite)/data/portfolioData"
-import { useContext } from "react"
-import { AppContext } from "../../misc/appContext"
 
 export default function Colosseum() {
-  const {openForm} = useContext(AppContext)
 
   return (
     <section className={styles.section}>
@@ -19,7 +16,7 @@ export default function Colosseum() {
         <h1 className={styles.secondTagline}>And Many More!</h1>
         <div className="center">
 
-          <button onClick={openForm} style={{color: "white"}} className={`main-button ${styles.ctaButton}`}>Let's Get Started!</button>
+        <a href="https://www.facebook.com/messages/t/130761123452165" target="_blank" style={{color: "white", fontFamily: "sans-serif"}} className={`main-button ${styles.ctaButton}`}>Let's Get Started!</a>
         </div>
 
 

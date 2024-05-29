@@ -216,7 +216,7 @@ export default function Navbar() {
           />
 
           
-<button onClick={openForm} className={`main-button ${styles.ctaButton}`}>Request a Quote!</button>
+<a href="https://www.facebook.com/messages/t/130761123452165" target="_blank" className={`main-button ${styles.ctaButton}`}>Request a Quote!</a>
           
 
           </ul>

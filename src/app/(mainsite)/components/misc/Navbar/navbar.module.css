@@ -190,6 +190,7 @@
     border-radius: 999px;
     transition: filter 0.3s;
     color: black;
+    font-family: var(--third-font);
 }
 
 .cta:hover{
@@ -198,10 +199,12 @@
 
 .ctaButton{
     margin-left: 2vw !important;
+    font-family: sans-serif;
+    font-weight: 900;
 }
 
 .cta span{
-    font-family: var(--secondary-font);
+    
     font-weight: 600;
     font-weight: 1.2rem;
 }

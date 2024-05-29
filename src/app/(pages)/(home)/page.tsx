@@ -7,6 +7,7 @@ import CalendarPopup from '@/app/(mainsite)/components/homepage/CalendarPopup/Ca
 import InfiniteRibbon from '@/app/(mainsite)/components/homepage/InfiniteRibbon/InfiniteRibbon'
 import Problems from '@/app/(mainsite)/components/homepage/Problems/Problems'
 import Commitment from '@/app/(mainsite)/components/homepage/Commitment/Commitment'
+import Colosseum2 from '@/app/(mainsite)/components/homepage/Colosseum2/Colosseum2'
 
 export default function Home() {
     
@@ -24,6 +25,7 @@ export default function Home() {
     <Testimonials />
     <Problems />
     <Commitment />
+    <Colosseum2 />
     <InfiniteRibbon content={infiniteRibbonContent} />
     <FAQ />
     
