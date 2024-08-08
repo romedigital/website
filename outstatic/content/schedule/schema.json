@@ -1,0 +1,13 @@
+{
+  "title": "schedule",
+  "type": "object",
+  "properties": {
+    "date": {
+      "required": true,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Date"
+    }
+  }
+}
