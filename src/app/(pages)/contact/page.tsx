@@ -8,7 +8,7 @@ import ContentCalendar from "@/app/(mainsite)/components/contactpage/ContactCale
 
 export const metadata: Metadata = {
     title: "Contact | Small Business Web Design and Development",
-    description: "Let's get started on building your digital empire through websites by Rome Digital"
+    description: "Let's get started on building your digital empire through websites by Rome Sites"
 }
 
 export default function ContactPage(){
@@ -17,7 +17,7 @@ export default function ContactPage(){
             <Header />
             <ContactInfo />
             {/* <ContentCalendar /> */}
-            <ContactForm />
+            {/* <ContactForm /> */}
 
             <Image className={styles.mainBg} src="/img/contact-bg.png" width={1024} height={1024} alt="Contact background image" />
         </main>

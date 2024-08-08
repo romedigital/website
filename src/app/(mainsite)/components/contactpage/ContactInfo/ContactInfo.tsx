@@ -9,9 +9,9 @@ export default function ContactInfo() {
             <span>Click to chat!</span>
         </a>
 
-        <a className={`${styles.emailLink} ${styles.contactItem}`} href="mailto:contact@romedigital.co" target="_blank">
+        <a className={`${styles.emailLink} ${styles.contactItem}`} href="mailto:contact@romesites.co" target="_blank">
             <Image src="/icons/email.png" alt="email icon" width={400} height={400} />
-            <span>contact@romedigital.co</span>
+            <span>contact@romesites.co</span>
         </a>
 
     </div>

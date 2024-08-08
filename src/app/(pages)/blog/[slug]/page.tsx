@@ -7,10 +7,10 @@ import { getDocumentSlugs } from "outstatic/server";
 export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata>{
     const poststuff = getDocumentBySlug("posts", params.slug, ["title", 'coverImage', "description"])
     return {
-        title: `${poststuff?.title} | Rome Digital Web Design`,
+        title: `${poststuff?.title} | Rome Sites Web Design`,
         description: poststuff?.description,
         openGraph: {
-            title: `${poststuff?.title} | Rome Digital Web Design`,
+            title: `${poststuff?.title} | Rome Sites Web Design`,
             description: poststuff?.description,
             type: "website",
             images: [
@@ -23,7 +23,7 @@ export async function generateMetadata({params}: {params: {slug: string}}): Prom
           },
           twitter: {
             card: 'summary_large_image',
-            title: `${poststuff?.title} | Rome Digital Web Design`,
+            title: `${poststuff?.title} | Rome Sites Web Design`,
             description: poststuff?.description,
             images: [ poststuff?.coverImage || 'https://www.romedigital.co/img/main-website-bg.jpg',]
           },

@@ -46,12 +46,12 @@ export default function Footer() {
 
                 <aside className={`${styles.contactItem} ${styles.listItem}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"></path></svg>
-                  <a href="https://www.facebook.com/rome.digital.dev/" target="_blank">rome.digital.dev</a>
+                  <a href="https://www.facebook.com/rome.digital.dev/" target="_blank">rome.sites</a>
                 </aside>
                 
                 <aside className={`${styles.contactItem} ${styles.listItem}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"></path></svg>
-                  <a href="mailto:contact@romedigital.co" target="_blank">contact@romedigital.co</a>
+                  <a href="mailto:contact@romesites.co" target="_blank">contact@romesites.co</a>
                 </aside>
                 
                 <aside className={`${styles.contactItem} ${styles.listItem}`}>
@@ -65,7 +65,7 @@ export default function Footer() {
 
       </div>
 
-      <div className={styles.copyright}>© Copyright 2023 to Present - <a href="https://www.romedigital.co" target="_blank">Rome Digital</a></div>
+      <div className={styles.copyright}>© Copyright 2023 to Present - <a href="https://www.romedigital.co" target="_blank">Rome Sites</a></div>
         
        
     </footer>

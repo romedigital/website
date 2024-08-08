@@ -5,7 +5,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
     title: "Onboarding | Small Business Web Design and Development",
-    description: "Let's get started on building your digital empire through websites by Rome Digital"
+    description: "Let's get started on building your digital empire through websites by Rome Sites"
 }
 
 export default function OnboardingPayedPage(){

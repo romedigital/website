@@ -6,7 +6,7 @@ export default function Commitment() {
         <div className={styles.contentWrapper}>
             <h1 className={`main-heading ${styles.mainHeading}`} style={{textAlign: "left"}}>Your Vision<br />Our <span className="highlight"><span className={`helmet-reverse ${styles.helmet}`}>C</span>ommitment</span></h1>
 
-            <p>Hello, I'm <strong>William Bojczuk</strong>, the Proud owner of Rome Digital. Websites are what I specialize in, but not just websites, the value that they provide is far more important to me. Over the past several years, I've been able to work with many businesses and industries which taught me so much.</p>
+            <p>Hello, I'm <strong>William Bojczuk</strong>, the Proud owner of Rome Sites. Websites are what I specialize in, but not just websites, the value that they provide is far more important to me. Over the past several years, I've been able to work with many businesses and industries which taught me so much.</p>
 
             <p>I've seen many businesses pay thousands of dollars for a slow, unresponisive, and overall bad-looking website. Those agencies don't care about your business, only about their next paycheck. My goal is to make websites feel like a branded website, like it BELONGS with you, and website's that not only look good but also build trust with visitors.</p>
 
@@ -16,10 +16,10 @@ export default function Commitment() {
             <p>Let's connect and transform your business and bring your vision into a bright reality, let me prove that I'm the best.</p>
 
             <div className={styles.personWrapper}>
-                <img className={styles.ownerImg} src="/img/williambojczuk.webp" alt="Image of Rome Digital Owner" />
+                <img className={styles.ownerImg} src="/img/williambojczuk.webp" alt="Image of Rome Sites Owner" />
                 <div>
                     <img src="/img/signature.webp"/>
-                    <span>Owner of <span className="highlight">Rome Digital</span></span>
+                    <span>Owner of <span className="highlight">Rome Sites</span></span>
                 </div>
             </div>
         </div>
