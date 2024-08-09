@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://www.romedigital.co/img/main-website-bg.webp',
-        width: 1920,
-        height: 1080,
+        width: 1280,
+        height: 720,
       }
     ]
   },
