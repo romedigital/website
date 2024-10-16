@@ -54,6 +54,9 @@ export default function Testimonials() {
           {testimonialElems}
         </Carousel>
         </div>
+        <div className="center">
+        <a style={{color: "white"}} href={"https://www.facebook.com/romesites/reviews"} target="_blank" className={`main-button`}>View Facebook Reviews</a>
+        </div>
         <img src="/img/brick-bg.webp" aria-hidden className="bg-img" style={{opacity: 0.3}} />
         <div className="shader-gradient"></div>
     </section>

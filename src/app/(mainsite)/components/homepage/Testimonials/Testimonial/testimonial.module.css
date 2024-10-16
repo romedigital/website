@@ -37,6 +37,7 @@
     margin-top: 0.1vw;
     max-height: 15vw;
     overflow-y: auto;
+    white-space: preserve;
 }
 
 /* width */
