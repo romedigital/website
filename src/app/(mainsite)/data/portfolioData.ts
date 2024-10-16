@@ -5,6 +5,16 @@ const portfolioData: portfolioType[] = [
         url: "https://mandysfamilyfriendlydreamtravel.com"
     },
     {
+        mockupImg: "/img/portfolio/yoyo.webp",
+        logoImg: "/img/logos/yoyo.webp",
+        url: "https://yoyoproductions.net" 
+    },
+    {
+        mockupImg: "/img/portfolio/anytimeroadside.webp",
+        logoImg: "/img/logos/anytimeroadside.webp",
+        url: "https://anytimeroadsideservices.net"
+    },
+    {
         mockupImg: "/img/portfolio/trexdetailing.webp",
         logoImg: "/img/logos/trexdetailing.webp",
         url: "https://trexdetailingllc.com"
