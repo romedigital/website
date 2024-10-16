@@ -17,13 +17,13 @@ const portfolioData: portfolioType[] = [
     {
         mockupImg: "/img/portfolio/blessedhandscatering.webp",
         logoImg: "/img/logos/blessedhandscatering.webp",
-        url: "https://blessedhandscatering.org"
+        url: "https://blessed-hands-catering-rd.pages.dev"
     },
     
     {
         mockupImg: "/img/portfolio/gbmusiq.webp",
         logoImg: "/img/logos/gbmusiq.webp",
-        url: "https://gbmusiq.net"
+        url: "https://gbmusiq-rd.pages.dev"
     },
     {
         mockupImg: "/img/portfolio/itsallaboutlife.webp",

@@ -7,7 +7,7 @@ const portfolioData2: portfolioType[] = [
     {
         mockupImg: "/img/portfolio/supernaturalchurch.webp",
         logoImg: "/img/logos/supernaturalchurch.webp",
-        url: "https://sncalamo.org/"
+        url: "https://supernatural-church-rd.pages.dev"
     },
     {
         mockupImg: "/img/portfolio/libertylearning.webp",
@@ -22,7 +22,7 @@ const portfolioData2: portfolioType[] = [
     {
         mockupImg: "/img/portfolio/beargroup.webp",
         logoImg: "/img/logos/beargroup.webp",
-        url: "https://beargrpllc.com"
+        url: "https://bear-group-llc-rd.pages.dev"
     },
     
     {
