@@ -1,5 +1,10 @@
 const portfolioData: portfolioType[] = [
     {
+        mockupImg: "/img/portfolio/mandys.webp",
+        logoImg: "/img/logos/mandys.webp",
+        url: "https://mandysfamilyfriendlydreamtravel.com"
+    },
+    {
         mockupImg: "/img/portfolio/trexdetailing.webp",
         logoImg: "/img/logos/trexdetailing.webp",
         url: "https://trexdetailingllc.com"
@@ -14,6 +19,7 @@ const portfolioData: portfolioType[] = [
         logoImg: "/img/logos/blessedhandscatering.webp",
         url: "https://blessedhandscatering.org"
     },
+    
     {
         mockupImg: "/img/portfolio/gbmusiq.webp",
         logoImg: "/img/logos/gbmusiq.webp",
