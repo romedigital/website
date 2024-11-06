@@ -11,16 +11,16 @@ const secondaryFont = Spectral({ subsets: ['latin'], weight: ["200", "300", "400
 const thirdFont = IBM_Plex_Sans({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "100"], display: "swap", variable: "--third-font" })
 
 export const metadata: Metadata = {
-  title: 'Rome Sites - High Converting Websites For Small Businesses',
+  title: 'Rome Sites - Professional Websites For Your Business',
   description: 'Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.',
 
   openGraph: {
-    title: "Rome Sites - High Converting Websites For Small Businesses",
+    title: "Rome Sites - Professional Websites For Your Business",
     description: "Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.",
     type: "website",
     images: [
       {
-        url: 'https://www.romedigital.co/img/main-website-bg.webp',
+        url: 'https://www.romesites.co/img/main-website-bg.webp',
         width: 1280,
         height: 720,
       }
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Rome Sites - High Converting Websites For Small Businesses",
+    title: "Rome Sites - Professional Websites For Your Business",
     description: "Top Rated Website Development Agency. Strengthening business\' brands and converting prospects with websites.",
-    images: ['https://www.romedigital.co/img/main-website-bg.webp']
+    images: ['https://www.romesites.co/img/main-website-bg.webp']
   },
 }
 

@@ -18,7 +18,7 @@ export default function OnboardingForm(props: {businessName: string}){
 return (
  <div className={styles.onboardingForm}>
     <div className={styles.stuffWrapper}>
-      <h1>Hey {businessName}, let's get started!</h1>
+      <h1>Hey {businessName}, let's get this started!</h1>
       <img src="/img/portfolio/trexdetailing.webp" aria-hidden className={styles.mainImg} />
     </div>
     <div className={styles.formWrapper}>
