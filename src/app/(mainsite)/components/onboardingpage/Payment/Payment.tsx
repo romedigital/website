@@ -52,6 +52,29 @@ if(typeof window !== "undefined"){
 
       break;
 
+      case "2025sale":
+      buttonHTML = `<script async
+      src="https://js.stripe.com/v3/buy-button.js">
+    </script>
+    <stripe-buy-button
+      buy-button-id="buy_btn_1OplaMKaTewv8x5BW3Lm2oyJ"
+      publishable-key="pk_live_51OTXVsKaTewv8x5B7ocCPmnBDkWU0v37izsVOBOTKx8a457McIMV4KP7TeAzxabBumxqtThWW8N82jKOkPqRKXdi00efBOjxag"
+    >
+    </stripe-buy-button>`
+
+      break;
+
+      default:
+
+        buttonHTML = `<script async
+        src="https://js.stripe.com/v3/buy-button.js">
+      </script>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1OplaMKaTewv8x5BW3Lm2oyJ"
+        publishable-key="pk_live_51OTXVsKaTewv8x5B7ocCPmnBDkWU0v37izsVOBOTKx8a457McIMV4KP7TeAzxabBumxqtThWW8N82jKOkPqRKXdi00efBOjxag"
+      >
+      </stripe-buy-button>`
+
   }
 
   useEffect(()=>{
