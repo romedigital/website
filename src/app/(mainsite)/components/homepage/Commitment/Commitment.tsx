@@ -16,7 +16,7 @@ export default function Commitment() {
             <p>Let's connect and transform your business and bring your vision into a bright reality, let me prove that I'm the best.</p>
 
             <div className={styles.personWrapper}>
-                <img className={styles.ownerImg} src="/img/williambojczuk.webp" alt="Image of Rome Sites Owner" />
+                {/* <img className={styles.ownerImg} src="/img/williambojczuk.webp" alt="Image of Rome Sites Owner" /> */}
                 <div>
                     <img src="/img/signature.webp"/>
                     <span>Owner of <span className="highlight">Rome Sites</span></span>

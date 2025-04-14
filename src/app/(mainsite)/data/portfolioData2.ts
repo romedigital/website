@@ -28,7 +28,7 @@ const portfolioData2: portfolioType[] = [
     {
         mockupImg: "/img/portfolio/vintagevixen.webp",
         logoImg: "/img/logos/vintagevixen.webp",
-        url: "https://vintagevixentees.com"
+        url: "https://vintage-vixen-tees-rd.pages.dev/"
     },
     
     // {

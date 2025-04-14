@@ -23,7 +23,7 @@ export default function Home() {
     <Colosseum />
     <InfiniteRibbon content={infiniteRibbonContent} />
     <Testimonials />
-    <Problems />
+    {/* <Problems /> */}
     <Commitment />
     <Colosseum2 />
     <InfiniteRibbon content={infiniteRibbonContent} />
