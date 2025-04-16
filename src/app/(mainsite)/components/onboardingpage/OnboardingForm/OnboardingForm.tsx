@@ -9,7 +9,7 @@ export default function OnboardingForm(props: {businessName: string}){
  if(typeof window !== "undefined"){
   const urlParams = (typeof window !== "undefined") ? new URLSearchParams(window.location.search) : null;
     
-    let pkg = urlParams?.has("pkg") ?  urlParams?.get("pkg") : "2024sale"
+    let pkg = urlParams?.has("pkg") ?  urlParams?.get("pkg") : "2025sale"
   localStorage.setItem("business_name", businessName)
   localStorage.setItem("pkg", pkg!)
  }
@@ -18,7 +18,7 @@ export default function OnboardingForm(props: {businessName: string}){
 return (
  <div className={styles.onboardingForm}>
     <div className={styles.stuffWrapper}>
-      <h1>Hey {businessName}, let's get this started!</h1>
+      <h1>Hey {businessName}, let's get started!</h1>
       <img src="/img/portfolio/trexdetailing.webp" aria-hidden className={styles.mainImg} />
     </div>
     <div className={styles.formWrapper}>
