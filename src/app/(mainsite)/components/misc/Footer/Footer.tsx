@@ -65,7 +65,7 @@ export default function Footer() {
 
       </div>
 
-      <div className={styles.copyright}>© Copyright 2023 to Present - <a href="https://www.romedigital.co" target="_blank">Rome Sites</a></div>
+      <div className={styles.copyright}>© Copyright 2023 to Present - <a href="https://www.romesites.co" target="_blank">Rome Sites</a></div>
         
        
     </footer>
