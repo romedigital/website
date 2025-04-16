@@ -1,4 +1,7 @@
 "use client"
+import InfiniteRibbon from '../../homepage/InfiniteRibbon/InfiniteRibbon';
+import RecentProjects from '../../homepage/RecentProjects/RecentProjects';
+import Testimonials from '../../homepage/Testimonials/Testimonials';
 import styles from './onboardingform.module.css';
 
 export default function OnboardingForm(props: {businessName: string}){
@@ -13,13 +16,15 @@ export default function OnboardingForm(props: {businessName: string}){
   localStorage.setItem("business_name", businessName)
   localStorage.setItem("pkg", pkg!)
  }
-
+ const infiniteRibbonContent = <>
+      <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden /> <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden /> <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden /> <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden /> <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden />
+    </>
  
 return (
  <div className={styles.onboardingForm}>
     <div className={styles.stuffWrapper}>
       <h1>Hey {businessName}, let's get started!</h1>
-      <img src="/img/portfolio/trexdetailing.webp" aria-hidden className={styles.mainImg} />
+      <img src="/img/portfolio/washedbythewater.webp" aria-hidden className={styles.mainImg} />
     </div>
     <div className={styles.formWrapper}>
         <div className={styles.formContent} dangerouslySetInnerHTML={{__html: `<script type="text/javascript" src="https://form.jotform.com/jsform/241003968771156"></script>`}}>
