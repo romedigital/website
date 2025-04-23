@@ -216,7 +216,7 @@ export default function Navbar() {
           />
 
           
-<a href="https://www.facebook.com/messages/t/130761123452165" target="_blank" className={`main-button ${styles.ctaButton}`}>Request a Quote!</a>
+<a href="https://www.facebook.com/messages/t/130761123452165" target="_blank" className={`main-button ${styles.ctaButton}`}>Get Started!</a>
           
 
           </ul>
