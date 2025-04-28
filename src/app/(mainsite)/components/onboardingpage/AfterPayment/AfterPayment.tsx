@@ -14,7 +14,7 @@ export default function AfterPayment() {
   return (
         <div className={styles.contentWrapper}>
           <DisplaySteps currentSection={2} />
-        <h1 className={styles.title}>Thank's for Choosing Us{businessName}!</h1>
+        <h1 className={styles.title}>Thank's for choosing us to be a key part of your business!</h1>
 
         <p className={styles.content}>We will now begin designing your website. We will keep in close contact with you through the whole process to make sure you get exactly what you want!
         </p>
