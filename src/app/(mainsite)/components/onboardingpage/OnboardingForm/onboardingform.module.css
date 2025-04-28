@@ -27,6 +27,16 @@
     width: 45%;
 }
 
+.stuffWrapper h3{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.stuffWrapper p{
+    margin-top: 1vw;
+    font-size: 1.5rem;
+}
+
 .stuffWrapper img{
     width: 80%;
 }
@@ -57,11 +67,10 @@
     }
     
     .stuffWrapper{
-        width: 70%;
+        width: 80%;
         margin: 0 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: inline-block;
+        align-items: left;
         flex-direction: column;
     }
     
@@ -69,17 +78,31 @@
         width: 80%;
     }
     
+    .stuffWrapper h3{
+        font-size: 2rem;
+        display: inline-block;
+    }
+    
+    .stuffWrapper p{
+        margin-top: 2vw;
+        padding-bottom: 8vw;
+        font-size: 1.5rem;
+    }
+    
+    .stuffWrapper img{
+        width: 80%;
+    }
+    
     .stuffWrapper h1{
-        text-align: center;
-        font-size: 4rem;
-        padding: 0 10% 3vw 0;
+        font-size: 3rem;
+        padding: 0 10% 2vw 0;
     }
 }
 
  /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
     .onboardingForm{
-        padding: 30vw 5%;
+        padding: 10vw 5% 30vw 5%;
         gap: 8vw;
         justify-content: center;
         align-items: center;
@@ -96,9 +119,9 @@
     
     
     .stuffWrapper{
-        width: 90%;
+        width: 95%;
         margin:  0 5%;
-        display: flex;
+        display: inline-block;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -109,9 +132,24 @@
         width: 100%;
     }
     
+    .stuffWrapper h3{
+        margin-top: 4vw;
+        font-size: 2rem;
+        display: inline-block;
+    }
+    
+    .stuffWrapper p{
+        margin-top: 4vw;
+        padding-bottom: 8vw;
+        font-size: 1.5rem;
+    }
+    
+    .stuffWrapper img{
+        width: 80%;
+    }
+    
     .stuffWrapper h1{
-        text-align: center;
-        font-size: 4rem;
-        padding: 0 10% 5vw 0;
+        font-size: 3rem;
+        padding: 0 10% 2vw 0;
     }
 }

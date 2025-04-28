@@ -2,6 +2,7 @@
 import InfiniteRibbon from '../../homepage/InfiniteRibbon/InfiniteRibbon';
 import RecentProjects from '../../homepage/RecentProjects/RecentProjects';
 import Testimonials from '../../homepage/Testimonials/Testimonials';
+import DisplaySteps from '../DisplaySteps/DisplaySteps';
 import styles from './onboardingform.module.css';
 
 export default function OnboardingForm(props: {businessName: string}){
@@ -9,22 +10,38 @@ export default function OnboardingForm(props: {businessName: string}){
     return str.charAt(0).toUpperCase() + str.slice(1)
 }).join(" ")
 
+let clientName = ""
+
  if(typeof window !== "undefined"){
   const urlParams = (typeof window !== "undefined") ? new URLSearchParams(window.location.search) : null;
     
     let pkg = urlParams?.has("pkg") ?  urlParams?.get("pkg") : "2025sale"
+    clientName = urlParams?.has("name") ?  urlParams?.get("name")! : ""
+    clientName = clientName.split("-").map((str)=>{
+      return str.charAt(0).toUpperCase() + str.slice(1)
+  }).join(" ")
   localStorage.setItem("business_name", businessName)
   localStorage.setItem("pkg", pkg!)
+  localStorage.setItem("client_name", clientName!)
  }
- const infiniteRibbonContent = <>
-      <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden /> <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden /> <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden /> <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden /> <span>Are You Ready To Destroy The Competition?</span><img src="/img/logo.webp" aria-hidden />
-    </>
+
  
 return (
+  <>
+    <div style={{position: "relative"}}>
+    <DisplaySteps currentSection={0} />
  <div className={styles.onboardingForm}>
+  
     <div className={styles.stuffWrapper}>
-      <h1>Hey {businessName}, let's get started!</h1>
-      <img src="/img/portfolio/washedbythewater.webp" aria-hidden className={styles.mainImg} />
+      <h1>Hey{(clientName != "") ? ` ${clientName}` : ""}! Thanks for taking the next step with {businessName}.</h1>
+      <h3 className='underline'>Here's what to expect:</h3>
+      <p>
+      ✅ Our easy onboarding form on this page <br />
+      ✅ 100% refundable first month’s payment <br />
+      ✅ We personally follow up and begin designing your website! <br />
+<br />
+<strong>I'm excited to personally help you grow {businessName} — let’s get started!</strong></p>
+      {/* <img src="/img/portfolio/washedbythewater.webp" aria-hidden className={styles.mainImg} /> */}
     </div>
     <div className={styles.formWrapper}>
         <div className={styles.formContent} dangerouslySetInnerHTML={{__html: `<script type="text/javascript" src="https://form.jotform.com/jsform/241003968771156"></script>`}}>
@@ -32,7 +49,10 @@ return (
         </div>
         <div className={styles.hideBoi}></div>
     </div>
-    <img src="/img/colosseum.webp" alt="" className="bg-img" />
-    <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>
+   
  </div>
+ <img src="/img/colosseum.webp" alt="" className="bg-img" />
+ <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>
+ </div>
+ </>
 )};

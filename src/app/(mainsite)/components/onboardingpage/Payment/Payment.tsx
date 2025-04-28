@@ -1,4 +1,5 @@
 "use client"
+import DisplaySteps from "../DisplaySteps/DisplaySteps"
 import styles from "./payment.module.css"
 import { useEffect, useState } from "react"
 
@@ -89,13 +90,17 @@ if(typeof window !== "undefined"){
 
   return (
         <div className={styles.contentWrapper}>
-        <h1 className={styles.title}>Almost There{businessName}!</h1>
+          <DisplaySteps currentSection={1} />
+        <h1 className={styles.title}>You're Almost There<span className="highlight">!</span></h1>
 
-        <p className={styles.content}>For us to be able to begin designing your website, all there is to do is to complete your subscription at the secure link below. If you aren't fully satisfied with the initial design, we will refund you 100% of your money, so there's absolutely no risk! We support all major cards and banks!
+        <p className={styles.content}>This final step secures your spot for your business' amazing website. Your payment is safe, encrypted, and handled securely.🔒
         </p>
         <div className={styles.buttonWrapper} dangerouslySetInnerHTML={{__html: buttonHTML}}>
 
         </div>
+
+        <p className={styles.satisfaction}><span className="underline"><strong>Satisfaction Guaranteed!</strong></span><br /><br />
+        If you have any questions after signup, we’ll work with you to make sure you’re 100% happy.</p>
         <img src="/img/colosseum.webp" alt="" className="bg-img" />
     <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>
         </div>

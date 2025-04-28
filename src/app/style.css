@@ -118,6 +118,20 @@ body{
   align-items: center;
   justify-content: center;
 }
+.underline{
+  position: relative;
+}
+
+.underline::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 102%;
+  left:0;
+  height: 8px;
+  width: 100%;
+  background-color: var(--primary-color);
+}
 
 .main-bg-top{
   background: linear-gradient(to bottom, var(--secondary-color), white);

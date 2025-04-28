@@ -3,7 +3,7 @@
 }
 
 .title{
-    padding: 12vw 10% 0 10%;
+    padding: 4vw 10% 0 10%;
     text-align: center;
     font-family: var(--secondary-font);
     font-size: 4rem;
@@ -20,14 +20,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
+}
+
+.satisfaction{
+    text-align: center;
+    padding: 0 35%;
     padding-bottom: 12vw;
+    font-size: 1.6rem;
+}
+.satisfaction span{
+    font-size: 2rem;
 }
 
 .content{
     text-align: center;
     width: 40%;
     margin: 2vw 30%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     
 }
 
@@ -52,12 +62,16 @@
         margin: 3vw 25%;
         font-size: 1.4rem;
     }
+    .satisfaction{
+        padding: 0 25%;
+        padding-bottom: 12vw;
+    }
 }
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
     .title{
-        padding: 40vw 5% 0 5%;
+        padding: 8vw 5% 0 5%;
         line-height: 4.5rem;
     }
     
@@ -74,5 +88,9 @@
         width: 80%;
         margin: 4vw 10%;
         font-size: 1.6rem;
+    }
+    .satisfaction{
+        padding: 0 10%;
+        padding-bottom: 12vw;
     }
 }
