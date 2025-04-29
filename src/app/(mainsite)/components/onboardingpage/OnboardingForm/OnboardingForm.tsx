@@ -33,7 +33,7 @@ return (
  <div className={styles.onboardingForm}>
   
     <div className={styles.stuffWrapper}>
-      <h1>Hey{(clientName != "") ? ` ${clientName}` : ""}! Thanks for taking the next step with {businessName}.</h1>
+      <h1>Hey{(clientName != "") ? ` ${clientName}` : ""}! Congrats on taking the next step with {businessName}.</h1>
       <h3 className='underline'>Here's what to expect:</h3>
       <p>
       ✅ Our easy onboarding form on this page <br />
