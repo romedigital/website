@@ -5,10 +5,8 @@ import Testimonials from '../../homepage/Testimonials/Testimonials';
 import DisplaySteps from '../DisplaySteps/DisplaySteps';
 import styles from './onboardingform.module.css';
 
-export default function OnboardingForm(props: {businessName: string}){
-  const businessName = (props.businessName).split("-").map((str)=>{
-    return str.charAt(0).toUpperCase() + str.slice(1)
-}).join(" ")
+export default function OnboardingFormNEW(){
+  const businessName = ""
 
 let clientName = ""
 
@@ -33,14 +31,16 @@ return (
  <div className={styles.onboardingForm}>
   
     <div className={styles.stuffWrapper}>
-      <h1>Congrats on taking the next step with {businessName}!</h1>
+      <h1>Congrats on taking the next step!</h1>
       <h3 className='underline'>Here's what to expect:</h3>
       <p>
+      This Sale includes a website up to 5 pages, design, development, SEO, hosting, maintenance, a contact form, and 24/7 support. <br /><br />
+
       ✅ Our easy onboarding form on this page <br />
       ✅ 100% refundable first month’s payment <br />
       ✅ We personally follow up and begin designing your website! <br />
 <br />
-<strong>I'm excited to personally help you grow {businessName} — let’s get started!</strong></p>
+<strong>I'm excited to personally help you grow — let’s get started!</strong></p>
       {/* <img src="/img/portfolio/washedbythewater.webp" aria-hidden className={styles.mainImg} /> */}
     </div>
     <div className={styles.formWrapper}>

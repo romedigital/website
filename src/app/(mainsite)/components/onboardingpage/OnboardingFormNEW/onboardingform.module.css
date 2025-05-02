@@ -1,0 +1,155 @@
+.onboardingForm{
+    position: relative;
+    padding: 5vw 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.formWrapper{
+    width: 50%;
+    position: relative;
+}
+.hideBoi{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f3f3fe;
+    z-index: 990;
+    /* border: 1px solid black;
+    border-top:  none; */
+}
+
+.stuffWrapper{
+    width: 45%;
+}
+
+.stuffWrapper h3{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.stuffWrapper p{
+    margin-top: 1vw;
+    font-size: 1.5rem;
+}
+
+.stuffWrapper img{
+    width: 80%;
+}
+
+.stuffWrapper h1{
+    font-size: 3rem;
+    padding: 0 10% 2vw 0;
+}
+
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .onboardingForm{
+        padding: 8vw 10%;
+        gap: 4vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .formWrapper{
+        width: 80%;
+    }
+    
+    .stuffWrapper{
+        width: 80%;
+        margin: 0 15%;
+        display: inline-block;
+        align-items: left;
+        flex-direction: column;
+    }
+    
+    .stuffWrapper img{
+        width: 80%;
+    }
+    
+    .stuffWrapper h3{
+        font-size: 2rem;
+        display: inline-block;
+    }
+    
+    .stuffWrapper p{
+        margin-top: 2vw;
+        padding-bottom: 8vw;
+        font-size: 1.5rem;
+    }
+    
+    .stuffWrapper img{
+        width: 80%;
+    }
+    
+    .stuffWrapper h1{
+        font-size: 3rem;
+        padding: 0 10% 2vw 0;
+    }
+}
+
+ /* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .onboardingForm{
+        padding: 10vw 5% 30vw 5%;
+        gap: 8vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        
+    }
+    
+    .formWrapper{
+        width: 100%;
+        position: relative;
+    }
+
+    
+    
+    .stuffWrapper{
+        width: 95%;
+        margin:  0 5%;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    .stuffWrapper img{
+        width: 100%;
+    }
+    
+    .stuffWrapper h3{
+        margin-top: 4vw;
+        font-size: 2rem;
+        display: inline-block;
+    }
+    
+    .stuffWrapper p{
+        margin-top: 4vw;
+        padding-bottom: 8vw;
+        font-size: 1.5rem;
+    }
+    
+    .stuffWrapper img{
+        width: 80%;
+    }
+    
+    .stuffWrapper h1{
+        font-size: 3rem;
+        padding: 0 10% 2vw 0;
+    }
+}
