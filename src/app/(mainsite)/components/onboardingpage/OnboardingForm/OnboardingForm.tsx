@@ -40,7 +40,7 @@ return (
       ✅ 100% refundable first month’s payment <br />
       ✅ We personally follow up and begin designing your website! <br />
 <br />
-<strong>I'm excited to personally help you grow {businessName} — let’s get started!</strong></p>
+<strong>We're excited to personally help you grow {businessName} — let’s get started!</strong></p>
       {/* <img src="/img/portfolio/washedbythewater.webp" aria-hidden className={styles.mainImg} /> */}
     </div>
     <div className={styles.formWrapper}>
