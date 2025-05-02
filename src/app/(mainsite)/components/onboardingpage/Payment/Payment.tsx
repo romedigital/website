@@ -89,6 +89,7 @@ if(typeof window !== "undefined"){
   }, [])
 
   return (
+    <>
         <div className={styles.contentWrapper}>
           <DisplaySteps currentSection={1} />
         <h1 className={styles.title}>You're Almost There<span className="highlight">!</span></h1>
@@ -101,8 +102,10 @@ if(typeof window !== "undefined"){
 
         <p className={styles.satisfaction}><span className="underline"><strong>Satisfaction Guaranteed!</strong></span><br /><br />
         If you have any questions after signup, we’ll work with you to make sure you’re 100% happy.</p>
-        <img src="/img/colosseum.webp" alt="" className="bg-img" />
-    <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>
+        
         </div>
+        <img src="/img/colosseum.webp" alt="" className="bg-img" />
+        <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>
+        </>
   )
 }

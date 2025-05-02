@@ -51,8 +51,9 @@ return (
     </div>
    
  </div>
+ 
+ </div>
  <img src="/img/colosseum.webp" alt="" className="bg-img" />
  <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>
- </div>
  </>
 )};

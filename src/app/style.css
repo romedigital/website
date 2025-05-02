@@ -20,9 +20,10 @@
 }
 
 body{
+  position: relative;
   font-family: var(--primary-font);
   color: var(--primary-text-color);
-  margin-top: 6vw;
+  padding-top: 6vw;
 }
 
 .hidden{
@@ -264,7 +265,7 @@ body{
       font-size: 12px;
   }
   body{
-    margin-top: 12vw;
+    padding-top: 12vw;
   }
   .main-button{
     padding: 1.2vw 3vw;

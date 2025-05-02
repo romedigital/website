@@ -18,6 +18,8 @@ export default function Navbar() {
   const [isOnTouch, setIsOnTouch] = useState(false)
   const [isOnMobile, setIsOnMobile] = useState(false) 
   const [isTopBarOpen, setIsTopBarOpen] = useState(true)
+  const hideNav: any = useRef()
+  hideNav.current = false
 
 
   // ****************** Add NAV OPTION REFS HERE ******************
@@ -66,6 +68,7 @@ export default function Navbar() {
         data.ref.current.classList.remove(styles.active)
       }
     })
+
   }, [pathname])
 
 
@@ -152,7 +155,7 @@ export default function Navbar() {
 
 
   return (
-    <nav ref={navRef} className={styles.mainNav}>
+      <nav style={{display: (pathname.match("onboarding")) ? "none" : "initial"}} ref={navRef} className={styles.mainNav}>
 
       <div ref={topBarRef} className={styles.topBar}>
         <span className={styles.topBarText}>Why settle for anything less than the best?</span>

@@ -12,6 +12,7 @@ export default function AfterPayment() {
   }, [])
 
   return (
+    <>
         <div className={styles.contentWrapper}>
           <DisplaySteps currentSection={2} />
         <h1 className={styles.title}>Thank's for choosing us to be a key part of your business!</h1>
@@ -21,8 +22,10 @@ export default function AfterPayment() {
         <div className="center">
             <a href="https://www.facebook.com/messages/t/130761123452165" className={`main-button ${styles.buttonWrapper}`}>Open Chat</a>
         </div>
-        <img src="/img/colosseum.webp" alt="" className="bg-img" />
-    <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>
+        
         </div>
+        <img src="/img/colosseum.webp" alt="" className="bg-img" />
+        <div style={{backgroundColor: "rgba(255,255,255,0.95)"}} className="shader"></div>
+        </>
   )
 }
