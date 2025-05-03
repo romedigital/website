@@ -44,7 +44,7 @@ return (
       {/* <img src="/img/portfolio/washedbythewater.webp" aria-hidden className={styles.mainImg} /> */}
     </div>
     <div className={styles.formWrapper}>
-        <div className={styles.formContent} dangerouslySetInnerHTML={{__html: `<script type="text/javascript" src="https://form.jotform.com/jsform/241003968771156"></script>`}}>
+        <div className={styles.formContent} dangerouslySetInnerHTML={{__html: `<script type="text/javascript" src="https://form.jotform.com/jsform/251216527013143"></script>`}}>
           
         </div>
         <div className={styles.hideBoi}></div>
