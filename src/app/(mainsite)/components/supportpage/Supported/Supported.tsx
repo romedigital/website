@@ -40,8 +40,6 @@ Ice Cream Parlors <br />
 Juice Bars <br />
 Residential Agents <br />
 Property Management Services <br />
-Land Listings <br />
-Vacation Homes <br />
 Home Staging Services <br />
 Marketing Consultants <br />
 IT Consultants <br />
