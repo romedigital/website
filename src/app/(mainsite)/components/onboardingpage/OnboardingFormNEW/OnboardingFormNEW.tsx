@@ -31,16 +31,21 @@ return (
  <div className={styles.onboardingForm}>
   
     <div className={styles.stuffWrapper}>
-      <h1>Congrats on taking the next step!</h1>
+      <h1> <span className="highlight">Congrats</span> on taking the next step!</h1>
+      <p> With this sale you get a professional website up to 5 pages, hosting, maintenance, contact forms, and 24/7 support! <br /><br /></p>
       <h3 className='underline'>Here's what to expect:</h3>
       <p>
-      This Sale includes a website up to 5 pages, design, development, SEO, hosting, maintenance, a contact form, and 24/7 support. <br /><br />
+     
 
       ✅ Our easy onboarding form on this page <br />
       ✅ 100% refundable first month’s payment <br />
       ✅ We personally follow up and begin designing your website! <br />
 <br />
-<strong>We're excited to personally help you grow — let’s get started!</strong></p>
+Websites typically take less than a week to launch! <br /><br />
+<strong>We're excited to personally help you grow — let’s get started!</strong><br /><br />
+
+If you have any questions, send us a quick message! <br /><br />
+<a href="https://m.me/romesites" className={`main-button ${styles.buttonWrapper}`}>Send Message</a></p>
       {/* <img src="/img/portfolio/washedbythewater.webp" aria-hidden className={styles.mainImg} /> */}
     </div>
     <div className={styles.formWrapper}>
