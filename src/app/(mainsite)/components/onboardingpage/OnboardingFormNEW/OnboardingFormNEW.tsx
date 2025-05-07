@@ -50,7 +50,7 @@ return (
 <strong>We're excited to personally help you grow — let’s get started!</strong><br /><br />
 
 If you have any questions, send us a quick message! <br /><br />
-<a href="https://m.me/romesites" className={`main-button ${styles.buttonWrapper}`}>Send Message</a></p>
+<a target='_blank' href="https://m.me/romesites" className={`main-button ${styles.buttonWrapper}`}>Send Message</a></p>
       {/* <img src="/img/portfolio/washedbythewater.webp" aria-hidden className={styles.mainImg} /> */}
     </div>
     <div className={styles.formWrapper}>
