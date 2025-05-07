@@ -1,7 +1,7 @@
 .stepsWrapper{
     margin-top: 5vw;
     display: inline-flex;
-    width: 15%;
+    width: 40%;
     align-items: center;
     justify-content: center;
     padding: 1vw 10% 1.5vw 10%;
@@ -14,15 +14,29 @@
     background-color: var(--secondary-text-color);
     outline: 1px solid var(--primary-color);
     color: var(--primary-color);
-    width: var(--circle-size);
+    width: 3vw;
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
 
-.circle.filled{
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.filled .circle{
     background-color: var(--primary-color);
     outline: 1px solid var(--primary-color);
     color: var(--secondary-text-color);
+}
+
+.text{
+    width: 5vw;
+    text-align: center;
+    font-weight: bold;
+    white-space: pre;
 }
 
 .connector{
@@ -42,10 +56,14 @@
     .stepsWrapper{
         margin-top: 8vw;
         padding: 1.5vw 10% 2.25vw 10%;
-        width: 30%;
+        width: 60%;
     }
     .circle{
        font-size: 1.1rem;
+       width: 5vw;
+    }
+    .text{
+        width: 10vw;
     }
 }
  
@@ -54,9 +72,14 @@
     .stepsWrapper{
         padding: 2.5vw 10% 5vw 10%;
         margin-top: 30vw;
-        width: 60%;
+        width: 90%;
     }
     .circle{
         font-size: 1.4rem;
+        width: 8vw;
+     }
+
+     .text{
+        width: 15vw;
      }
 }

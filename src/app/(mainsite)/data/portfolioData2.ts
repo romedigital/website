@@ -1,8 +1,8 @@
 const portfolioData2: portfolioType[] = [
     {
-        mockupImg: "/img/portfolio/washedbythewater.webp",
-        logoImg: "/img/logos/washedbythewater.webp",
-        url: "https://washedbythewaternc.com/"
+        mockupImg: "/img/portfolio/mandys.webp",
+        logoImg: "/img/logos/mandys.webp",
+        url: "https://mandys-dream-travel-rs.pages.dev/"
     },
     {
         mockupImg: "/img/portfolio/supernaturalchurch.webp",
@@ -19,12 +19,12 @@ const portfolioData2: portfolioType[] = [
         logoImg: "/img/logos/mikemendietaministries.webp",
         url: "https://mikemendietaministries.com"
     },
-    {
-        mockupImg: "/img/portfolio/beargroup.webp",
-        logoImg: "/img/logos/beargroup.webp",
-        url: "https://bear-group-llc-rd.pages.dev"
-    },
     
+    {
+        mockupImg: "/img/portfolio/pastoringgodssheep.webp",
+        logoImg: "/img/logos/pastoringgodssheep.webp",
+        url: "https://pastoring-gods-sheep-rd.pages.dev/"
+    },
     {
         mockupImg: "/img/portfolio/vintagevixen.webp",
         logoImg: "/img/logos/vintagevixen.webp",

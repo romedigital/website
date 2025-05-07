@@ -1,0 +1,132 @@
+.testimonial{
+    display: inline-block;
+    width: 20vw;
+    margin: 0 2vw;
+    font-family: var(--secondary-font);
+    user-select: none;
+    
+}
+
+.headerContent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.name{
+    padding-top: 0.5vw;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.title{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.testimonial img{
+    padding-top: 0.1vw;
+    width: 4vw;
+}
+
+.testimonial p{
+    font-weight: 600;
+    font-style: italic;
+    padding: 0 5%;
+    font-size: 1.2rem;
+    line-height: 220%;
+    margin-top: 0.1vw;
+    max-height: 15vw;
+    overflow-y: auto;
+    white-space: preserve;
+}
+
+/* width */
+.testimonial p::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .testimonial p::-webkit-scrollbar-track {
+    background: transparent;
+    
+  }
+  
+  /* Handle */
+  .testimonial p::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 999px;
+  }
+
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1900px){
+    .testimonial{
+        width: 22vw;
+        margin: 0 1vw;
+    }
+    
+    .name{
+        padding-top: 0.5vw;
+        font-size: 1.2rem;
+    }
+    
+    .testimonial img{
+        width: 4.5vw;
+    }
+    
+    .testimonial p{
+        padding: 0 5%;
+        font-size: 1.1rem;
+    }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .testimonial{
+        width: 30vw;
+        margin: 0 2vw;
+        
+    }
+    
+    .name{
+        padding-top: 1vw;
+        padding-left: 0.5vw;
+    }
+    
+    .testimonial img{
+        width: 6vw;
+        padding-top: 0.5vw;
+    }
+    
+    .testimonial p{
+        padding: 0 2.5%;
+        line-height: 200%;
+        margin-top: 0.3vw;
+        max-height: 18vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .testimonial{
+        width: 45vw;
+        margin: 0 2vw;
+        
+    }
+    
+    .name{
+        padding-top: 2vw;
+        padding-left: 0.5vw;
+    }
+    
+    .testimonial img{
+        width: 10vw;
+        padding-top: 1vw;
+    }
+    
+    .testimonial p{
+        padding: 0 2%;
+        line-height: 200%;
+        margin-top: 0.5vw;
+        max-height: 35vw;
+    }
+}

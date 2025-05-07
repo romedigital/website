@@ -39,9 +39,22 @@ export default function DisplaySteps(props: displayStepsProps) {
         for(let i = 0; i < 3; ++i){
             const displayStepsCircleStyles = {"--circle-size": `${displayStepsSize}%`} as CSSProperties
             const displayStepsConnectorStyles = {"--connector-width": `${displayStepsConnectorWidth}%`} as CSSProperties
-    
+            let text = ""
+            if(i == 0){
+                text = `Fill in
+your info`
+            }else if(i == 1){
+                text = `Lock in
+the deal`
+            }else{
+                text = `We build
+your website!`
+            }
             displayStepsElems.push(
-                <div key={i} className={styles.circle} style={displayStepsCircleStyles}>{i+1}</div>
+                <div className={styles.wrap}>
+                    <div key={i} className={styles.circle} style={displayStepsCircleStyles}>{i+1}</div>
+                    <div className={styles.text}>{text}</div>
+                </div>
             )
             if(i !== 3 - 1){
                 displayStepsElems.push(<div key={i+50} className={styles.connector} style={displayStepsConnectorStyles}></div>)

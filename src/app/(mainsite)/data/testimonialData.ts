@@ -10,11 +10,23 @@ I’m a super small business with a just as small capitol to work with. This tea
     //     title: "PM of Actors Under Construction's Website",
     //     desc: `What a fantastic find!!! He went above and beyond. I am proud to present the website to the public now. He pays attention to the little details! I appreciate the extra care very much!`
     // },
+    {
+        name: "Juan Rodriguez",
+        title: "Owner of Juan Pressure Washing",
+        desc: "Very professional and quick service five stars"
+    },
+    
 
     {
-        name: "Trey",
-        title: "CEO of Superior Pressure Washing",
-        desc: `Big shout out to William Bojczuk for our new website! Now you can fill a form out online and receive a quote that way! There will be more that we will be working with William on in the future. Message William directly if you need a high quality website build.`
+        name: "Jacqueline Bland",
+        title: "Owner of Essential DNA Testing Solutions",
+        desc: "WOW! I can't say enough about how happy I am with the service given by the Rome Sites staff. I am only partically through getting my website built and have recommended two others to get theirs started.  They were very professional and proficient. I highly recommend to anyone needing the whole package on a startup budget. #yourock #imnotdoneyet."
+    },
+
+    {
+        name: "Diedra Villery",
+        title: "Owner of Platinum Medical & DNA Testing",
+        desc: "My business is Platinum Medical & DNA Testing, RomeSites was recommended to me & I found out quickly he’s awesome professional & very easy to communicate with, It didn’t take him hardly anytime to complete my Website, sending me forms to fill out gave him a pallet to work with about my services & colors for my business, he’s VERY cost effective & he provides maintenance to your site.. As a small business every thing we do counts BIG TIME !! I appreciate you William !! Stay Amazing !! Signed a very excited client."
     },
 
     {

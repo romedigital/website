@@ -1,0 +1,79 @@
+.section{
+    position: relative;
+    padding: 5vw 0;
+    /* margin: 5vw 0; */
+}
+
+.tagline{
+    
+}
+
+.subTagline{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    line-height: 100%;
+}
+
+.secondTagline{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: var(--secondary-font);
+}
+
+
+.bgImg{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 10%;
+    z-index: -2;
+}
+
+.bgGradient{
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 5%, rgba(255,255,255,0) 95%, rgba(255,255,255,1) 100%);
+}
+
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1900px){
+
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .section{
+        padding: 6vw 0;
+        margin: 6vw 0;
+    }
+    .subTagline{
+        margin-bottom: 1vw;
+    }
+
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .ctaButton{
+        font-size: 2rem;
+        padding: 4vw 8vw;
+    }
+    div:has(.ctaButton){
+        padding: 2vw 0;
+    }
+    .section{
+        padding: 10vw 0;
+        margin: 10vw 0;
+    }
+}
