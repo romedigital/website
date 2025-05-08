@@ -155,7 +155,7 @@ export default function Navbar() {
 
 
   return (
-      <nav style={{display: (pathname.match("onboarding")) ? "none" : "initial"}} ref={navRef} className={styles.mainNav}>
+      <nav /*style={{display: (pathname.match("onboarding")) ? "none" : "initial"}}*/ ref={navRef} className={styles.mainNav}>
 
       <div ref={topBarRef} className={styles.topBar}>
         <span className={styles.topBarText}>Why settle for anything less than the best?</span>
