@@ -17,7 +17,7 @@ export default function AfterPayment() {
           <DisplaySteps currentSection={2} />
         <h1 className={styles.title}>Thank's for choosing us to be a key part of your business!</h1>
 
-        <p className={styles.content}>Send us a quick message on messenger at the link below, and tell us your business name. We will now begin designing your website and keep in close contact with you through the whole process to make sure you get exactly what you want!
+        <p className={styles.content}>We will now begin designing your website and keep in close contact with you through the whole process to make sure you get exactly what you want!
         </p>
         <div className="center">
             <a href="https://m.me/romesites" className={`main-button ${styles.buttonWrapper}`}>Open Chat</a>

@@ -36,18 +36,6 @@
     margin-top: 1vw;
     font-size: 1.5rem;
 }
-.stuffWrapper p svg{
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.stuffWrapper p span{
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5vw;
-    margin: .25vw 0;
-}
 
 .stuffWrapper img{
     width: 80%;
@@ -67,7 +55,7 @@
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
     .onboardingForm{
-        padding: 8vw 10% 8vw 10%;
+        padding: 8vw 10%;
         gap: 4vw;
         justify-content: center;
         align-items: center;
@@ -96,22 +84,9 @@
     }
     
     .stuffWrapper p{
-        margin-top: 0vw;
-        padding-bottom: 6vw;
+        margin-top: 2vw;
+        padding-bottom: 8vw;
         font-size: 1.5rem;
-    }
-
-    .stuffWrapper p svg{
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
-    .stuffWrapper p span{
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1vw;
-        margin: .5vw 0;
     }
     
     .stuffWrapper img{
@@ -164,13 +139,9 @@
     }
     
     .stuffWrapper p{
-        margin-top: 0vw;
-        padding-bottom: 10vw;
+        margin-top: 4vw;
+        padding-bottom: 8vw;
         font-size: 1.5rem;
-    }
-    .stuffWrapper p span{
-        gap: 1vw;
-        margin: .8vw 0;
     }
     
     .stuffWrapper img{
