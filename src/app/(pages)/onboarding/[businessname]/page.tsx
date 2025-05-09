@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function OnboardingPage({params}: {params: {businessname: string}}){
 return(
     <>
-        <OnboardingForm businessName={params.businessname} />
+        <OnboardingForm />
     </>
 )
 }
