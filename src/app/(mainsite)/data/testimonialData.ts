@@ -10,6 +10,11 @@ I’m a super small business with a just as small capitol to work with. This tea
     //     title: "PM of Actors Under Construction's Website",
     //     desc: `What a fantastic find!!! He went above and beyond. I am proud to present the website to the public now. He pays attention to the little details! I appreciate the extra care very much!`
     // },
+     {
+        name: "Sandra ThurmondBrown",
+        title: "Owner of Birthed Out For Purpose",
+        desc: "I definitely like the quality of Rome websites! Very timely professional and it really inspired and motivated me to move forward with the Vision that has been placed on my Heart! I'm Grateful"
+    },
     {
         name: "Juan Rodriguez",
         title: "Owner of Juan Pressure Washing",
