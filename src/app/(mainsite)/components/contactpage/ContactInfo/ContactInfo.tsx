@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function ContactInfo() {
   return (
     <div className={styles.contactInfo}>
-        <a href="https://www.facebook.com/messages/t/130761123452165" target="_blank" className={styles.contactItem}>
+        <a href="https://m.me/romesites" target="_blank" className={styles.contactItem}>
             <img src="/icons/messenger_black.svg" alt="messenger icon" />
             <span>Click to chat!</span>
         </a>
