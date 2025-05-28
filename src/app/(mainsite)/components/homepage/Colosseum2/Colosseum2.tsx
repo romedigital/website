@@ -16,7 +16,7 @@ export default function Colosseum2() {
         <h1 className={styles.secondTagline}>Be the next one!</h1>
         <div className="center">
 
-          <a href="https://www.facebook.com/messages/t/130761123452165" target="_blank" style={{color: "white", fontFamily: "sans-serif"}} className={`main-button ${styles.ctaButton}`}>Let's Get Started!</a>
+          <a href="https://m.me/romesites" target="_blank" style={{color: "white", fontFamily: "sans-serif"}} className={`main-button ${styles.ctaButton}`}>Let's Get Started!</a>
         </div>
 
 
