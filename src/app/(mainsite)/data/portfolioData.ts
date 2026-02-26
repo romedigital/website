@@ -18,7 +18,7 @@ const portfolioData: portfolioType[] = [
     {
         mockupImg: "/img/portfolio/trexdetailing.webp",
         logoImg: "/img/logos/trexdetailing.webp",
-        url: "https://trexdetailingllc.com"
+        url: "https://trex-mobile-detailing-rd.pages.dev"
     },
     {
         mockupImg: "/img/portfolio/iconhomes.webp",

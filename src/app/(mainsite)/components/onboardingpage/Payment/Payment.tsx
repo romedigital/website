@@ -8,7 +8,7 @@ export default function Payment() {
   const [businessName, setBusinessName] = useState("")
   const [renderClient, setRenderClient] = useState(false)
 
-let pkg = "2024sale"
+let pkg = "2026sale"
 
 if(typeof window !== "undefined"){
   pkg = localStorage.getItem("pkg")!
@@ -53,13 +53,13 @@ if(typeof window !== "undefined"){
 
       break;
 
-      case "2025sale":
+      case "2026sale":
       buttonHTML = `<script async
   src="https://js.stripe.com/v3/buy-button.js">
 </script>
 
 <stripe-buy-button
-  buy-button-id="buy_btn_1REKEFKaTewv8x5BOA1MxhlQ"
+  buy-button-id="buy_btn_1T5CsgKaTewv8x5BZPsbcf4t"
   publishable-key="pk_live_51OTXVsKaTewv8x5B7ocCPmnBDkWU0v37izsVOBOTKx8a457McIMV4KP7TeAzxabBumxqtThWW8N82jKOkPqRKXdi00efBOjxag"
 >
 </stripe-buy-button>`
@@ -73,7 +73,7 @@ if(typeof window !== "undefined"){
 </script>
 
 <stripe-buy-button
-  buy-button-id="buy_btn_1REKEFKaTewv8x5BOA1MxhlQ"
+  buy-button-id="buy_btn_1T5CsgKaTewv8x5BZPsbcf4t"
   publishable-key="pk_live_51OTXVsKaTewv8x5B7ocCPmnBDkWU0v37izsVOBOTKx8a457McIMV4KP7TeAzxabBumxqtThWW8N82jKOkPqRKXdi00efBOjxag"
 >
 </stripe-buy-button>`

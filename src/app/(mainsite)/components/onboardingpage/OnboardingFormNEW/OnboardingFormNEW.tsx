@@ -15,7 +15,7 @@ let clientName = ""
  if(typeof window !== "undefined"){
   const urlParams = (typeof window !== "undefined") ? new URLSearchParams(window.location.search) : null;
     
-    let pkg = urlParams?.has("pkg") ?  urlParams?.get("pkg") : "2025sale"
+    let pkg = urlParams?.has("pkg") ?  urlParams?.get("pkg") : "2026sale"
     clientName = urlParams?.has("fname") ?  urlParams?.get("fname")! : ""
     clientName = clientName.split("-").map((str)=>{
       return str.charAt(0).toUpperCase() + str.slice(1)
