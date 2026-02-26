@@ -1,7 +1,7 @@
 const faqData: faqType[] = [
     {
         question: "How much does a website cost?",
-        answer: `Our most popular website that meets most business' needs is $100 per month. If you need a website larger than 5 pages, etc, contact us and we'd be happy to analyze your business' needs and give you a free quote!`
+        answer: `Our most popular website that meets most business' needs is $100 per month, but if you catch us during a sale you can get it for a big discount. If you need a website larger than 5 pages, etc, contact us and we'd be happy to analyze your business' needs and give you a free quote!`
     },
     {
         question: "How long does it take to complete a website?",
