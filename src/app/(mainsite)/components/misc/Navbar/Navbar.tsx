@@ -47,10 +47,10 @@ export default function Navbar() {
       triggers: ["/contact"],
       ref: contactRef
     },
-    {
-      triggers: ["/blog"],
-      ref: reviewsRef
-    },
+    // {
+    //   triggers: ["/blog"],
+    //   ref: reviewsRef
+    // },
     {
       triggers: ["/", "/home"],
       ref: homeRef
@@ -197,12 +197,12 @@ export default function Navbar() {
           ref={homeRef}
           />
 
-          <NavOption
+          {/* <NavOption
           title="Blog"
           url="/blog"
           icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"></path></svg>}
           ref={reviewsRef}
-          />
+          /> */}
 
           <NavOption
           title="Contact"
