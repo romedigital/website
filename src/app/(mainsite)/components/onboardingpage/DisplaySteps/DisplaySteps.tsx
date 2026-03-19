@@ -41,8 +41,8 @@ export default function DisplaySteps(props: displayStepsProps) {
             const displayStepsConnectorStyles = {"--connector-width": `${displayStepsConnectorWidth}%`} as CSSProperties
             let text = ""
             if(i == 0){
-                text = `Fill in
-your info`
+                text = `Homepage
+Designed`
             }else if(i == 1){
                 text = `Lock in
 the deal`
